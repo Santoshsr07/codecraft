@@ -684,7 +684,7 @@ button:active{
 }
 .meta-img img{
     width: 100%;
-    background-color: #705d4a;
+    background-color: transparent;
     border-radius: 10px;
     transition: all .50s ease;
     cursor: pointer;
