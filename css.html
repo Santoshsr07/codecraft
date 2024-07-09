@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics CSS</title>
+    <link rel="stylesheet" href="g1.css">
+</head>
+<body>
+    <!-- Header Start -->
+    <header>
+        <a href="index.html" class="logo"
+            style="text-decoration: none; color: white; height: 100; font-size: xx-large;">CODECRAFT<img
+                src="./images/.png" alt=""></a>
+
+        <div class="fa-solid fa-bars" id="menu-icon"></div>
+
+        <ul class="navlist">
+            <li><a href="index.html" style="text-decoration: none;">Home</a></li>
+            <li><a href="About.html" style="text-decoration: none;">About</a></li>
+            <li><a href="Contact.html" style="text-decoration: none;">Contact</a></li>
+            <li><a href="Course.html" style="text-decoration: none;">Course</a></li>
+        </ul>
+
+    </header>
+    <!-- Header End -->
+
+    <h2>What is CSS?</h2>
+    <p>CSS stands for <span class="highlight">Cascading Style Sheets</span>. It is used to describe the presentation of a document written in HTML or XML.</p>
+    
+    <h2>CSS Syntax</h2>
+    <div class="code-example">
+        <pre><code>
+selector {
+    property: value;
+}
+        </code></pre>
+    </div>
+    
+    <h2>CSS Selectors</h2>
+    <table>
+        <tr>
+            <th>Selector</th>
+            <th>Example</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Element</td>
+            <td>p { }</td>
+            <td>Selects all &lt;p&gt; elements</td>
+        </tr>
+        <tr>
+            <td>Class</td>
+            <td>.classname { }</td>
+            <td>Selects elements with class="classname"</td>
+        </tr>
+        <tr>
+            <td>ID</td>
+            <td>#idname { }</td>
+            <td>Selects the element with id="idname"</td>
+        </tr>
+    </table>
+
+    <h2>CSS Box Model</h2>
+    <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of:</p>
+    <ul>
+        <li>Content - The content of the box, where text and images appear</li>
+        <li>Padding - Clears an area around the content. The padding is transparent</li>
+        <li>Border - A border that goes around the padding and content</li>
+        <li>Margin - Clears an area outside the border. The margin is transparent</li>
+    </ul>
+
+    <h2>CSS Flexbox</h2>
+    <p>Flexbox is a one-dimensional layout method for laying out items in rows or columns. To use flexbox, you set the display property on a parent element:</p>
+    <div class="code-example">
+        <pre><code>
+            <h2>What is CSS?</h2>
+    <p>CSS stands for <span class="highlight">Cascading Style Sheets</span>. It is used to describe the presentation of a document written in HTML or XML.</p>
+    
+    <h2>CSS Syntax</h2>
+    <div class="code-example">
+        <pre><code>
+selector {
+    property: value;
+}
+        </code></pre>
+    </div>
+    
+    <h2>CSS Selectors</h2>
+    <table>
+        <tr>
+            <th>Selector</th>
+            <th>Example</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Element</td>
+            <td>p { }</td>
+            <td>Selects all &lt;p&gt; elements</td>
+        </tr>
+        <tr>
+            <td>Class</td>
+            <td>.classname { }</td>
+            <td>Selects elements with class="classname"</td>
+        </tr>
+        <tr>
+            <td>ID</td>
+            <td>#idname { }</td>
+            <td>Selects the element with id="idname"</td>
+        </tr>
+    </table>
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+        </code></pre>
+    </div>
+
+    <h2>CSS Grid</h2>
+    <p>CSS Grid Layout is a two-dimensional layout system for the web. It lets you lay content out in rows and columns. To use CSS Grid, you set the display property on a parent element:</p>
+    <div class="code-example">
+        <pre><code>
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+        </code></pre>
+    </div>
+
+    <div class="note">
+        <p>Note: This page itself is an example of HTML and CSS in action. The styles you see are defined in the &lt;style&gt; tag in the &lt;head&gt; section of this document.</p>
+    </div>
+    <div class="home">
+        <button><a href="#" style="text-decoration: none; color: white;">Task <br> COMING SOON</a></button>
+        </div>
+        <footer>
+            <div class="logo" style="color: white;"><b>CODECRAFT</b></div><br>
+            <p>Creating a Language Learning Game website  is an exciting project <br> that can enhance  the user experience in
+                language acquisition. <br> Here's a breakdown of the key features and components <br> you might want to include
+            </p>
+    
+            
+            <div class="bottom">
+                <p>Copyright &copy; 2024 <a href="#"> CODECRAFT</a> All Rights Reserved</p>
+            </div>
+        </footer>
+</body>
+</html>

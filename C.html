@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="g1.css">
+    <title>C Programming Basics</title>
+    
+</head>
+
+<body>
+
+        <!-- Header Start -->
+        <header>
+            <a href="index.html" class="logo"
+                style="text-decoration: none; color: white; height: 100; font-size: xx-large;">CODECRAFT<img
+                    src="./images/.png" alt=""></a>
+    
+            <div class="fa-solid fa-bars" id="menu-icon"></div>
+    
+            <ul class="navlist">
+                <li><a href="index.html" style="text-decoration: none;">Home</a></li>
+                <li><a href="About.html" style="text-decoration: none;">About</a></li>
+                <li><a href="Contact.html" style="text-decoration: none;">Contact</a></li>
+                <li><a href="Course.html" style="text-decoration: none;">Course</a></li>
+            </ul>
+    
+        </header>
+        <!-- Header End -->
+        <h1 style="color: purple;">C Programming Basics</h1>
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction to C</h2>
+            <p>C is a general-purpose programming language created in the 1970s. It's known for its efficiency and is
+                widely used in system programming, embedded systems, and application development.</p>
+        </section>
+
+        <section id="structure">
+            <h2>Basic Program Structure</h2>
+            <pre><code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    // Your code here
+    printf("Hello, World!\n");
+    return 0;
+}
+            </code></pre>
+            <p>This is the basic structure of a C program. It includes a main function, which is the entry point of the
+                program.</p>
+            <p>Certainly. Let's break down this basic C program structure:
+
+                1. #include <stdio.h><br>
+                    - This is a preprocessor directive that includes the standard input/output library (stdio.h).
+                    - It allows you to use functions like `printf()` for output.<br><br>
+
+                    2. int main() { ... }<br>
+                    - This declares the main function, which is the entry point of every C program.
+                    - `int` indicates that the function will return an integer value.<br><br>
+
+                    3. // Your code here<br>
+                    - This is a comment. Comments are ignored by the compiler and are used to explain the code.<br><br>
+
+                    4. printf("Hello, World!\n");<br>
+                    - This is a function call to 'printf()'', which prints text to the console.
+                    - "Hello, World!\n" is the string to be printed. The '\n' represents a newline character.<br><br>
+
+                    5. return 0;<br>
+                    - This statement returns 0 to the operating system, indicating that the program executed
+                    successfully.<br><br>
+
+                    6. The curly braces '{ }'' enclose the body of the main function.<br><br>
+
+                    This structure is the foundation for most C programs. You would typically add your own code between
+                    the opening and closing braces of the main function.<br><br>
+
+                    Would you like me to elaborate on any part of this structure or explain how you might expand on it?
+            </p>
+        </section>
+
+        <section id="datatypes">
+            <h2>Data Types</h2>
+            <ul>
+                <li><strong>int</strong>: Integer values</li>
+                <li><strong>float</strong>: Single-precision floating point</li>
+                <li><strong>double</strong>: Double-precision floating point</li>
+                <li><strong>char</strong>: Single character</li>
+            </ul>
+        </section>
+
+        <section id="variables">
+            <h2>Variables</h2>
+            <p>Variables are used to store data. In C, you must declare a variable's type before using it.</p>
+            <pre><code>
+int age = 25;
+float height = 1.75;
+char grade = 'A';
+            </code></pre>
+        </section>
+
+        <section id="operators">
+            <h2>Operators</h2>
+            <ul>
+                <li>Arithmetic: +, -, *, /, %</li>
+                <li>Comparison: ==, !=, &lt;, &gt;, &lt;=, &gt;=</li>
+                <li>Logical: &&, ||, !</li>
+                <li>Assignment: =, +=, -=, *=, /=, %=</li>
+            </ul>
+        </section>
+
+        <section id="controlflow">
+            <h2>Control Flow</h2>
+            <h3>If-Else Statement</h3>
+            <pre><code>
+if (condition) {
+    // code if condition is true
+} else {
+    // code if condition is false
+}
+            </code></pre>
+            <h3>For Loop</h3>
+            <pre><code>
+for (int i = 0; i < 5; i++) {
+    // code to repeat
+}
+            </code></pre>
+            <h3>While Loop</h3>
+            <pre><code>
+while (condition) {
+    // code to repeat while condition is true
+}
+            </code></pre>
+        </section>
+    </main>
+    <div class="home">
+    <button><a href="task.html" style="text-decoration: none; color: white;">Task</a></button>
+    </div>
+
+
+    <footer>
+        <div class="logo" style="color: white;"><b>CODECRAFT</b></div><br>
+        <p>Creating a Language Learning Game website  is an exciting project <br> that can enhance  the user experience in
+            language acquisition. <br> Here's a breakdown of the key features and components <br> you might want to include
+        </p>
+
+       
+        <div class="bottom">
+            <p>Copyright &copy; 2024 <a href="#"> CODECRAFT</a> All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
