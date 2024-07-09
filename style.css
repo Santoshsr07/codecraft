@@ -1,4 +1,4 @@
-*{
+@import url('https://fonts.cdnfonts.com/css/gagalin');*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -672,7 +672,7 @@ button:active{
 }
 /* Road Map End */
 
-/* Meta Start */
+/* h Start */
 .meta{
     padding: 100px 11.5% 100px;
     height: auto;
@@ -684,7 +684,7 @@ button:active{
 }
 .meta-img img{
     width: 100%;
-    background-color: #705d4a;
+    background-color: transparent;
     border-radius: 10px;
     transition: all .50s ease;
     cursor: pointer;
