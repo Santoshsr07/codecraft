@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Basics</title>
+    <link rel="stylesheet" href="g1.css">
+</head>
+<body>
+    <!-- Header Start -->
+    <header>
+        <a href="index.html" class="logo"
+            style="text-decoration: none; color: white; height: 100; font-size: xx-large;">CODECRAFT<img
+                src="./images/.png" alt=""></a>
+
+        <div class="fa-solid fa-bars" id="menu-icon"></div>
+
+        <ul class="navlist">
+            <li><a href="index.html" style="text-decoration: none;">Home</a></li>
+            <li><a href="About.html" style="text-decoration: none;">About</a></li>
+            <li><a href="Contact.html" style="text-decoration: none;">Contact</a></li>
+            <li><a href="Course.html" style="text-decoration: none;">Course</a></li>
+        </ul>
+
+    </header>
+    <!-- Header End -->
+     <br>
+    <h1 style="color: purple;">Python Basics</h1>
+    
+    <h2>What is Python?</h2>
+    <p>Python is a high-level, interpreted programming language known for its simplicity and readability. It was created by Guido van Rossum and first released in 1991.</p>
+    
+    <h2>Key Features</h2>
+    <ul>
+        <li>Easy to learn and read</li>
+        <li>Versatile and powerful</li>
+        <li>Large standard library</li>
+        <li>Strong community support</li>
+        <li>Cross-platform compatibility</li>
+        <li>Extensive third-party packages</li>
+    </ul>
+    
+    <h2>Basic Syntax</h2>
+    <p>Python uses indentation to define code blocks. Here's a simple example:</p>
+    <pre><code>
+if True:
+    print("This is indented")
+print("This is not indented")
+    </code></pre>
+    
+    <h2>Variables and Data Types</h2>
+    <p>Variables in Python are created when you assign a value:</p>
+    <pre><code>
+x = 5
+name = "John"
+is_student = True
+height = 1.75
+    </code></pre>
+    
+    <div class="highlight">
+        <p>Python is dynamically typed, meaning you don't need to declare variable types explicitly.</p>
+    </div>
+    
+    <h3>Common Data Types</h3>
+    <table>
+        <tr>
+            <th>Type</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>Integer</td>
+            <td><code>x = 5</code></td>
+        </tr>
+        <tr>
+            <td>Float</td>
+            <td><code>y = 3.14</code></td>
+        </tr>
+        <tr>
+            <td>String</td>
+            <td><code>name = "Alice"</code></td>
+        </tr>
+        <tr>
+            <td>Boolean</td>
+            <td><code>is_valid = True</code></td>
+        </tr>
+        <tr>
+            <td>List</td>
+            <td><code>numbers = [1, 2, 3]</code></td>
+        </tr>
+        <tr>
+            <td>Dictionary</td>
+            <td><code>person = {"name": "Bob", "age": 30}</code></td>
+        </tr>
+    </table>
+
+    <h2>Control Structures</h2>
+    
+    <h3>If-Else Statement</h3>
+    <pre><code>
+x = 10
+if x > 5:
+    print("x is greater than 5")
+elif x == 5:
+    print("x is equal to 5")
+else:
+    print("x is less than 5")
+    </code></pre>
+
+    <h3>For Loop</h3>
+    <pre><code>
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+    </code></pre>
+
+    <h3>While Loop</h3>
+    <pre><code>
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+    </code></pre>
+
+    <h2>Functions</h2>
+    <p>Functions in Python are defined using the <code>def</code> keyword:</p>
+    <pre><code>
+def greet(name):
+    return f"Hello, {name}!"
+
+message = greet("Alice")
+print(message)  # Output: Hello, Alice!
+    </code></pre>
+
+    <h2>Modules</h2>
+    <p>Python has a wide range of built-in modules and allows you to create your own:</p>
+    <pre><code>
+import math
+
+print(math.pi)  # Output: 3.141592653589793
+    </code></pre>
+
+    <div class="highlight">
+        <p>The Python Standard Library contains many useful modules for various tasks, from file I/O to web development.</p>
+    </div>
+    <div class="home">
+        <button><a href="pythontask.html" style="text-decoration: none; color: white;">Task</a></button>
+        </div>
+        <footer>
+            <div class="logo" style="color: white;"><b>CODECRAFT</b></div><br>
+            <p>Creating a Language Learning Game website  is an exciting project <br> that can enhance  the user experience in
+                language acquisition. <br> Here's a breakdown of the key features and components <br> you might want to include
+            </p>
+    
+            <div class="bottom">
+                <p>Copyright &copy; 2024 <a href="#"> CODECRAFT</a> All Rights Reserved</p>
+            </div>
+        </footer>
+</body>
+</html>

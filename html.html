@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Basics</title>
+    <link rel="stylesheet" href="g1.css">
+</head>
+<body>
+    <!-- Header Start -->
+    <header>
+        <a href="index.html" class="logo"
+            style="text-decoration: none; color: white; height: 100; font-size: xx-large;">CODECRAFT<img
+                src="./images/.png" alt=""></a>
+
+        <div class="fa-solid fa-bars" id="menu-icon"></div>
+
+        <ul class="navlist">
+            <li><a href="index.html" style="text-decoration: none;">Home</a></li>
+            <li><a href="About.html" style="text-decoration: none;">About</a></li>
+            <li><a href="Contact.html" style="text-decoration: none;">Contact</a></li>
+            <li><a href="Course.html" style="text-decoration: none;">Course</a></li>
+        </ul>
+
+    </header>
+    <!-- Header End -->
+
+    <h1>Basics HTML</h1>
+    
+    <h2>What is HTML?</h2>
+    <p>HTML stands for <span class="highlight">Hypertext Markup Language</span>. It is the standard markup language for creating web pages and web applications.</p>
+    
+    <h2>Basic HTML Structure</h2>
+    <div class="code-example">
+        <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;This is a heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+    </div>
+    
+    <h2>Common HTML Elements</h2>
+    <table>
+        <tr>
+            <th>Element</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>&lt;h1&gt; to &lt;h6&gt;</td>
+            <td>Headings</td>
+        </tr>
+        <tr>
+            <td>&lt;p&gt;</td>
+            <td>Paragraph</td>
+        </tr>
+        <tr>
+            <td>&lt;a&gt;</td>
+            <td>Hyperlink</td>
+        </tr>
+        <tr>
+            <td>&lt;img&gt;</td>
+            <td>Image</td>
+        </tr>
+        <tr>
+            <td>&lt;ul&gt; and &lt;ol&gt;</td>
+            <td>Unordered and Ordered Lists</td>
+        </tr>
+    </table>
+
+    
+    
+    <h2>What is HTML?</h2>
+    <p>HTML stands for <span class="highlight">Hypertext Markup Language</span>. It is the standard markup language for creating web pages and web applications.</p>
+    
+    <h2>Basic HTML Structure</h2>
+    <div class="code-example">
+        <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;This is a heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+    </div>
+    
+    <h2>Common HTML Elements</h2>
+    <table>
+        <tr>
+            <th>Element</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>&lt;h1&gt; to &lt;h6&gt;</td>
+            <td>Headings</td>
+        </tr>
+        <tr>
+            <td>&lt;p&gt;</td>
+            <td>Paragraph</td>
+        </tr>
+        <tr>
+            <td>&lt;a&gt;</td>
+            <td>Hyperlink</td>
+        </tr>
+        <tr>
+            <td>&lt;img&gt;</td>
+            <td>Image</td>
+        </tr>
+        <tr>
+            <td>&lt;ul&gt; and &lt;ol&gt;</td>
+            <td>Unordered and Ordered Lists</td>
+        </tr>
+    </table>
+
+    <h2>HTML Semantic Elements</h2>
+    <p>Semantic elements clearly describe their meaning in a human- and machine-readable way. Examples include:</p>
+    <ul>
+        <li>&lt;header&gt; - Defines a header for a document or a section</li>
+        <li>&lt;nav&gt; - Defines a set of navigation links</li>
+        <li>&lt;article&gt; - Defines an independent, self-contained content</li>
+        <li>&lt;section&gt; - Defines a section in a document</li>
+        <li>&lt;aside&gt; - Defines content aside from the page content</li>
+        <li>&lt;footer&gt; - Defines a footer for a document or a section</li>
+    </ul>
+
+    <h2>HTML Forms</h2>
+    <p>HTML forms are used to collect user input. The &lt;form&gt; element is used to create an HTML form:</p>
+    <div class="code-example">
+        <pre><code>
+&lt;form action="/submit-form" method="post"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name" required&gt;
+
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email" required&gt;
+
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+        </code></pre>
+    </div>
+    <div class="note">
+        <p>Note: This page itself is an example of HTML and CSS in action. The styles you see are defined in the &lt;style&gt; tag in the &lt;head&gt; section of this document.</p>
+    </div>
+    <div class="home">
+        <button><a href="htmltask.html" style="text-decoration: none; color: white;">Task</a></button>
+        </div>
+        <footer>
+            <div class="logo" style="color: white;"><b>CODECRAFT</b></div><br>
+            <p>Creating a Language Learning Game website  is an exciting project <br> that can enhance  the user experience in
+                language acquisition. <br> Here's a breakdown of the key features and components <br> you might want to include
+            </p>
+    
+            <div class="bottom">
+                <p>Copyright &copy; 2024 <a href="#"> CODECRAFT</a> All Rights Reserved</p>
+            </div>
+        </footer>
+</body>
+</html>
