@@ -3,166 +3,138 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
-
-    <!-- Fav icon -->
-
-    <!-- Fav icon -->
-
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Style CSS -->
-
-
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Font Awesome CDN -->
-
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="home.css">
+    <title>Login & Registration</title>
 </head>
 
 <body>
-
-
-    <!-- Header Start -->
-    <header>
-        <a href="index.html" class="logo"
-            style="text-decoration: none; color: white; height: 100; font-size: xx-large;">CODECRAFT<img
-                src="./images/.png" alt=""></a>
-
-        <div class="fa-solid fa-bars" id="menu-icon"></div>
-
-        <ul class="navlist">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-            <li><a href="Course.html">Course</a></li>
-            <li><a href="register.html">Login</a></li>
-        </ul>
-
-    </header>
-    <!-- Header End -->
-
-
-
-    <!-- Home section Start -->
-    <section class="home" id="home">
-
-        <!-- Home Content -->
-        <div class="home-content">
-            <div class="container">
-                <div class="text">
-                    <h1>Programming</h1>
-                </div><br>
-                <!-- <h3>Art & NFTs</h3> -->
-                <p>Programming refers to the process of telling a computer which tasks to perform in order to solve
-                    problems.
-                    <br>
-                    It's a collaborative effort between humans and computers, where humans create instructions (known as
-                    code) for
-                    the computer to follow.
-                    <br>
-                    Think of it like a recipe: the programmer provides a set of instructions, and the computer executes
-                    them.
-                    <br>
-                    Coding, on the other hand, is the act of transforming those ideas into a written language that the
-                    computer
-                    can
-                    understand.
-                    <br>
-                    So, programming is all about communication with machines, and coding is the bridge that enables that
-                    communication!
-                </p>
-
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p><a href="home.html" style="text-decoration: none; color: white;">CODECRAFT</a></p>
             </div>
-        </div>
-        <!-- Home Content -->
+            <div class="nav-button">
+                <button class="btn white-btn" id="loginBtn" onclick="login()">Login</button>
+                <button class="btn" id="registerBtn" onclick="register()">Register</button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
 
-        <!-- Img -->
-        <div class="img">
-            <img src="./images/Programming.jpeg" alt="">
-        </div>
-        <!-- Img -->
+        <div class="form-box">
 
-    </section>
-    <!-- Home section End -->
-
-
-    <!-- NFTs Start -->
-    <section class="nfts" id="nfts">
-
-        <div class="main-text">
-            <h1>TRANDING COURSES</h1>
-        </div>
-
-        <div class="card-content">
-            <div class="row">
-                <div class="card-body">
-                    <div class="img">
-                        <img src="images/Html.jpg" alt="">
+            <div class="login-container" id="login">
+                <div class="top">
+                    <span>Don't have an account? <a href="#" onclick="register()">Register</a></span>
+                    <header>Login</header>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Username or Email">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input-field" placeholder="Password">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Login">
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="login-check">
+                        <label for="login-check"> Remember Me</label>
                     </div>
-                    <div class="c">
-                        <button><a href="html.html">
-                                <h3>HTML</h3>
-                            </a></button>
+                    <div class="two">
+                        <label><a href="#">Forgot password?</a></label>
                     </div>
-
-
                 </div>
             </div>
 
-            <div class="row">
-                <div class="card-body">
-                    <div class="img">
-                        <img src="./images/React.jpg" alt="">
-                    </div>
 
-                    <div class="c">
-                        <button><a href="#">
-                                <h3>COMING SOON</h3>
-                            </a></button>
+            <div class="register-container" id="register">
+                <div class="top">
+                    <span>Have an account? <a href="#" onclick="login()">Login</a></span>
+                    <header>Sign Up</header>
+                </div>
+                <div class="two-forms">
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Firstname">
+                        <i class="bx bx-user"></i>
                     </div>
-
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Lastname">
+                        <i class="bx bx-user"></i>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Email">
+                    <i class="bx bx-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input-field" placeholder="Password">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Register">
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="register-check">
+                        <label for="register-check"> Remember Me</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="#">Terms & conditions</a></label>
+                    </div>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="card-body">
-                    <div class="img">
-                        <img src="./images/Python.jpg" alt="">
-                    </div>
-
-                    <div class="c">
-                        <button><a href="python.html">
-                                <h3>Python</h3>
-                            </a></button>
-                    </div>
-
-                </div>
-            </div>
-
         </div>
-
-    </section>
-    <!-- NFTs End -->
+    </div>
 
 
-    <footer>
-        <div class="logo" style="color: white;"><b>CODECRAFT</b></div><br>
-        <p>Creating a Language Learning Game website  is an exciting project <br> that can enhance  the user experience in
-            language acquisition. <br> Here's a breakdown of the key features and components <br> you might want to include
-        </p>
+    <script>
 
-        
-        <div class="bottom">
-            <p>Copyright &copy; 2024 <a href="#"> CODECRAFT</a> All Rights Reserved</p>
-        </div>
-    </footer>
+        function myMenuFunction() {
+            var i = document.getElementById("navMenu");
 
-    <!-- Script -->
-    <script src="script.js"></script>
-    <!-- Script -->
+            if (i.className === "nav-menu") {
+                i.className += " responsive";
+            } else {
+                i.className = "nav-menu";
+            }
+        }
 
+    </script>
+
+    <script>
+
+        var a = document.getElementById("loginBtn");
+        var b = document.getElementById("registerBtn");
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+
+        function login() {
+            x.style.left = "4px";
+            y.style.right = "-520px";
+            a.className += " white-btn";
+            b.className = "btn";
+            x.style.opacity = 1;
+            y.style.opacity = 0;
+        }
+
+        function register() {
+            x.style.left = "-510px";
+            y.style.right = "5px";
+            a.className = "btn";
+            b.className += " white-btn";
+            x.style.opacity = 0;
+            y.style.opacity = 1;
+        }
+
+    </script>
 </body>
 
 </html>

@@ -363,7 +363,6 @@ footer p{
 }
 /* Footer End */
 .icons{
-	font-size: 50px; 
-	width: 50px; 
-	text-align: center;
+	font-size: auto; 
+	width: auto; 
 }
