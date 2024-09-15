@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,22 +7,28 @@
     scroll-behavior: smooth;
     font-family: "Lobster", sans-serif;
 }
-html::-webkit-scrollbar-track{
+
+html::-webkit-scrollbar-track {
     background: transparent;
 }
-html::-webkit-scrollbar-thumb{
-    background: linear-gradient(#e49158 10%, #0c0908 50%);
+
+html::-webkit-scrollbar-thumb {
+    background: linear-gradient(#0c0908 10%, #e49158 50%);
     border-radius: 10px;
 }
-html::-webkit-scrollbar{
+
+html::-webkit-scrollbar {
     width: 10px;
 }
-body{
+
+body {
     background: black;
 }
 
+
+
 /* Header Start */
-header{
+header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -33,16 +39,19 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 16px 10%;
-    box-shadow: 0 .1rem .1rem rgba(0,0,0, .2);
+    box-shadow: 0 .1rem .1rem rgba(0, 0, 0, .2);
     transition: 0.5s;
 }
-.logo img{
+
+.logo img {
     width: 130px;
 }
-.navlist{
+
+.navlist {
     display: flex;
 }
-.navlist a{
+
+.navlist a {
     font-size: 18px;
     color: #fff;
     font-weight: 500;
@@ -51,34 +60,40 @@ header{
     padding: 8px;
     transition: all .50s;
 }
-.navlist a:hover{
+
+.navlist a:hover {
     background-color: #e49158;
 }
-#menu-icon{
+
+#menu-icon {
     font-size: 25px;
     color: #e49158;
     z-index: 10001;
     display: none;
     cursor: pointer;
 }
-header.sticky{
+
+header.sticky {
     background: #0c0908;
     box-shadow: #e49158 0px 0px 10px 0px;
     padding: 16px 9%;
 }
-.navlist.active{
+
+.navlist.active {
     right: 0;
 }
-@media (max-width:920px){
-    .navlist.active{
+
+@media (max-width:920px) {
+    .navlist.active {
         right: 0;
     }
 
-    #menu-icon{
+    #menu-icon {
         display: block;
         color: #e49158;
     }
-    .navlist{
+
+    .navlist {
         position: absolute;
         top: 100%;
         right: -100%;
@@ -91,19 +106,21 @@ header.sticky{
         box-shadow: #e49158 0px 0px 10px 0px;
         transition: all .50s ease;
     }
-    .navlist a{
+
+    .navlist a {
         color: #fff;
         display: block;
         padding: 17px;
         font-size: 22px;
     }
-    
+
 }
+
 /* Header End */
 
 
 /* Home Section Start */
-.home{
+.home {
     padding: 100px 11.5% 100px;
     height: 100vh;
     display: flex;
@@ -114,44 +131,55 @@ header.sticky{
     z-index: 0;
     transition: all .50s ease;
 }
-.home .img{
-    flex:  1 1 200px;
+
+.home .img {
+    flex: 1 1 200px;
 }
-.home .img img{
+
+.home .img img {
     width: 100%;
 }
-@keyframes c{
-    0%, 100%{
+
+@keyframes c {
+
+    0%,
+    100% {
         transform: translateY(0px);
     }
-    50%{
+
+    50% {
         transform: translateY(30px);
     }
 }
-.home-content{
+
+.home-content {
     flex: 1 1 500px;
     margin-top: 90px;
 }
-.home-content .text{
+
+.home-content .text {
     letter-spacing: 1px;
     font-size: 30px;
     color: #fff;
     font-weight: 700;
 }
-.home-content h3{
+
+.home-content h3 {
     font-size: 43px;
     color: #e49158;
     margin-top: 5px;
     font-weight: 700;
 }
-.home-content p{
+
+.home-content p {
     letter-spacing: 1px;
     font-size: 13px;
     color: #fff;
     font-weight: bold;
     margin-top: 10px;
 }
-.home button{
+
+.home button {
     position: relative;
     padding: 10px 20px;
     margin-top: 15px;
@@ -167,7 +195,8 @@ header.sticky{
     box-shadow: 0 0 0 0 transparent;
     cursor: pointer;
 }
-.home button:hover{
+
+.home button:hover {
     color: #fff;
     background: #e49158;
     box-shadow: 0 0 30px 5px #e49158;
@@ -175,12 +204,14 @@ header.sticky{
     -moz-transition: all 0.2s ease-in;
     transition: all 0.25s ease-out;
 }
-.home button:hover::before{
+
+.home button:hover::before {
     -webkit-animation: sh02 0.5s 0s linear;
     -moz-animation: sh02 0.5s 0s linear;
     animation: sh02 0.5s 0s linear;
 }
-.home button::before{
+
+.home button::before {
     content: '';
     display: block;
     width: 0px;
@@ -198,49 +229,59 @@ header.sticky{
     transform: skewX(-20deg);
 }
 
-@keyframes sh02{
+@keyframes sh02 {
     form {
         opacity: 0;
         left: 0%;
     }
+
     50% {
         opacity: 1;
     }
+
     to {
         opacity: 0;
         left: 100%;
     }
 }
-button:active{
+
+button:active {
     box-shadow: 0 0 0 0 transparent;
     -webkit-transition: box-shadow 0.2s ease-in;
     -moz-transition: box-shadow 0.2s ease-in;
     transition: box-shadow 0.2s ease-in;
 }
-@keyframes animate{
-    40%, 60%{
+
+@keyframes animate {
+
+    40%,
+    60% {
         left: 100%;
     }
-    100%{
+
+    100% {
         left: 0%;
     }
 }
-@media (max-width:1200px){
-    .home{
+
+@media (max-width:1200px) {
+    .home {
         padding: 110px 7% 90px;
     }
 }
-@media (max-width:951px){
-    .home{
+
+@media (max-width:951px) {
+    .home {
         padding: 110px 11% 90px;
         height: auto;
     }
-    
+
 }
+
 /* Home Section End */
 
 /* Home Section Start */
-.c{
+.c {
     padding: 5px;
     height: 10vh;
     display: flex;
@@ -252,44 +293,55 @@ button:active{
     z-index: 0;
     transition: all .50s ease;
 }
-.c .img{
-    flex:  1 1 200px;
+
+.c .img {
+    flex: 1 1 200px;
 }
-.c .img img{
+
+.c .img img {
     width: 100%;
 }
-@keyframes c{
-    0%, 100%{
+
+@keyframes c {
+
+    0%,
+    100% {
         transform: translateY(0px);
     }
-    50%{
+
+    50% {
         transform: translateY(30px);
     }
 }
-.c-content{
+
+.c-content {
     flex: 1 1 500px;
     margin-top: 90px;
 }
-.c-content .text{
+
+.c-content .text {
     letter-spacing: 1px;
     font-size: 30px;
     color: #fff;
     font-weight: 700;
 }
-.c-content h3{
+
+.c-content h3 {
     font-size: 43px;
     color: #e49158;
     margin-top: 5px;
     font-weight: 700;
 }
-.c-content p{
+
+.c-content p {
     letter-spacing: 1px;
     font-size: 13px;
     color: #fff;
     font-weight: bold;
     margin-top: 10px;
 }
-.c button{
+
+.c button {
     position: relative;
     padding: 10px 20px;
     margin-top: 15px;
@@ -305,7 +357,8 @@ button:active{
     box-shadow: 0 0 0 0 transparent;
     cursor: pointer;
 }
-.c button:hover{
+
+.c button:hover {
     color: #fff;
     background: #e49158;
     box-shadow: 0 0 30px 5px #e49158;
@@ -313,12 +366,14 @@ button:active{
     -moz-transition: all 0.2s ease-in;
     transition: all 0.25s ease-out;
 }
-.c button:hover::before{
+
+.c button:hover::before {
     -webkit-animation: sh02 0.5s 0s linear;
     -moz-animation: sh02 0.5s 0s linear;
     animation: sh02 0.5s 0s linear;
 }
-.c button::before{
+
+.c button::before {
     content: '';
     display: block;
     width: 0px;
@@ -336,192 +391,338 @@ button:active{
     transform: skewX(-20deg);
 }
 
-@keyframes sh02{
+@keyframes sh02 {
     form {
         opacity: 0;
         left: 0%;
     }
+
     50% {
         opacity: 1;
     }
+
     to {
         opacity: 0;
         left: 100%;
     }
 }
-button:active{
+
+button:active {
     box-shadow: 0 0 0 0 transparent;
     -webkit-transition: box-shadow 0.2s ease-in;
     -moz-transition: box-shadow 0.2s ease-in;
     transition: box-shadow 0.2s ease-in;
 }
-@keyframes animate{
-    40%, 60%{
+
+@keyframes animate {
+
+    40%,
+    60% {
         left: 100%;
     }
-    100%{
+
+    100% {
         left: 0%;
     }
 }
-@media (max-width:1200px){
-    .c{
+
+@media (max-width:1200px) {
+    .c {
         padding: 110px 7% 90px;
     }
 }
-@media (max-width:951px){
-    .c{
+
+@media (max-width:951px) {
+    .c {
         padding: 110px 11% 90px;
         height: auto;
     }
-    
+
 }
+
 /* Home Section End */
 
+/* Featured Section Starte*/<style>
+    /* Scroll Container */
+    .scroll-container {
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
 
-/* Top Card Start */
-/* Feature Card Styling */
-.feature-card {
-    background-color: rgba(0, 0, 0, 0.8); /* Adjusted background color */
-    border-radius: 10px;
-    padding: 30px;
-    text-align: center;
-    transition: transform 0.3s ease;
-    transform-style: preserve-3d;
-}
+    /* Features Grid */
+    .features-grid {
+        display: inline-flex;
+        animation: scroll-horizontal 15s linear infinite;
+    }
 
-.feature-icon {
-    font-size: 48px;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
-}
+    /* Content Grid for Seamless Scrolling */
+    .features-grid-content {
+        display: inline-flex;
+    }
 
-.feature-card:hover .feature-icon {
-    transform: translateZ(20px) rotateY(360deg);
-}
+    /* Feature Card Styling */
+    .feature-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%; /* Adjusted to fit smaller screens */
+        max-width: 300px; /* Ensures cards don't get too large */
+        margin: 15px; /* Adjusted margin */
+        padding: 25px; /* Increased padding */
+        text-align: center;
+        background-color: #1a1a1a; /* Dark card background */
+        color: #f1f1f1; /* Light text color */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        transform-style: preserve-3d;
+        height: 250px; /* Increased height */
+        overflow: hidden;
+    }
 
-.feature-card h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-}
+    /* Flex Container for Card Content */
+    .feature-card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
 
-/* Top Card Section */
-.features {
-    padding: 100px 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-}
+    /* Feature Card Icon */
+    .feature-icon {
+        font-size: 2.5rem; /* Responsive font size */
+        color: #ffdd57; /* Accent color for icons */
+        margin-bottom: 15px; /* Adjusted margin */
+        transition: opacity 0.3s ease;
+    }
 
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-}
+    /* Feature Card Heading */
+    .feature-card h3 {
+        font-size: 1.5rem; /* Responsive font size */
+        margin: 0;
+        color: #ffffff; /* White text for titles */
+        opacity: 1; /* Initially visible */
+        transition: opacity 0.3s ease;
+    }
 
-.feature-card {
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 10px;
-    padding: 30px;
-    text-align: center;
-    transition: transform 0.3s ease;
-    transform-style: preserve-3d;
-    background-color: rgba(255, 255, 255, 0.8);
-    
-}
+    /* Feature Card Paragraph */
+    .feature-card p {
+        font-size: 1rem; /* Responsive font size */
+        color: #cccccc; /* Slightly lighter text color */
+        margin: 0;
+        opacity: 0; /* Initially hidden */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: absolute; /* Overlay over heading and icon */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center the paragraph */
+        width: 80%; /* Adjust width to fit well inside the card */
+        transition: opacity 0.3s ease;
+        flex: 1; /* Allow the paragraph to take available space */
+    }
 
-.feature-icon {
-    font-size: 48px;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
-}
+    /* Hover Effect on Feature Card */
+    .feature-card:hover {
+        transform: scale(1.05); /* Zoom effect on hover */
+        box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2); /* Enhanced shadow for depth */
+        background-color: #292929; /* Slightly lighter on hover */
+    }
 
-.feature-card:hover .feature-icon {
-    transform: translateZ(20px) rotateY(360deg);
-}
+    /* Hide Icon on Hover */
+    .feature-card:hover .feature-icon {
+        opacity: 0; /* Hide icon on hover */
+    }
 
-.feature-card h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-/* Top Card End */
+    /* Show Paragraph and Hide Heading on Hover */
+    .feature-card:hover h3 {
+        opacity: 0; /* Hide heading on hover */
+    }
+
+    .feature-card:hover p {
+        opacity: 1; /* Show paragraph on hover */
+    }
+
+    /* Scroll Animation */
+    @keyframes scroll-horizontal {
+        0% {
+            transform: translateX(0); /* Start at the beginning */
+        }
+        100% {
+            transform: translateX(-100%); /* Move one full container width */
+        }
+    }
+
+    /* Stop Scroll Animation on Hover */
+    .scroll-container:hover .features-grid {
+        animation-play-state: paused; /* Pauses the animation */
+    }
+
+    /* Features Section */
+    .features {
+        padding: 100px 0;
+        background: black; /* Dark background */
+    }
+
+    /* Features Grid for Cards (with auto-fit for responsiveness) */
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted min-width */
+        gap: 20px; /* Reduced gap */
+    }
+
+    /* Ensure [data-tilt] Cursor */
+    [data-tilt] {
+        cursor: pointer;
+    }
+
+    /* Media Queries for Smaller Devices */
+    @media (max-width: 768px) {
+        .feature-card {
+            width: 100%; /* Full width on smaller screens */
+            max-width: 400px; /* Increase max-width for larger cards on tablets */
+            height: 300px; /* Increased height */
+            padding: 20px; /* Adjusted padding */
+        }
+
+        .feature-icon {
+            font-size: 2rem; /* Smaller font size for icons */
+        }
+
+        .feature-card h3 {
+            font-size: 1.25rem; /* Smaller font size for heading */
+        }
+
+        .feature-card p {
+            font-size: 0.875rem; /* Smaller font size for paragraph */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .feature-card {
+            width: 100%; /* Full width on very small screens */
+            max-width: 100%; /* Full width for mobile devices */
+            height: 350px; /* Increased height for better fit */
+            padding: 15px; /* Adjusted padding */
+        }
+
+        .feature-icon {
+            font-size: 1.5rem; /* Further reduced font size for very small screens */
+        }
+
+        .feature-card h3 {
+            font-size: 1rem; /* Further reduced font size for heading */
+        }
+
+        .feature-card p {
+            font-size: 0.75rem; /* Further reduced font size for paragraph */
+        }
+    }
+/* Featured Section End*/
 
 
 /* Trending Auction Start */
-.trending{
+.trending {
     padding: 100px 11.5% 100px;
     transition: all .50s ease;
 }
-.trending h6{
+
+.trending h6 {
     color: #e49158;
     font-size: 20px;
 }
-.trending h1{
+
+.trending h1 {
     color: #fff;
     font-size: 32px;
     margin-top: 10px;
 }
-.trending .card-content .row { 
+
+.trending .card-content .row {
     width: 100%;
     padding: 15px;
     background-color: #a9a9a92e;
     color: black;
-    overflow: hidden;           /* Ensures zoomed content doesn't overflow the container */
+    overflow: hidden;
+    /* Ensures zoomed content doesn't overflow the container */
     border-radius: 5px;
-    transition: transform 0.5s ease; /* Smooth zoom-in effect on hover */
+    transition: transform 0.5s ease;
+    /* Smooth zoom-in effect on hover */
     cursor: pointer;
 }
 
 .trending .card-content .row:hover {
-    transform: scale(1.05);      /* Slightly zooms in the element */
+    transform: scale(1.05);
+    /* Slightly zooms in the element */
 }
 
-#profile{
+#profile {
     margin-bottom: 10px;
 }
-#profile img{
+
+#profile img {
     width: 30px;
 }
-#profile span{
+
+#profile span {
     color: #fff;
 }
-#profile i{
+
+#profile i {
     float: right;
     font-size: 20px;
     color: #fff;
     transition: 0.5s;
     cursor: pointer;
 }
-#profile i:hover{
+
+#profile i:hover {
     color: #e49158
 }
-.trending .img{
+
+.trending .img {
     text-align: center;
 }
-.trending .img img{
+
+.trending .img img {
     width: 100%;
     border-radius: 10px;
 }
-.trending .card-body h3{
+
+.trending .card-body h3 {
     margin-top: 15px;
     font-size: 20px;
     color: #fff;
 }
-.trending .card-body p{
+
+.trending .card-body p {
     font-size: 15px;
     margin-top: 10px;
     color: #fff;
 }
-.trending .card-body h5{
+
+.trending .card-body h5 {
     font-size: 17px;
     color: #fff;
     margin-top: 10px;
 }
-.trending .card-body h5 i{
+
+.trending .card-body h5 i {
     font-size: 25px;
     color: #606061;
 }
-.trending .card-body h5 button{
+
+.trending .card-body h5 button {
     float: right;
     width: 100px;
     height: 30px;
@@ -530,7 +731,8 @@ button:active{
     border-radius: 6px;
     cursor: pointer;
 }
-#trending-btn{
+
+#trending-btn {
     margin-top: 30px;
     width: 150px;
     height: 32px;
@@ -540,37 +742,43 @@ button:active{
     transition: 0.5s ease;
     cursor: pointer;
 }
-#trending-btn:hover{
+
+#trending-btn:hover {
     background-color: #e49158;
     color: #fff;
 }
-@media (max-width:920px){
-    .trending .card-content{
+
+@media (max-width:920px) {
+    .trending .card-content {
         grid-template-columns: 1fr;
         grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     }
 }
-@media (max-width:1200px){
-    .trending{
+
+@media (max-width:1200px) {
+    .trending {
         padding: 110px 7% 90px;
     }
 }
-@media (max-width:951px){
-    .trending{
+
+@media (max-width:951px) {
+    .trending {
         padding: 110px 11% 90px;
         height: auto;
     }
 }
-@media (max-width:600px){
-    .trending .card-content{
+
+@media (max-width:600px) {
+    .trending .card-content {
         grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     }
-} 
+}
+
 /* Trending Auction End */
 
 
 /* Nfts Art Start */
-.nfts-art{
+.nfts-art {
     padding: 100px 11.5% 100px;
     height: auto;
     display: grid;
@@ -579,17 +787,20 @@ button:active{
     gap: 1.5rem;
     transition: all .50s ease;
 }
-.nfts-art .card-2 h3{
+
+.nfts-art .card-2 h3 {
     font-size: 36px;
     color: #fff;
 }
-.nfts-art .card-2 p{
+
+.nfts-art .card-2 p {
     color: darkgray;
     font-size: 15px;
     letter-spacing: 1px;
     margin-top: 10px;
 }
-.nfts-art .card-2 button{
+
+.nfts-art .card-2 button {
     width: 150px;
     height: 32px;
     background-color: #e49158;
@@ -600,49 +811,58 @@ button:active{
     transition: 0.5s;
     cursor: pointer;
 }
-.nfts-art .card-2 button:hover{
+
+.nfts-art .card-2 button:hover {
     width: 165px;
 }
-.nfts-art .card-3 img{
+
+.nfts-art .card-3 img {
     width: 100%;
 }
-@media (max-width:920px){
-    .nfts-art{
+
+@media (max-width:920px) {
+    .nfts-art {
         grid-template-columns: 1fr;
     }
 }
-@media(max-width:1200px){
-    .nfts-art{
+
+@media(max-width:1200px) {
+    .nfts-art {
         padding: 110px 7% 90px;
     }
 }
-@media (max-width:951px){
-    .nfts-art{
+
+@media (max-width:951px) {
+    .nfts-art {
         padding: 110px 11% 90px;
         height: auto;
     }
 }
+
 /* Nfts Art End */
 
 
 
 /* Road Map Start */
-.road-map{
+.road-map {
     padding: 100px 11.5% 100px;
     transition: all .50s ease;
 }
-.road-map .main-text h3{
+
+.road-map .main-text h3 {
     margin-top: 30px;
     color: #fff;
     text-align: center;
 }
-.road-map .card-content{
+
+.road-map .card-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     gap: 0.90rem;
     margin-top: 30px;
 }
-.road-map .card-content .row{
+
+.road-map .card-content .row {
 
     width: 100%;
     padding: 10px;
@@ -653,40 +873,47 @@ button:active{
     transition: 0.5s;
     cursor: pointer;
 }
-.road-map .card-body{
+
+.road-map .card-body {
     padding: 20px;
 }
-.road-map .card-body h3{
+
+.road-map .card-body h3 {
     margin-top: 15px;
     font-size: 15px;
     color: #fff;
 }
-.road-map .card-body h3 span{
+
+.road-map .card-body h3 span {
     color: #e49158;
     font-weight: bold;
     font-size: 20px;
 }
-@media(max-width:920px){
-    .road-map .card-content{
+
+@media(max-width:920px) {
+    .road-map .card-content {
         grid-template-columns: 1fr;
         grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     }
 }
-@media(max-width:1200px){
-    .road-map{
+
+@media(max-width:1200px) {
+    .road-map {
         padding: 110px 7% 90px;
     }
 }
-@media(max-width:951px){
-    .road-map{
+
+@media(max-width:951px) {
+    .road-map {
         padding: 110px 11% 90px;
         height: auto;
     }
 }
+
 /* Road Map End */
 
 /* h Start */
-.meta{
+.meta {
     padding: 100px 11.5% 100px;
     height: auto;
     display: grid;
@@ -695,31 +922,36 @@ button:active{
     gap: 1.5rem;
     transition: all .50s ease;
 }
-.meta-img img{
+
+.meta-img img {
     width: 100%;
     background-color: transparent;
     border-radius: 10px;
     transition: all .50s ease;
     cursor: pointer;
 }
-.meta-info h3{
+
+.meta-info h3 {
     color: #fff;
     font-size: 30px;
     line-height: 1;
     margin-bottom: 30px;
 }
-.meta-info h6{
+
+.meta-info h6 {
     margin-top: 20px;
     font-size: 15px;
     letter-spacing: 2px;
     color: #606061;
 
 }
-.meta-info h6 span{
+
+.meta-info h6 span {
     color: #e49158;
     font-size: 20px;
 }
-#meta-btn{
+
+#meta-btn {
     width: 150px;
     height: 36px;
     margin-top: 30px;
@@ -730,63 +962,75 @@ button:active{
     transition: 0.5s;
     cursor: pointer;
 }
-#meta-btn:hover{
+
+#meta-btn:hover {
     width: 165px;
 }
-@media(max-width:920px){
-    .meta{
+
+@media(max-width:920px) {
+    .meta {
         grid-template-columns: 1fr;
     }
-    .meta-img{
+
+    .meta-img {
         order: 2;
     }
-    .meta-img img{
+
+    .meta-img img {
         width: 100%;
         height: auto;
         max-width: 100%;
     }
 }
-@media(max-width:1200px){
-    .meta{
+
+@media(max-width:1200px) {
+    .meta {
         padding: 110px 7% 90px;
     }
 }
-@media(max-width:951px){
-    .meta{
+
+@media(max-width:951px) {
+    .meta {
         padding: 110px 11% 90px;
         height: auto;
     }
 }
+
 /* Meta Start */
 
 
 /* NFTs Start */
-.nfts{
+.nfts {
     padding: 100px 11.5% 100px;
     transition: all .50s ease;
 }
-.nfts .main-text{
+
+.nfts .main-text {
     text-align: center;
 }
-.nfts .main-text h1{
+
+.nfts .main-text h1 {
     color: #fff;
     font-size: 32px;
     margin-top: 10px;
 }
-.nfts .main-text h2{
+
+.nfts .main-text h2 {
     color: #e49158;
     font-size: 32px;
     margin-top: 10px;
     border-bottom: 2px solid #e49158;
     display: inline-block;
 }
-.nfts .card-content{
+
+.nfts .card-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, auto));
     gap: 0.90rem;
     margin-top: 30px;
 }
-.nfts .card-content .row{
+
+.nfts .card-content .row {
     width: 100%;
     padding: 15px;
     background-color: #a9a9a92e;
@@ -797,19 +1041,23 @@ button:active{
     transition: 0.5s;
     cursor: pointer;
 }
-.nfts .img{
+
+.nfts .img {
     text-align: center;
 }
-.nfts .img img{
+
+.nfts .img img {
     width: 100%;
     border-radius: 10px;
 }
-.nfts .card-body h3{
+
+.nfts .card-body h3 {
     margin-top: 15px;
     font-size: 20px;
     color: #fff;
 }
-.nfts .card-body h3 button{
+
+.nfts .card-body h3 button {
     float: right;
     padding: 5px;
     background-color: #e49158;
@@ -818,57 +1066,67 @@ button:active{
     border: none;
     cursor: pointer;
 }
-.nfts .card-body h5{
+
+.nfts .card-body h5 {
     margin-top: 10px;
     color: #fff;
     font-weight: 300;
     font-size: 15px;
 }
-.nfts .card-body h5 span{
+
+.nfts .card-body h5 span {
     float: right;
     color: #8b8b8b;
 }
-@media (max-width:920px){
-    .nfts .card-content{
+
+@media (max-width:920px) {
+    .nfts .card-content {
         grid-template-columns: 1fr;
         grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     }
 }
-@media(max-width:1200px){
-    .nfts{
+
+@media(max-width:1200px) {
+    .nfts {
         padding: 110px 7% 90px;
     }
 }
-@media(max-width:951px){
-    .nfts{
+
+@media(max-width:951px) {
+    .nfts {
         padding: 110px 11% 90px;
         height: auto;
     }
 }
+
 /* NFTs End */
 
 /* Footer Start */
-footer{
+footer {
     width: 100%;
     /* height: 20vh; */
     box-shadow: #e49158 0px 0px 10px 0px;
     padding-top: 5%;
     margin-top: 15%;
 }
-footer .logo{
+
+footer .logo {
     text-align: center;
     font-size: xx-large;
 }
-footer p{
+
+footer p {
     color: #fff;
     text-align: center;
     letter-spacing: 1px;
     font-weight: 400;
 }
-.icons{
+
+.icons {
     text-align: center;
 }
-.icons i{
+
+.icons i {
     padding: 10px;
     border: 2px solid #e49158;
     color: #e49158;
@@ -879,11 +1137,14 @@ footer p{
     transition: 0.5s;
     cursor: pointer;
 }
-.icons i:hover{
+
+.icons i:hover {
     background-color: #e49158;
     color: #fff;
 }
-.bottom{
+
+.bottom {
     margin-top: 3%;
 }
+
 /* Footer End */
