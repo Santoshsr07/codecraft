@@ -443,189 +443,131 @@ button:active {
 /* Home Section End */
 
 /* Featured Section Starte*/
-    /* Scroll Container */
-    .scroll-container {
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
+/* Scroll Container */
+.scroll-container {
+    overflow: hidden;
+    width: 100%; /* Full width of the viewport */
+    height: 100%;
+    position: relative; /* Required for absolute positioning of content */
+}
+
+/* Features Grid */
+.features-grid {
+    display: flex; /* Use flexbox for horizontal scrolling */
+    width: calc(300px * 5 + 20px * 4); /* Total width of 5 cards plus margins */
+    animation: scroll-horizontal 15s linear infinite; /* Scrolling animation */
+}
+
+/* Feature Card Styling */
+.feature-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px; /* Fixed width */
+    height: 250px; /* Fixed height */
+    margin: 10px; /* Space between cards */
+    padding: 20px;
+    text-align: center;
+    background-color: #1a1a1a; /* Dark card background */
+    color: #f1f1f1; /* Light text color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+    overflow: hidden;
+}
+
+/* Flex Container for Card Content */
+.feature-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+/* Feature Card Icon */
+.feature-icon {
+    font-size: 2.5rem;
+    color: #ffdd57; /* Accent color for icons */
+    margin-bottom: 15px;
+    transition: opacity 0.3s ease;
+}
+
+/* Feature Card Heading */
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #ffffff; /* White text for titles */
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* Feature Card Paragraph */
+.feature-card p {
+    font-size: 1rem;
+    color: #cccccc;
+    margin: 0;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    transition: opacity 0.3s ease;
+    flex: 1;
+}
+
+/* Hover Effect on Feature Card */
+.feature-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    background-color: #292929;
+}
+
+/* Hide Icon on Hover */
+.feature-card:hover .feature-icon {
+    opacity: 0;
+}
+
+/* Show Paragraph and Hide Heading on Hover */
+.feature-card:hover h3 {
+    opacity: 0;
+}
+
+.feature-card:hover p {
+    opacity: 1;
+}
+
+/* Scroll Animation */
+@keyframes scroll-horizontal {
+    0% {
+        transform: translateX(0);
     }
-
-    /* Features Grid */
-    .features-grid {
-        display: inline-flex;
-        animation: scroll-horizontal 15s linear infinite;
+    100% {
+        transform: translateX(-100%);
     }
+}
 
-    /* Content Grid for Seamless Scrolling */
-    .features-grid-content {
-        display: inline-flex;
-    }
+/* Stop Scroll Animation on Hover */
+.scroll-container:hover .features-grid {
+    animation-play-state: paused;
+}
 
-    /* Feature Card Styling */
-    .feature-card {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 90%; /* Adjusted to fit smaller screens */
-        max-width: 300px; /* Ensures cards don't get too large */
-        margin: 15px; /* Adjusted margin */
-        padding: 25px; /* Increased padding */
-        text-align: center;
-        background-color: #1a1a1a; /* Dark card background */
-        color: #f1f1f1; /* Light text color */
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        transform-style: preserve-3d;
-        height: 250px; /* Increased height */
-        overflow: hidden;
-    }
+/* Features Section */
+.features {
+    padding: 100px 0;
+    background: black;
+}
 
-    /* Flex Container for Card Content */
-    .feature-card-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        position: relative;
-    }
-
-    /* Feature Card Icon */
-    .feature-icon {
-        font-size: 2.5rem; /* Responsive font size */
-        color: #ffdd57; /* Accent color for icons */
-        margin-bottom: 15px; /* Adjusted margin */
-        transition: opacity 0.3s ease;
-    }
-
-    /* Feature Card Heading */
-    .feature-card h3 {
-        font-size: 1.5rem; /* Responsive font size */
-        margin: 0;
-        color: #ffffff; /* White text for titles */
-        opacity: 1; /* Initially visible */
-        transition: opacity 0.3s ease;
-    }
-
-    /* Feature Card Paragraph */
-    .feature-card p {
-        font-size: 1rem; /* Responsive font size */
-        color: #cccccc; /* Slightly lighter text color */
-        margin: 0;
-        opacity: 0; /* Initially hidden */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        position: absolute; /* Overlay over heading and icon */
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); /* Center the paragraph */
-        width: 80%; /* Adjust width to fit well inside the card */
-        transition: opacity 0.3s ease;
-        flex: 1; /* Allow the paragraph to take available space */
-    }
-
-    /* Hover Effect on Feature Card */
-    .feature-card:hover {
-        transform: scale(1.05); /* Zoom effect on hover */
-        box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2); /* Enhanced shadow for depth */
-        background-color: #292929; /* Slightly lighter on hover */
-    }
-
-    /* Hide Icon on Hover */
-    .feature-card:hover .feature-icon {
-        opacity: 0; /* Hide icon on hover */
-    }
-
-    /* Show Paragraph and Hide Heading on Hover */
-    .feature-card:hover h3 {
-        opacity: 0; /* Hide heading on hover */
-    }
-
-    .feature-card:hover p {
-        opacity: 1; /* Show paragraph on hover */
-    }
-
-    /* Scroll Animation */
-    @keyframes scroll-horizontal {
-        0% {
-            transform: translateX(0); /* Start at the beginning */
-        }
-        100% {
-            transform: translateX(-100%); /* Move one full container width */
-        }
-    }
-
-    /* Stop Scroll Animation on Hover */
-    .scroll-container:hover .features-grid {
-        animation-play-state: paused; /* Pauses the animation */
-    }
-
-    /* Features Section */
-    .features {
-        padding: 100px 0;
-        background: black; /* Dark background */
-    }
-
-    /* Features Grid for Cards (with auto-fit for responsiveness) */
-    .features-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted min-width */
-        gap: 20px; /* Reduced gap */
-    }
-
-    /* Ensure [data-tilt] Cursor */
-    [data-tilt] {
-        cursor: pointer;
-    }
-
-    /* Media Queries for Smaller Devices */
-    @media (max-width: 768px) {
-        .feature-card {
-            width: 100%; /* Full width on smaller screens */
-            max-width: 400px; /* Increase max-width for larger cards on tablets */
-            height: 300px; /* Increased height */
-            padding: 20px; /* Adjusted padding */
-        }
-
-        .feature-icon {
-            font-size: 2rem; /* Smaller font size for icons */
-        }
-
-        .feature-card h3 {
-            font-size: 1.25rem; /* Smaller font size for heading */
-        }
-
-        .feature-card p {
-            font-size: 0.875rem; /* Smaller font size for paragraph */
-        }
-    }
-
-    @media (max-width: 480px) {
-        .feature-card {
-            width: 100%; /* Full width on very small screens */
-            max-width: 100%; /* Full width for mobile devices */
-            height: 350px; /* Increased height for better fit */
-            padding: 15px; /* Adjusted padding */
-        }
-
-        .feature-icon {
-            font-size: 1.5rem; /* Further reduced font size for very small screens */
-        }
-
-        .feature-card h3 {
-            font-size: 1rem; /* Further reduced font size for heading */
-        }
-
-        .feature-card p {
-            font-size: 0.75rem; /* Further reduced font size for paragraph */
-        }
-    }
 /* Featured Section End*/
 
 
