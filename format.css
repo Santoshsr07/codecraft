@@ -29,18 +29,30 @@ header {
     transition: all .50s;
 }
 .navlist a:hover {
+<<<<<<< HEAD
     background-color: #1D6CE9;
 }
 #menu-icon {
     font-size: 25px;
     color: #1D6CE9;
+=======
+    background-color: #0000d5;
+}
+#menu-icon {
+    font-size: 25px;
+    color: #0000d5;
+>>>>>>> 505a67caf0d5163ee5cd49de9607fe364c0a13c9
     z-index: 10001;
     display: none;
     cursor: pointer;
 }
 header.sticky {
     background: #0c0908;
+<<<<<<< HEAD
     box-shadow: #1D6CE9 0px 0px 10px 0px;
+=======
+    box-shadow: #0000d5 0px 0px 10px 0px;
+>>>>>>> 505a67caf0d5163ee5cd49de9607fe364c0a13c9
     padding: 16px 9%;
 }
 .navlist.active {
@@ -52,7 +64,11 @@ header.sticky {
     }
     #menu-icon {
         display: block;
+<<<<<<< HEAD
         color: #1D6CE9;
+=======
+        color: #0000d5;
+>>>>>>> 505a67caf0d5163ee5cd49de9607fe364c0a13c9
     }
     .navlist {
         position: absolute;
@@ -63,8 +79,13 @@ header.sticky {
         display: flex;
         flex-direction: column;
         background: #0c0908;
+<<<<<<< HEAD
         border: 2px solid #1D6CE9;
         box-shadow: #1D6CE9 0px 0px 10px 0px;
+=======
+        border: 2px solid #0000d5;
+        box-shadow: #0000d5 0px 0px 10px 0px;
+>>>>>>> 505a67caf0d5163ee5cd49de9607fe364c0a13c9
         transition: all .50s ease;
     }
     .navlist a {
@@ -82,7 +103,11 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
+<<<<<<< HEAD
     background: linear-gradient(#0c0908 10%, #1D6CE9 50%);
+=======
+    background: linear-gradient(#0c0908 10%, #0000d5 50%);
+>>>>>>> 505a67caf0d5163ee5cd49de9607fe364c0a13c9
     border-radius: 10px;
 }
 
@@ -95,7 +120,11 @@ html::-webkit-scrollbar {
 footer {
     width: 100%;
     /* height: 20vh; */
+<<<<<<< HEAD
     box-shadow: #1D6CE9  0px 0px 10px 0px;
+=======
+    box-shadow: #0000d5  0px 0px 10px 0px;
+>>>>>>> 505a67caf0d5163ee5cd49de9607fe364c0a13c9
     padding-top: 5%;
     margin-top: 15%;
     background-image: url('images/BG.png');
@@ -127,8 +156,13 @@ footer p{
 }
 .icons i{
     padding: 10px;
+<<<<<<< HEAD
     border: 2px solid #1D6CE9;
     color: #1D6CE9;
+=======
+    border: 2px solid #0000d5;
+    color: #0000d5;
+>>>>>>> 505a67caf0d5163ee5cd49de9607fe364c0a13c9
     font-size: 13px;
     margin-top: 20px;
     margin-left: 6px;
@@ -137,7 +171,11 @@ footer p{
     cursor: pointer;
 }
 .icons i:hover{
+<<<<<<< HEAD
     background-color: #1D6CE9;
+=======
+    background-color: #0000d5;
+>>>>>>> 505a67caf0d5163ee5cd49de9607fe364c0a13c9
     color: #fff;
 }
 .bottom{
