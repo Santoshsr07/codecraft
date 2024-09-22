@@ -9,7 +9,7 @@
 }
 
 body {
-    background: black;
+    background: #0E0F10;
 
 }
 
@@ -17,7 +17,7 @@ body {
 
 /* Home Section Start */
 .home {
-    padding: 100px 11.5% 100px;
+    padding: 1px 11.5% 100px;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -475,7 +475,7 @@ button:active {
 /* Features Section */
 .features {
     padding: 100px 0;
-    background: black;
+    background: #0E0F10;
 }
 
 /* Featured Section End*/
