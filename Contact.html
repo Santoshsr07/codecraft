@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<link rel="stylesheet" type="text/css" href="Contact.css">
 	<link rel="stylesheet" href="format.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,900&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script> <!-- Cursor animation -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,900&display=swap"
+		rel="stylesheet">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>Contact</title>
 </head>
+
 <body vlink="black">
 
-	 <!-- Header Start -->
-	 <header>
-        <a href="home.html" class="logo"
-            style="text-decoration: none; color: white; height: 100; font-size: xx-large;">CODECRAFT<img
-                src="./images/.png" alt=""></a>
+	<!-- Header Start -->
+	<header>
+		<a href="home.html" class="logo"
+			style="text-decoration: none; color: white; height: 100; font-size: xx-large;">CODECRAFT<img
+				src="./images/.png" alt=""></a>
 
-        <div class="fa-solid fa-bars" id="menu-icon"></div>
+		<div class="fa-solid fa-bars" id="menu-icon"></div>
 
-        <ul class="navlist">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-            <li><a href="Course.html">Course</a></li>
-        </ul>
+		<ul class="navlist">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a href="Contact.html">Contact</a></li>
+			<li><a href="Course.html">Course</a></li>
+		</ul>
 
-    </header>
-    <!-- Header End -->
+	</header>
+	<!-- Header End -->
 
-    
+
 
 	<div class="container">
 		<main class="row">
@@ -43,7 +48,7 @@
 				<!--  *******   Contact Info Starts   *******  -->
 
 				<div class="contactInfo">
-					
+
 					<div class="iconGroup">
 						<div class="icon">
 							<i class="fa-solid fa-phone"></i>
@@ -76,31 +81,15 @@
 
 				</div>
 
-				<!--  *******   Contact Info Ends   *******  -->
-
-				<!--  *******   Social Media Starts   *******  -->
-
-				<div class="socialMedia">
-					<a  href="#"><i class=" icons fa-brands fa-facebook "></i></a>
-					<a href="#"><i class=" icons fa-brands fa-twitter"></i></a>
-					<a href="#"><i class=" icons fa-brands fa-instagram"></i></a>
-					<a href="#"><i class=" icons fa-brands fa-linkedin"></i></a>
-				</div>
-
-				<!--  *******   Social Media Ends   *******  -->
 
 			</section>
 
-			<!--  *******   Left Section (Column) Ends   *******  -->
-
-			<!--  *******   Right Section (Column) Starts   *******  -->
-
 			<section class="col right">
-				
+
 				<!--  *******   Form Starts   *******  -->
 
 				<form class="messageForm">
-					
+
 					<div class="inputGroup halfWidth">
 						<input type="text" name="" required="required">
 						<label>Your Name</label>
@@ -136,25 +125,32 @@
 	</div>
 
 	<footer>
-        <div class="logo" style="color: white;"><b>CODECRAFT</b></div><br>
-        <p>Creating a Language Learning Game website  is an exciting project <br> that can enhance  the user experience in
-            language acquisition. <br> Here's a breakdown of the key features and components <br> you might want to include
-        </p>
+		<div class="logo" style="color: white;"><b>CODECRAFT</b></div><br>
+		<p>Creating a Language Learning Game website is an exciting project <br> that can enhance the user experience in
+			language acquisition. <br> Here's a breakdown of the key features and components <br> you might want to
+			include
+		</p>
 
-        <div class="icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-pinterest"></i>
-            <i class="fa-brands fa-linkedin"></i>
-        </div>
-        <div class="bottom">
-            <p>Copyright &copy; 2024 <a href="#"> CODECRAFT</a> All Rights Reserved</p>
-        </div>
-		  <!-- Script -->
-		  <script src="script.js"></script>
-		  <!-- Script -->
-    </footer>
+		<div class="icons">
+			<i class="fa-brands fa-facebook"></i>
+			<i class="fa-brands fa-instagram"></i>
+			<i class="fa-brands fa-twitter"></i>
+			<i class="fa-brands fa-pinterest"></i>
+			<i class="fa-brands fa-linkedin"></i>
+		</div>
+
+		<div class="bottom">
+			<p>Copyright &copy; 2024 <a href="#"> CODECRAFT</a> All Rights Reserved</p>
+		</div>
+
+		<div id="cursor" class="Cursor"></div> <!-- Cursor Animation  div -->
+
+		<!-- Script -->
+		<script src="script.js"></script>
+		<script src="Cursor.js"></script> <!-- Cursor Animation -->
+		<!-- Script -->
+	</footer>
 
 </body>
+
 </html>

@@ -1,9 +1,14 @@
+
+body {
+    background:#121212;
+    /* background-image: linear-gradient(to right, #0F1421 , #0E1813); */
+}
 /* Header Start */
 header {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: black;
+    background-color: #191E23;
     right: 0;
     z-index: 1000;
     display: flex;
@@ -45,7 +50,7 @@ header {
 }
 
 header.sticky {
-    background: #0c0908;
+    background: #0E1117;
     box-shadow: #1D6CE9 0px 0px 10px 0px;
     padding: 16px 9%;
 }
@@ -95,7 +100,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: linear-gradient(#0c0908 10%, #1D6CE9 50%);
+    background: linear-gradient(#121212 10%, #1D6CE9 50%);
     border-radius: 10px;
 }
 
@@ -104,6 +109,35 @@ html::-webkit-scrollbar {
 }
 
 /* Scrollbar End */
+
+/* Cursor Animations Start*/
+body,
+html {
+  cursor: none;
+}
+
+.Cursor {
+  pointer-events: none;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  filter: url("#goo");
+}
+
+.Cursor span {
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 20px;
+  background-color: #1D6CE9;
+  transform-origin: center center;
+  transform: translate(-50%, -50%);
+}
+
+/* Cursor Animations End*/
 
 /* Footer Start */
 footer {

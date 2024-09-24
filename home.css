@@ -8,10 +8,7 @@
     font-family: "Lobster", sans-serif;
 }
 
-body {
-    background: #0E0F10;
 
-}
 
 
 
@@ -475,7 +472,7 @@ button:active {
 /* Features Section */
 .features {
     padding: 100px 0;
-    background: #0E0F10;
+    background: #121212;
 }
 
 /* Featured Section End*/

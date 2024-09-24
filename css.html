@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basics CSS</title>
 
-    <!-- style sheet link -->
+    <!-- style sheet link Start-->
     <link rel="stylesheet" href="format.css">
     <link rel="stylesheet" href="C.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script> <!-- Cursor animation -->
+    <!-- style sheet link End-->
+
 </head>
+
 <body>
     <!-- Header Start -->
     <header>
@@ -29,8 +34,9 @@
     <!-- Header End -->
 
     <h2>What is CSS?</h2>
-    <p>CSS stands for <span class="highlight">Cascading Style Sheets</span>. It is used to describe the presentation of a document written in HTML or XML.</p>
-    
+    <p>CSS stands for <span class="highlight">Cascading Style Sheets</span>. It is used to describe the presentation of
+        a document written in HTML or XML.</p>
+
     <h2>CSS Syntax</h2>
     <div class="code-example">
         <pre><code>
@@ -39,7 +45,7 @@ selector {
 }
         </code></pre>
     </div>
-    
+
     <h2>CSS Selectors</h2>
     <table>
         <tr>
@@ -74,7 +80,8 @@ selector {
     </ul>
 
     <h2>CSS Flexbox</h2>
-    <p>Flexbox is a one-dimensional layout method for laying out items in rows or columns. To use flexbox, you set the display property on a parent element:</p>
+    <p>Flexbox is a one-dimensional layout method for laying out items in rows or columns. To use flexbox, you set the
+        display property on a parent element:</p>
     <div class="code-example">
         <pre><code>
             <h2>What is CSS?</h2>
@@ -88,7 +95,7 @@ selector {
 }
         </code></pre>
     </div>
-    
+
     <h2>CSS Selectors</h2>
     <table>
         <tr>
@@ -112,16 +119,17 @@ selector {
             <td>Selects the element with id="idname"</td>
         </tr>
     </table>
-.container {
+    .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-        </code></pre>
+    }
+    </code></pre>
     </div>
 
     <h2>CSS Grid</h2>
-    <p>CSS Grid Layout is a two-dimensional layout system for the web. It lets you lay content out in rows and columns. To use CSS Grid, you set the display property on a parent element:</p>
+    <p>CSS Grid Layout is a two-dimensional layout system for the web. It lets you lay content out in rows and columns.
+        To use CSS Grid, you set the display property on a parent element:</p>
     <div class="code-example">
         <pre><code>
 .container {
@@ -133,21 +141,28 @@ selector {
     </div>
 
     <div class="note">
-        <p>Note: This page itself is an example of HTML and CSS in action. The styles you see are defined in the &lt;style&gt; tag in the &lt;head&gt; section of this document.</p>
+        <p>Note: This page itself is an example of HTML and CSS in action. The styles you see are defined in the
+            &lt;style&gt; tag in the &lt;head&gt; section of this document.</p>
     </div>
     <div class="home">
         <button><a href="#" style="text-decoration: none; color: white;">Task <br> COMING SOON</a></button>
+    </div>
+    <footer>
+        <div class="logo" style="color: white;"><b>CODECRAFT</b></div><br>
+        <p>Creating a Language Learning Game website is an exciting project <br> that can enhance the user experience in
+            language acquisition. <br> Here's a breakdown of the key features and components <br> you might want to
+            include
+        </p>
+
+
+        <div class="bottom">
+            <p>Copyright &copy; 2024 <a href="#"> CODECRAFT</a> All Rights Reserved</p>
         </div>
-        <footer>
-            <div class="logo" style="color: white;"><b>CODECRAFT</b></div><br>
-            <p>Creating a Language Learning Game website  is an exciting project <br> that can enhance  the user experience in
-                language acquisition. <br> Here's a breakdown of the key features and components <br> you might want to include
-            </p>
-    
-            
-            <div class="bottom">
-                <p>Copyright &copy; 2024 <a href="#"> CODECRAFT</a> All Rights Reserved</p>
-            </div>
-        </footer>
+    </footer>
+
+    <div id="cursor" class="Cursor"></div> <!-- Cursor Animation  div -->
+
+    <script src="Cursor.js"></script> <!-- Cursor Animation -->
 </body>
+
 </html>

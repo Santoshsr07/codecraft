@@ -7,3 +7,6 @@ Secondary Colour: A deep, rich purple (#6c5ce7) to represent the mystery and adv
 	Colour for Icons “ #0000d5 ”
 	Colour for Shades “ #000080 ”
 
+# button Colour
+	Hover "1D6CE9"
+
