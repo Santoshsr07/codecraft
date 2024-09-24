@@ -2,6 +2,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 
+/* Cursor Animations Start*/
+body,
+html {
+  cursor: none;
+}
+
+.Cursor {
+  pointer-events: none;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  filter: url("#goo");
+}
+
+.Cursor span {
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 20px;
+  background-color: #1D6CE9;
+  transform-origin: center center;
+  transform: translate(-50%, -50%);
+}
+
+/* Cursor Animations End*/
+
 /* Section Styles and Animation */
 section {
     position: absolute;
