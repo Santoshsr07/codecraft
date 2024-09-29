@@ -372,12 +372,12 @@ button:active {
     /* Space between cards */
     padding: 20px;
     text-align: center;
-    background-color: #1a1a1a;
+    background-color: #1B1B26;
     /* Dark card background */
     color: #f1f1f1;
     /* Light text color */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgb(27, 27, 38, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     transform-style: preserve-3d;
     overflow: hidden;
@@ -435,8 +435,8 @@ button:active {
 /* Hover Effect on Feature Card */
 .feature-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
-    background-color: #292929;
+    box-shadow: 0 8px 16px rgb(27, 27, 38, 0.2);
+    background-color: #1B1B26;
 }
 
 /* Hide Icon on Hover */
@@ -472,7 +472,7 @@ button:active {
 /* Features Section */
 .features {
     padding: 100px 0;
-    background: #121212;
+    background: #0F0F1A;
 }
 
 /* Featured Section End*/
@@ -498,7 +498,7 @@ button:active {
 .trending .card-content .row {
     width: 100%;
     padding: 15px;
-    background-color: #a9a9a92e;
+    background-color: #1B1B26;
     color: black;
     overflow: hidden;
     /* Ensures zoomed content doesn't overflow the container */
@@ -883,8 +883,8 @@ button:active {
 .nfts .card-content .row {
     width: 100%;
     padding: 15px;
-    background-color: #a9a9a92e;
-    color: black;
+    background-color: #1B1B26;
+    color: #1B1B26;
     position: relative;
     overflow: hidden;
     border-radius: 5px;
@@ -926,7 +926,7 @@ button:active {
 
 .nfts .card-body h5 span {
     float: right;
-    color: #8b8b8b;
+    color: #1B1B26
 }
 
 @media (max-width:920px) {
