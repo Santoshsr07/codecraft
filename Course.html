@@ -4,18 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
+    <title>Document</title>
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="format.css">
-    <!-- Style CSS -->
-
-
-    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="Course.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script> <!-- Cursor animation -->
-    <!-- Font Awesome CDN -->
+    <!-- Style CSS -->
 
 </head>
 
@@ -23,8 +21,7 @@
     <!-- Header Start -->
     <header>
         <a href="home.html" class="logo"
-            style="text-decoration: none; color: white; height: 100; font-size: xx-large;">CODECRAFT<img
-                src="./images/.png" alt=""></a>
+            style="text-decoration: none; color: white; height: 100; font-size: xx-large;">CODECRAFT</a>
 
         <div class="fa-solid fa-bars" id="menu-icon"></div>
 
@@ -38,117 +35,62 @@
     </header>
     <!-- Header End -->
 
-    <!-- NFTs Start -->
-    <section class="nfts" id="nfts">
-
-        <div class="main-text">
-            <h1>COURSES</h1>
+    <section class="features" id="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card" data-tilt>
+                    <img src="https://cdn-icons-png.flaticon.com/512/246/246185.png" width="150" height="150" alt="HTML"
+                        title="HTML" class="img-small">
+                    <h3>HTML</h3>
+                    <p>The language for building web pages</p>
+                </div>
+                <div class="feature-card" data-tilt>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2325/2325973.png" width="150" height="150"
+                        alt="CSS" title="CSS" class="img-small">
+                    <h3>CSS</h3>
+                    <p>The language for styling web pages</p>
+                </div>
+                <div class="feature-card" data-tilt>
+                    <img src="https://cdn-icons-png.flaticon.com/512/17711/17711694.png" width="150" height="150"
+                        alt="C++" title="C++" class="img-small">
+                    <h3>C++</h3>
+                    <p>A programming language</p>
+                </div>
+                <div class="feature-card" data-tilt>
+                    <img src="https://cdn-icons-png.flaticon.com/512/3098/3098090.png" width="150" height="150"
+                        alt="Python" title="Python" class="img-small">
+                    <h3>PYTHON</h3>
+                    <p>A popular programming language</p>
+                </div>
+                <div class="feature-card" data-tilt>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1183/1183618.png" width="150" height="150"
+                        alt="Java" title="Java" class="img-small">
+                    <h3>JAVA</h3>
+                    <p>A programming language</p>
+                </div>
+                <div class="feature-card" data-tilt>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1199/1199124.png" width="150" height="150"
+                        alt="JavaScript" title="JavaScript" class="img-small">
+                    <h3>JAVASCRIPT</h3>
+                    <p>The language for programming web pages</p>
+                </div>
+                <div class="feature-card" data-tilt>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1199/1199128.png" width="150" height="150"
+                        alt="MySQL" title="MySQL" class="img-small">
+                    <h3>MYSQL</h3>
+                    <p>A language for accessing databases</p>
+                </div>
+                <div class="feature-card" data-tilt>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" width="150" height="150"
+                        alt="React" title="React" class="img-small">
+                    <h3>REACT</h3>
+                    <p>Learn React Once and Write Everywhere</p>
+                </div>
+            </div>
         </div>
-
-        <div class="card-content">
-
-            <div class="row">
-                <div class="card-body">
-                    <div class="img">
-                        <img src="./images/Python.jpg" alt="">
-                    </div>
-
-                    <div class="c">
-                        <button><a href="python.html">
-                                <h3>Python</h3>
-                            </a></button>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="card-body">
-                    <div class="img">
-                        <img src="./images/Java.jpg" alt="">
-                    </div>
-
-                    <div class="c">
-                        <button><a href="#">
-                                <h3>COMING SOON</h3>
-                            </a></button>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="card-body">
-                    <div class="img">
-                        <img src="./images/Css.jpg" alt="">
-                    </div>
-
-                    <div class="c">
-                        <button><a href="css.html">
-                                <h3>CSS</h3>
-                            </a></button>
-                    </div>
-
-                </div>
-            </div>
-
-
-        </div>
-
-        <div class="card-content">
-
-            <div class="row">
-                <div class="card-body">
-                    <div class="img">
-                        <img src="./images/Html.jpg" alt="">
-                    </div>
-
-                    <div class="c">
-                        <button><a href="html.html">
-                                <h3>HTML</h3>
-                            </a></button>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="card-body">
-                    <div class="img">
-                        <img src="./images/Java-Script.jpg" alt="">
-                    </div>
-
-                    <div class="c">
-                        <button><a href="#">
-                                <h3>COMING SOON</h3>
-                            </a></button>
-                    </div>
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="card-body">
-                    <div class="img">
-                        <img src="./images/React.jpg" alt="">
-                    </div>
-
-                    <div class="c">
-                        <button><a href="#">
-                                <h3>COMING SOON</h3>
-                            </a></button>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
     </section>
-    <!-- NFTs End -->
 
-
-
+    <!-- footer start -->
     <footer>
         <div class="logo" style="color: white;"><b>CODECRAFT</b></div><br>
         <p>Creating a Language Learning Game website is an exciting project <br> that can enhance the user experience in
@@ -156,11 +98,18 @@
             include
         </p>
 
-
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
         <div class="bottom">
             <p>Copyright &copy; 2024 <a href="#"> CODECRAFT</a> All Rights Reserved</p>
         </div>
     </footer>
+    <!-- footer end-->
 
     <div id="cursor" class="Cursor"></div> <!-- Cursor Animation  div -->
 
