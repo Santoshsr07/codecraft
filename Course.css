@@ -1,7 +1,7 @@
 :root {
     --primary-color: #6e48aa;
     --secondary-color: #9d50bb;
-    --accent-color: #00ffa3;
+    --accent-color: #1D6CE9;
     --bg-color: #0f0f1a;
     --text-color: #ffffff;
 }
@@ -21,7 +21,7 @@ body, html {
 }
 
 .features {
-    padding: 100px 0;
+    padding: 0 0 100px 0;
 }
 
 .features-grid {
@@ -54,10 +54,29 @@ body, html {
 }
 
 .feature-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-20px);
 }
 
-.feature-card:hover img {
+/* .feature-card:hover img {
     transform: rotate(360deg);
     transition: all 0.5s ease-in-out;
+} */
+
+
+.hero {
+    text-align: center;
+    margin-top: 120px;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+    text-shadow: 0 0 20px rgba(0, 60, 255, 0.5);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
 }
