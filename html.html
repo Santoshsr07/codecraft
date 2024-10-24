@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,12 @@
 
     <!-- Style sheet link -->
     <link rel="stylesheet" href="format.css">
-    <link rel="stylesheet" href="g1.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>   <!-- Cursor animation -->
+    <link rel="stylesheet" href="html.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script> <!-- Cursor animation -->
     <!-- Style sheet link -->
-     
+
 </head>
+
 <body>
     <!-- Header Start -->
     <header>
@@ -22,132 +24,116 @@
         <div class="fa-solid fa-bars" id="menu-icon"></div>
 
         <ul class="navlist">
-            <li><a href="home.html" style="text-decoration: none;">Home</a></li>
-            <li><a href="About.html" style="text-decoration: none;">About</a></li>
-            <li><a href="Contact.html" style="text-decoration: none;">Contact</a></li>
-            <li><a href="Course.html" style="text-decoration: none;">Course</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Course.html">Course</a></li>
         </ul>
 
     </header>
     <!-- Header End -->
 
-    <h1>Basics HTML</h1>
-    
-    <h2>What is HTML?</h2>
-    <p>HTML stands for <span class="highlight">Hypertext Markup Language</span>. It is the standard markup language for creating web pages and web applications.</p>
-    
-    <h2>Basic HTML Structure</h2>
-    <div class="code-example">
-        <pre><code>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="floating" title="Basic HTML">Basic HTML</h1>
+            </div>
+            <div class="code-background" id="codeBackground"></div>
+        </section>
+
+        <section id="what-is-html" class="content-section">
+            <div class="container">
+                <h2>What is HTML?</h2>
+                <div class="card">
+                    <p>HTML stands for HyperText Markup Language. It's the standard markup language for creating web
+                        pages and web applications. HTML describes the structure of a Web page semantically and
+                        originally included cues for the appearance of the document.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="basic-structure" class="content-section">
+            <div class="container">
+                <h2>Basic Structure</h2>
+                <div class="code-example">
+                    <pre><code>
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Document Title&lt;/title&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;h1&gt;This is a heading&lt;/h1&gt;
-    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+    &lt;h1&gt;My First Heading&lt;/h1&gt;
+    &lt;p&gt;My first paragraph.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-        </code></pre>
-    </div>
-    
-    <h2>Common HTML Elements</h2>
-    <table>
-        <tr>
-            <th>Element</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>&lt;h1&gt; to &lt;h6&gt;</td>
-            <td>Headings</td>
-        </tr>
-        <tr>
-            <td>&lt;p&gt;</td>
-            <td>Paragraph</td>
-        </tr>
-        <tr>
-            <td>&lt;a&gt;</td>
-            <td>Hyperlink</td>
-        </tr>
-        <tr>
-            <td>&lt;img&gt;</td>
-            <td>Image</td>
-        </tr>
-        <tr>
-            <td>&lt;ul&gt; and &lt;ol&gt;</td>
-            <td>Unordered and Ordered Lists</td>
-        </tr>
-    </table>
+                    </code></pre>
+                </div>
+            </div>
+        </section>
 
-    
-    
-    <h2>What is HTML?</h2>
-    <p>HTML stands for <span class="highlight">Hypertext Markup Language</span>. It is the standard markup language for creating web pages and web applications.</p>
-    
-    <h2>Basic HTML Structure</h2>
-    <div class="code-example">
-        <pre><code>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Document Title&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;This is a heading&lt;/h1&gt;
-    &lt;p&gt;This is a paragraph.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-        </code></pre>
-    </div>
-    
-    <h2>Common HTML Elements</h2>
-    <table>
-        <tr>
-            <th>Element</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>&lt;h1&gt; to &lt;h6&gt;</td>
-            <td>Headings</td>
-        </tr>
-        <tr>
-            <td>&lt;p&gt;</td>
-            <td>Paragraph</td>
-        </tr>
-        <tr>
-            <td>&lt;a&gt;</td>
-            <td>Hyperlink</td>
-        </tr>
-        <tr>
-            <td>&lt;img&gt;</td>
-            <td>Image</td>
-        </tr>
-        <tr>
-            <td>&lt;ul&gt; and &lt;ol&gt;</td>
-            <td>Unordered and Ordered Lists</td>
-        </tr>
-    </table>
+        <section id="common-tags" class="content-section">
+            <div class="container">
+                <h2>Common HTML Tags</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-heading"></i></div>
+                        <h3>&lt;h1&gt; to &lt;h6&gt;</h3>
+                        <p>Headings</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-paragraph"></i></div>
+                        <h3>&lt;p&gt;</h3>
+                        <p>Paragraph</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-link"></i></div>
+                        <h3>&lt;a&gt;</h3>
+                        <p>Link</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-image"></i></div>
+                        <h3>&lt;img&gt;</h3>
+                        <p>Image</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-list"></i></div>
+                        <h3>&lt;ul&gt; and &lt;ol&gt;</h3>
+                        <p>Unordered and Ordered Lists</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-square"></i></div>
+                        <h3>&lt;div&gt;</h3>
+                        <p>Division or section</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <h2>HTML Semantic Elements</h2>
-    <p>Semantic elements clearly describe their meaning in a human- and machine-readable way. Examples include:</p>
-    <ul>
-        <li>&lt;header&gt; - Defines a header for a document or a section</li>
-        <li>&lt;nav&gt; - Defines a set of navigation links</li>
-        <li>&lt;article&gt; - Defines an independent, self-contained content</li>
-        <li>&lt;section&gt; - Defines a section in a document</li>
-        <li>&lt;aside&gt; - Defines content aside from the page content</li>
-        <li>&lt;footer&gt; - Defines a footer for a document or a section</li>
-    </ul>
+        <section id="semantic-elements" class="content-section">
+            <div class="container">
+                <h2>HTML Semantic Elements</h2>
+                <p>Semantic elements clearly describe their meaning in a human- and machine-readable way. </p>
+                <p>Examples include:</p>
+                <ul>
+                    <li><code>&lt;header&gt;</code> - Defines a header for a document or a section</li>
+                    <li><code>&lt;nav&gt;</code> - Defines a set of navigation links</li>
+                    <li><code>&lt;article&gt;</code> - Defines an independent, self-contained content</li>
+                    <li><code>&lt;section&gt;</code> - Defines a section in a document</li>
+                    <li><code>&lt;aside&gt;</code> - Defines content aside from the page content</li>
+                    <li><code>&lt;footer&gt;</code> - Defines a footer for a document or a section</li>
+                </ul>
+            </div>
+        </section>
 
-    <h2>HTML Forms</h2>
-    <p>HTML forms are used to collect user input. The &lt;form&gt; element is used to create an HTML form:</p>
-    <div class="code-example">
-        <pre><code>
+        <section id="html-forms" class="content-section">
+            <div class="container">
+                <h2>HTML Forms</h2>
+                <p>HTML forms are used to collect user input. The &lt;form&gt; element is used to create an HTML form:
+                </p>
+                <div class="code-example">
+                    <pre><code>
 &lt;form action="/submit-form" method="post"&gt;
     &lt;label for="name"&gt;Name:&lt;/label&gt;
     &lt;input type="text" id="name" name="name" required&gt;
@@ -157,23 +143,131 @@
 
     &lt;input type="submit" value="Submit"&gt;
 &lt;/form&gt;
-        </code></pre>
-    </div>
-    <div class="note">
-        <p>Note: This page itself is an example of HTML and CSS in action. The styles you see are defined in the &lt;style&gt; tag in the &lt;head&gt; section of this document.</p>
-    </div>
-    <div class="home">
-        <button><a href="htmltask.html" style="text-decoration: none; color: white;">Task</a></button>
-        </div>
-        <footer>
-            <div class="logo" style="color: white;"><b>CODECRAFT</b></div><br>
-            <p>Creating a Language Learning Game website  is an exciting project <br> that can enhance  the user experience in
-                language acquisition. <br> Here's a breakdown of the key features and components <br> you might want to include
-            </p>
-    
-            <div class="bottom">
-                <p>Copyright &copy; 2024 <a href="#"> CODECRAFT</a> All Rights Reserved</p>
+            </code></pre>
+                </div>
             </div>
-        </footer>
+        </section>
+
+        <div class="note">
+            <div class="container">
+                <p>Note: This page itself is an example of HTML and CSS in action. The styles you see are defined in the
+                    &lt;style&gt; tag in the &lt;head&gt; section of this document.</p>
+            </div>
+        </div><br>
+
+        <section id="interactive-demo" class="content-section">
+            <div class="container">
+                <h2>Interactive Demo</h2>
+                <div class="interactive-demo">
+                    <p>Try out some HTML! Type your HTML code below and see the result.</p>
+                    <textarea id="html-input" rows="5" style="width: 100%; margin-top: 10px;"></textarea>
+                    <button onclick="updateDemo()" class="cta-button" style="margin-top: 10px;">Run Code</button>
+                    <div id="demo-output"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+   <!-- footer Start -->
+   <footer>
+    <div class="logo" style="color: white;"><b>CODECRAFT</b></div><br>
+    <p>Creating a Language Learning Game website is an exciting project <br> that can enhance the user experience in
+        language acquisition. <br> Here's a breakdown of the key features and components <br> you might want to
+        include
+    </p>
+
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <div class="bottom">
+        <p>Copyright &copy; 2024 <a href="#"> CODECRAFT</a> All Rights Reserved</p>
+    </div>
+</footer>
+<!-- footer End -->
+
+    <div id="cursor" class="Cursor"></div> <!-- Cursor Animation  div -->
+
+    <script src="Cursor.js"></script> <!-- Cursor Animation -->
+    <script src="script.js"></script>
+    <script>
+        function createCodeBackground() {
+            const codeBackground = document.getElementById('codeBackground');
+            const htmlTags = ['<div>', '<p>', '<a>', '<img>', '<h1>', '<ul>', '<li>', '<span>', '<form>', '<input>'];
+
+            for (let i = 0; i < 50; i++) {
+                const codeLine = document.createElement('div');
+                codeLine.classList.add('code-line');
+                codeLine.style.left = `${Math.random() * 100}%`;
+                codeLine.style.animationDuration = `${Math.random() * 10 + 5}s`;
+                codeLine.style.animationDelay = `${Math.random() * 5}s`;
+                codeLine.textContent = htmlTags[Math.floor(Math.random() * htmlTags.length)];
+                codeBackground.appendChild(codeLine);
+            }
+        }
+
+        function updateDemo() {
+            const htmlInput = document.getElementById('html-input').value;
+            const demoOutput = document.getElementById('demo-output');
+            demoOutput.innerHTML = htmlInput;
+        }
+
+        function smoothScroll(target) {
+            const element = document.querySelector(target);
+            window.scrollTo({
+                top: element.offsetTop - 80,
+                behavior: 'smooth'
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            createCodeBackground();
+
+            // Add smooth scrolling to navigation links
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const target = e.target.getAttribute('href');
+                    smoothScroll(target);
+                });
+            });
+
+            // Add hover effect to feature items
+            document.querySelectorAll('.feature-item').forEach(item => {
+                item.addEventListener('mouseenter', () => {
+                    item.style.transform = 'scale(1.05) translateY(-10px)';
+                    item.style.boxShadow = '0 10px 20px rgba(0, 255, 0, 0.3)';
+                });
+                item.addEventListener('mouseleave', () => {
+                    item.style.transform = 'scale(1) translateY(0)';
+                    item.style.boxShadow = 'none';
+                });
+            });
+
+            // Add typing effect to the hero title
+            const heroTitle = document.querySelector('.hero h1');
+            const text = heroTitle.textContent;
+            heroTitle.textContent = '';
+            let i = 0;
+            function typeWriter() {
+                if (i < text.length) {
+                    heroTitle.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 100);
+                }
+            }
+            typeWriter();
+
+            // Initialize the demo with some example HTML
+            document.getElementById('html-input').value = '<h1>Welcome to CodeCraft</h1>\n<p>This is an interactive HTML demo.</p>';
+            updateDemo();
+        });
+    </script>
+
+
 </body>
+
 </html>
