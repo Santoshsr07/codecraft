@@ -170,8 +170,17 @@ button:active {
     }
 
 }
-
 /* Home Section End */
+
+
+/* Carousel start */
+.carousel-inner img {
+    margin-top: 80px;
+    width: 100%;
+    height: 70vh;
+}
+/* Carousel End*/
+
 
 /* Home Section Start */
 .c {
