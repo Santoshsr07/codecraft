@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML and CSS Basics</title>
+    <title>Document</title>
 
-    <!-- Style sheet link -->
+
+    <link rel="stylesheet" href="new copy.css">
     <link rel="stylesheet" href="format.css">
-    <link rel="stylesheet" href="html.css">
     <link rel="stylesheet" href="Nav.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- Link for Icons in footers section -->
-    <!-- Style sheet link -->
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    <!-- Link for Icons in footers section -->
+
 </head>
 
 <body>
@@ -21,19 +20,16 @@
         <a href="home.html" class="logo"
             style="text-decoration: none; color: white; height: 100; font-size: xx-large;">CODECRAFT<img
                 src="./images/.png" alt=""></a>
-
         <div class="fa-solid fa-bars" id="menu-icon"></div>
-
         <ul class="navlist">
             <li><a href="home.html">Home</a></li>
             <li><a href="About.html">About</a></li>
             <li><a href="Contact.html">Contact</a></li>
             <li><a href="Course.html">Course</a></li>
         </ul>
-        
+
     </header>
     <!-- Header End -->
-
     <main>
         <section id="home" class="hero">
             <div class="hero-content">
@@ -41,7 +37,7 @@
             </div>
             <div class="code-background" id="codeBackground"></div>
         </section>
-        
+
         <section id="what-is-html" class="content-section">
             <div class="container">
                 <h2>What is HTML?</h2>
@@ -49,10 +45,10 @@
                     <p>HTML stands for HyperText Markup Language. It's the standard markup language for creating web
                         pages and web applications. HTML describes the structure of a Web page semantically and
                         originally included cues for the appearance of the document.</p>
-                    </div>
+                </div>
             </div>
         </section>
-        
+
         <section id="basic-structure" class="content-section">
             <div class="container">
                 <h2>Basic Structure</h2>
@@ -61,22 +57,22 @@
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
-&lt;meta charset="UTF-8"&gt;
-&lt;title&gt;Page Title&lt;/title&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
     &lt;h1&gt;My First Heading&lt;/h1&gt;
     &lt;p&gt;My first paragraph.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
-</div>
-</div>
-</section>
+                    </code></pre>
+                </div>
+            </div>
+        </section>
 
-<section id="common-tags" class="content-section">
-    <div class="container">
-        <h2>Common HTML Tags</h2>
+        <section id="common-tags" class="content-section">
+            <div class="container">
+                <h2>Common HTML Tags</h2>
                 <div class="feature-grid">
                     <div class="feature-item">
                         <div class="feature-icon"><i class="fas fa-heading"></i></div>
@@ -153,10 +149,10 @@
             <div class="container">
                 <p>Note: This page itself is an example of HTML and CSS in action. The styles you see are defined in the
                     &lt;style&gt; tag in the &lt;head&gt; section of this document.</p>
-                </div>
-            </div><br>
+            </div>
+        </div><br>
 
-            <section id="interactive-demo" class="content-section">
+        <section id="interactive-demo" class="content-section">
             <div class="container">
                 <h2>Interactive Demo</h2>
                 <div class="interactive-demo">
@@ -168,108 +164,34 @@
             </div>
         </section>
     </main>
-    
-   <!-- footer Start -->
-   <footer>
-    <div class="logo" style="color: white;"><b>CODECRAFT</b></div><br>
-    <p>Creating a Language Learning Game website is an exciting project <br> that can enhance the user experience in
-        language acquisition. <br> Here's a breakdown of the key features and components <br> you might want to
-        include
-    </p>
 
-    <div class="icons">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-pinterest"></i>
-        <i class="fa-brands fa-linkedin"></i>
-    </div>
-    <div class="bottom">
-        <p>Copyright &copy; 2024 <a href="#"> CODECRAFT</a> All Rights Reserved</p>
-    </div>
-</footer>
-<!-- footer End -->
-
-<div id="cursor" class="Cursor"></div> <!-- Cursor Animation  div -->
-
-<script src="Cursor.js"></script> <!-- Cursor Animation -->
-    <script src="script.js"></script>
+    <!-- Footer Start -->
+    <footer>
+        <div class="logo" style="color: white;"><b>CODECRAFT</b></div><br>
+        <p>
+            Creating a Language Learning Game website is an exciting project <br>
+            that can enhance the user experience in language acquisition. <br>
+            Here's a breakdown of the key features and components <br>
+            you might want to include
+        </p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-pinterest"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <div class="bottom">
+            <p>Copyright &copy; 2024 <a href="#">CODECRAFT</a> All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <div id="cursor" class="Cursor"></div> <!-- Cursor Animation  div -->
+    <!-- Script -->
+    <script src="script.js"></script> <!-- Script Source -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script> <!-- Cursor animation -->
-    <script>
-        function createCodeBackground() {
-            const codeBackground = document.getElementById('codeBackground');
-            const htmlTags = ['<div>', '<p>', '<a>', '<img>', '<h1>', '<ul>', '<li>', '<span>', '<form>', '<input>'];
-
-            for (let i = 0; i < 50; i++) {
-                const codeLine = document.createElement('div');
-                codeLine.classList.add('code-line');
-                codeLine.style.left = `${Math.random() * 100}%`;
-                codeLine.style.animationDuration = `${Math.random() * 10 + 5}s`;
-                codeLine.style.animationDelay = `${Math.random() * 5}s`;
-                codeLine.textContent = htmlTags[Math.floor(Math.random() * htmlTags.length)];
-                codeBackground.appendChild(codeLine);
-            }
-        }
-
-        function updateDemo() {
-            const htmlInput = document.getElementById('html-input').value;
-            const demoOutput = document.getElementById('demo-output');
-            demoOutput.innerHTML = htmlInput;
-        }
-
-        function smoothScroll(target) {
-            const element = document.querySelector(target);
-            window.scrollTo({
-                top: element.offsetTop - 80,
-                behavior: 'smooth'
-            });
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            createCodeBackground();
-
-            // Add smooth scrolling to navigation links
-            document.querySelectorAll('nav a').forEach(link => {
-                link.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const target = e.target.getAttribute('href');
-                    smoothScroll(target);
-                });
-            });
-            
-            // Add hover effect to feature items
-            document.querySelectorAll('.feature-item').forEach(item => {
-                item.addEventListener('mouseenter', () => {
-                    item.style.transform = 'scale(1.05) translateY(-10px)';
-                    item.style.boxShadow = '0 10px 20px rgba(0, 255, 0, 0.3)';
-                });
-                item.addEventListener('mouseleave', () => {
-                    item.style.transform = 'scale(1) translateY(0)';
-                    item.style.boxShadow = 'none';
-                });
-            });
-
-            // Add typing effect to the hero title
-            const heroTitle = document.querySelector('.hero h1');
-            const text = heroTitle.textContent;
-            heroTitle.textContent = '';
-            let i = 0;
-            function typeWriter() {
-                if (i < text.length) {
-                    heroTitle.textContent += text.charAt(i);
-                    i++;
-                    setTimeout(typeWriter, 100);
-                }
-            }
-            typeWriter();
-
-            // Initialize the demo with some example HTML
-            document.getElementById('html-input').value = '<h1>Welcome to CodeCraft</h1>\n<p>This is an interactive HTML demo.</p>';
-            updateDemo();
-        });
-        </script>
-
-
+    <script src="Cursor.js"></script> <!-- Cursor Animation -->
+    <!-- Script -->
 </body>
 
 </html>
