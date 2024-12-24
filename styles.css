@@ -110,7 +110,6 @@ header {
     width: 100%;
     margin-bottom: 20px;
 }
-
 .input-box i {
     position: absolute;
     top: 15px;
@@ -119,14 +118,13 @@ header {
     font-size: 20px;
     pointer-events: none;
 }
-/* Input Fields */
+
 .input-field {
     font-size: 15px;
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
     height: 50px;
-    width: 100%;
-    max-width: 700px; /* Wider width for large screens */
+    max-width: 700px; /* Set a maximum width to avoid them becoming too wide */
     padding: 0 10px 0 45px;
     border: none;
     border-radius: 10px;
@@ -134,10 +132,12 @@ header {
     transition: .2s ease;
 }
 
+
 .input-field:hover,
 .input-field:focus {
     background: rgba(255, 255, 255, 0.25);
 }
+
 /* Checkbox Container for Terms and Conditions */
 /* .checkbox-container {
     display: flex;
@@ -161,14 +161,13 @@ header {
     text-decoration: underline;
 } */
 
-/* Submit Button */
 .submit {
     font-size: 15px;
     font-weight: 500;
     color: black;
     height: 45px;
-    width: 100%;
-    max-width: 700px; /* Wider button width for large screens */
+    width: 100%; /* Make the button take full width */
+    max-width: 700px; /* Set a maximum width for the button */
     border: none;
     border-radius: 10px;
     outline: none;
@@ -247,22 +246,30 @@ header {
     text-decoration: underline;
 }
 
-
-/* Responsive Adjustments for Larger Screens */
-@media (min-width: 768px) {
-    .input-box {
-        width: 100%;
-    }
-    .input-field {
-        max-width: 600px; /* Increase max-width for larger screens */
-    }
-    .submit {
-        max-width: 600px; /* Increase button width for larger screens */
-    }
+/* .forgot-password {
+    text-align: center;
+    margin-top: 10px; 
 }
+.forgot-password a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+.forgot-password a:hover {
+    text-decoration: underline;
+} */
 
-/* Responsive Adjustments for Smaller Screens */
+/* Mobile and smaller screen styles for better spacing */
 @media (max-width: 375px) {
+    .top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* .forgot-password {
+        margin-left: 0;
+        margin-top: 10px; 
+    } */
     .input-box {
         width: 100%;
     }
