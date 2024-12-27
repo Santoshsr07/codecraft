@@ -17,7 +17,6 @@ window.onscroll = () => {
     menu.classList.remove('active');
 }
 
-
 // Profile Sub menu script
 
 let subMenu = document.getElementById("subMenu");

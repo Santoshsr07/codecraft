@@ -214,6 +214,7 @@ header.sticky {
 
 }
 
+
 /* Responsive Design */
 @media (max-width:920px) {
   .navlist.active {
@@ -250,4 +251,6 @@ header.sticky {
   .user-pic{
     display: none;
   }
+
+
 }

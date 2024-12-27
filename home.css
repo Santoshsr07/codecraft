@@ -51,16 +51,16 @@
 .home-content .text {
     letter-spacing: 1px;
     font-size: 30px;
-    color: #fff;
+    color: var(--complement-color);
     font-weight: 700;
 }
 
-.home-content h3 {
+/* .home-content h3 {
     font-size: 43px;
     color: #e49158;
     margin-top: 5px;
     font-weight: 700;
-}
+} */
 
 .home-content p {
     letter-spacing: 1px;
@@ -70,7 +70,7 @@
     margin-top: 10px;
 }
 
-.home button {
+/* .home button {
     position: relative;
     padding: 10px 20px;
     margin-top: 15px;
@@ -118,7 +118,7 @@
     -ms-transform: skewX(-20deg);
     -o-transform: skewX(-20deg);
     transform: skewX(-20deg);
-}
+} */
 
 @keyframes sh02 {
     form {
@@ -221,7 +221,7 @@ button:active {
 /* Feature Card Icon */
 .feature-icon {
     font-size: 2.5rem;
-    color: #ffdd57;
+    color: var(--complement-color);
     margin-bottom: 15px;
     transition: opacity 0.3s ease;
 }
@@ -230,7 +230,7 @@ button:active {
 .feature-card h3 {
     font-size: 1.5rem;
     margin: 0;
-    color: #ffffff;
+    color: #ccc;
     opacity: 1;
     transition: opacity 0.3s ease;
 }
@@ -312,7 +312,7 @@ button:active {
 }
 
 .trending h1 {
-    color: #fff;
+    color: var(--heading-color);
     font-size: 32px;
     margin-top: 10px;
 }
@@ -459,13 +459,13 @@ button:active {
 
 .nfts .main-text h1 {
     
-    color: #fff;
+    color: var(--heading-color);
     font-size: 32px;
     margin-top: 10px;
 }
 
 .nfts .main-text h2 {
-    color: #e49158;
+    color: var(--heading-color);
     font-size: 32px;
     margin-top: 10px;
     border-bottom: 2px solid #e49158;
@@ -619,161 +619,70 @@ button:active {
 /* Nfts Art End */
 
 
+/* starts */
 
-/* Road Map Start */
-.road-map {
-    padding: 100px 11.5% 100px;
-    transition: all .50s ease;
+.features2 {
+    padding: 60px 20px; 
 }
 
-.road-map .main-text h3 {
-    margin-top: 30px;
-    color: #fff;
+.features2 .text {
     text-align: center;
+    margin-bottom: 50px;
 }
 
-.road-map .card-content {
+.features2 .text h2 {
+    font-size: 32px;
+    color: var(--heading-color);
+}
+
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.features-grid2 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-    gap: 0.90rem;
-    margin-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
 }
 
-.road-map .card-content .row {
-
-    width: 100%;
-    padding: 10px;
-    background: linear-gradient(to right, #0c0908 5%, #0c0c534a 50%);
-    position: relative;
-    overflow: hidden;
-    border-radius: 5px;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.road-map .card-body {
-    padding: 20px;
-}
-
-.road-map .card-body h3 {
-    margin-top: 15px;
-    font-size: 15px;
-    color: #fff;
-}
-
-.road-map .card-body h3 span {
-    color: #e49158;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-@media(max-width:920px) {
-    .road-map .card-content {
-        grid-template-columns: 1fr;
-        grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-    }
-}
-
-@media(max-width:1200px) {
-    .road-map {
-        padding: 110px 7% 90px;
-    }
-}
-
-@media(max-width:951px) {
-    .road-map {
-        padding: 110px 11% 90px;
-        height: auto;
-    }
-}
-
-/* Road Map End */
-
-/* h Start */
-.meta {
-    padding: 100px 11.5% 100px;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 1.5rem;
-    transition: all .50s ease;
-}
-
-.meta-img img {
-    width: 100%;
-    background-color: transparent;
+.feature-card2 {
+    background-color: rgba(255, 255, 255, 0.05);
     border-radius: 10px;
-    transition: all .50s ease;
-    cursor: pointer;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.meta-info h3 {
-    color: #fff;
-    font-size: 30px;
-    line-height: 1;
-    margin-bottom: 30px;
+.feature-icon2 {
+    font-size: 48px;
+    color: var(--complement-color); /* Replace with your primary color */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
 }
 
-.meta-info h6 {
-    margin-top: 20px;
-    font-size: 15px;
-    letter-spacing: 2px;
-    color: #606061;
-
+.feature-card2:hover .feature-icon2 {
+    transform: translateZ(20px) rotateY(360deg);
 }
 
-.meta-info h6 span {
-    color: #e49158;
-    font-size: 20px;
+.feature-card2 h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ccc; 
 }
 
-#meta-btn {
-    width: 150px;
-    height: 36px;
-    margin-top: 30px;
-    background: #e49158;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    transition: 0.5s;
-    cursor: pointer;
+.feature-card2 p {
+    font-size: 1rem;
+    color: var(--gray-color); 
+    margin: 0;
+    line-height: 1.6;
 }
 
-#meta-btn:hover {
-    width: 165px;
-}
+/* end */
 
-@media(max-width:920px) {
-    .meta {
-        grid-template-columns: 1fr;
-    }
-
-    .meta-img {
-        order: 2;
-    }
-
-    .meta-img img {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-    }
-}
-
-@media(max-width:1200px) {
-    .meta {
-        padding: 110px 7% 90px;
-    }
-}
-
-@media(max-width:951px) {
-    .meta {
-        padding: 110px 11% 90px;
-        height: auto;
-    }
-}
-
-/* Meta Start */
 
 .testimonials {
     padding: 2rem 1rem;
@@ -783,14 +692,16 @@ button:active {
 
 .testimonial-list blockquote {
     margin: 1rem auto;
+    
     max-width: 700px;
     font-style: italic;
-    color: #ffffff;
+    color: var(--gray-color);
 }
 
 .testimonials h2 {
     font-size: 32px;
     margin: auto;
     max-width: 700px;
-    color: #fff;
+    color: var(--heading-color);
+    padding-bottom: 40px;
 }

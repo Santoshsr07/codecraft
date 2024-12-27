@@ -1,3 +1,11 @@
+:root {
+    --primary-color: #0F0F1A;/* Backgroun color */
+    --secondary-color: #1B1B26;
+    --complement-color: #1D6CE9;
+    --heading-color: #f5f5f5;
+    --gray-color: #ccc;
+
+  }
 
 * {
     margin: 0;
@@ -10,7 +18,7 @@
 }
 
 body {
-    background:#0F0F1A;    /* background-image: linear-gradient(to right, #0F1421 , #0E1813); */
+    background:#0F0F1A;   
 }
 
 /* Scrollbar start */
