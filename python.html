@@ -4,174 +4,337 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Basics</title>
-
-    <!-- Style sheet link start-->
-    <link rel="stylesheet" href="format.css">
-    <link rel="stylesheet" href="Nav.css">
-    <link rel="stylesheet" href="C.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script> <!-- Cursor animation -->
-    <!-- Style sheet link end -->
-
+    <title>CODECRAFT - Python</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <link rel="stylesheet" href="PYTHON.css">
 </head>
+<header class="header">
+    <div class="header-content">
+        <div class="logo">CODECRAFT</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="course.html">Courses</a>
+            <a href="about.html">About</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+        <div class="mobile-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</header>
 
 <body>
-    <!-- Header Start -->
-    <header>
-        <a href="index.html" class="logo"
-            style="text-decoration: none; color: white; height: 100; font-size: xx-large;">CODECRAFT<img
-                src="./images/.png" alt=""></a>
 
-        <div class="fa-solid fa-bars" id="menu-icon"></div>
+    <main>
+        <section class="hero-section">
+            <div class="hero-background"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Python</h1>
+                    <p class="hero-subtitle">
+                        Master Python programming with our comprehensive course. From basics to advanced concepts,
+                        learn to build powerful applications, analyze data, and automate tasks through hands-on
+                        projects and interactive lessons.
+                    </p>
+                    <a href="#start" class="cta-button">Start Your Journey</a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3098/3098090.png " alt="Python Logo" class="html-logo">
+                </div>
+            </div>
+        </section>
 
-        <ul class="navlist">
-            <li><a href="index.html" style="text-decoration: none;">Home</a></li>
-            <li><a href="About.html" style="text-decoration: none;">About</a></li>
-            <li><a href="Contact.html" style="text-decoration: none;">Contact</a></li>
-            <li><a href="Course.html" style="text-decoration: none;">Course</a></li>
-        </ul>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-value">15</div>
+                <div class="feature-label">Chapters</div>
+                <p class="feature-desc"></p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-value">75</div>
+                <div class="feature-label">Articles</div>
+                <p class="feature-desc"></p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-value">3</div>
+                <div class="feature-label">Projects</div>
+                <p class="feature-desc"></p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-value">5</div>
+                <div class="feature-label">Quizzes</div>
+                <p class="feature-desc"></p>
+            </div>
+        </div>
+    </main>
 
-    </header>
-    <!-- Header End -->
-    <br>
-    <h1 style="color: purple;">Python Basics</h1>
+    <div class="content-wrapper">
+        <aside class="sidebar">
+            <h2>Quick Links</h2>
+            <a href="#" class="resource-link">Documentation</a>
+            <a href="#" class="resource-link">Projects</a>
+            <a href="#" class="resource-link">Python Reference</a>
+            <a href="#" class="resource-link">Video Tutorials</a>
+        </aside>
 
-    <h2>What is Python?</h2>
-    <p>Python is a high-level, interpreted programming language known for its simplicity and readability. It was created
-        by Guido van Rossum and first released in 1991.</p>
+        <div class="level-container">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Python Fundamentals</h3>
+                </div>
+                <div class="card-content">
+                    <ul class="level-content">
+                        <li>Introduction to Python</li>
+                        <li>Python Installation and Setup</li>
+                        <li>Variables and Data Types</li>
+                        <li>Basic Operators</li>
+                        <li>Input and Output</li>
+                    </ul>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
 
-    <h2>Key Features</h2>
-    <ul>
-        <li>Easy to learn and read</li>
-        <li>Versatile and powerful</li>
-        <li>Large standard library</li>
-        <li>Strong community support</li>
-        <li>Cross-platform compatibility</li>
-        <li>Extensive third-party packages</li>
-    </ul>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Control Flow</h3>
+                </div>
+                <div class="card-content">
+                    <ul class="level-content">
+                        <li>Conditional Statements (if, elif, else)</li>
+                        <li>Loops (for and while)</li>
+                        <li>Break and Continue</li>
+                        <li>Pass Statement</li>
+                        <li>Exception Handling</li>
+                    </ul>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
 
-    <h2>Basic Syntax</h2>
-    <p>Python uses indentation to define code blocks. Here's a simple example:</p>
-    <pre><code>
-if True:
-    print("This is indented")
-print("This is not indented")
-    </code></pre>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Data Structures</h3>
+                </div>
+                <div class="card-content">
+                    <ul class="level-content">
+                        <li>Lists and List Operations</li>
+                        <li>Tuples</li>
+                        <li>Dictionaries</li>
+                        <li>Sets</li>
+                        <li>String Operations</li>
+                    </ul>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
 
-    <h2>Variables and Data Types</h2>
-    <p>Variables in Python are created when you assign a value:</p>
-    <pre><code>
-x = 5
-name = "John"
-is_student = True
-height = 1.75
-    </code></pre>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Functions</h3>
+                </div>
+                <div class="card-content">
+                    <ul class="level-content">
+                        <li>Function Definition and Calling</li>
+                        <li>Arguments and Parameters</li>
+                        <li>Return Values</li>
+                        <li>Lambda Functions</li>
+                        <li>Recursion</li>
+                    </ul>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
 
-    <div class="highlight">
-        <p>Python is dynamically typed, meaning you don't need to declare variable types explicitly.</p>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Object-Oriented Programming</h3>
+                </div>
+                <div class="card-content">
+                    <ul class="level-content">
+                        <li>Classes and Objects</li>
+                        <li>Inheritance</li>
+                        <li>Encapsulation</li>
+                        <li>Polymorphism</li>
+                        <li>Magic Methods</li>
+                    </ul>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3>Modules and Packages</h3>
+                </div>
+                <div class="card-content">
+                    <ul class="level-content">
+                        <li>Creating Modules</li>
+                        <li>Importing Modules</li>
+                        <li>Package Structure</li>
+                        <li>Popular Python Libraries</li>
+                        <li>Virtual Environments</li>
+                    </ul>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3>File Handling</h3>
+                </div>
+                <div class="card-content">
+                    <ul class="level-content">
+                        <li>File Operations</li>
+                        <li>Reading and Writing Files</li>
+                        <li>Working with CSV Files</li>
+                        <li>JSON Data Handling</li>
+                        <li>File System Operations</li>
+                    </ul>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3>Advanced Topics</h3>
+                </div>
+                <div class="card-content">
+                    <ul class="level-content">
+                        <li>Decorators</li>
+                        <li>Generators</li>
+                        <li>Context Managers</li>
+                        <li>Threading and Multiprocessing</li>
+                        <li>Regular Expressions</li>
+                    </ul>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <div id="cursor" class="Cursor"></div> <!-- Cursor Animation  div -->
 
-    <h3>Common Data Types</h3>
-    <table>
-        <tr>
-            <th>Type</th>
-            <th>Example</th>
-        </tr>
-        <tr>
-            <td>Integer</td>
-            <td><code>x = 5</code></td>
-        </tr>
-        <tr>
-            <td>Float</td>
-            <td><code>y = 3.14</code></td>
-        </tr>
-        <tr>
-            <td>String</td>
-            <td><code>name = "Alice"</code></td>
-        </tr>
-        <tr>
-            <td>Boolean</td>
-            <td><code>is_valid = True</code></td>
-        </tr>
-        <tr>
-            <td>List</td>
-            <td><code>numbers = [1, 2, 3]</code></td>
-        </tr>
-        <tr>
-            <td>Dictionary</td>
-            <td><code>person = {"name": "Bob", "age": 30}</code></td>
-        </tr>
-    </table>
 
-    <h2>Control Structures</h2>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info footer-fade-up footer-delay-1">
+                <div class="footer-logo">CODECRAFT</div>
+                <p class="footer-description">
+                    Empowering the next generation of developers with cutting-edge programming education. 
+                    Join our community and transform your coding journey into a masterpiece of innovation and creativity.
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-icon" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-icon" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
 
-    <h3>If-Else Statement</h3>
-    <pre><code>
-x = 10
-if x > 5:
-    print("x is greater than 5")
-elif x == 5:
-    print("x is equal to 5")
-else:
-    print("x is less than 5")
-    </code></pre>
+            <div class="footer-section footer-fade-up footer-delay-2">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Courses</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
 
-    <h3>For Loop</h3>
-    <pre><code>
-fruits = ["apple", "banana", "cherry"]
-for fruit in fruits:
-    print(fruit)
-    </code></pre>
+            <div class="footer-section footer-fade-up footer-delay-3">
+                <h3>Our Courses</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> C++ Programming</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Python Development</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Web Development</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Data Structures</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Machine Learning</a></li>
+                </ul>
+            </div>
 
-    <h3>While Loop</h3>
-    <pre><code>
-count = 0
-while count < 5:
-    print(count)
-    count += 1
-    </code></pre>
+            <div class="footer-section footer-fade-up footer-delay-4">
+                <h3>Newsletter</h3>
+                <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 1rem;">
+                    Subscribe to our newsletter for the latest updates and coding resources.
+                </p>
+                <form class="newsletter-form">
+                    <input 
+                        type="email" 
+                        class="newsletter-input" 
+                        placeholder="Enter your email"
+                        required
+                    >
+                    <button type="submit" class="newsletter-button">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
 
-    <h2>Functions</h2>
-    <p>Functions in Python are defined using the <code>def</code> keyword:</p>
-    <pre><code>
-def greet(name):
-    return f"Hello, {name}!"
-
-message = greet("Alice")
-print(message)  # Output: Hello, Alice!
-    </code></pre>
-
-    <h2>Modules</h2>
-    <p>Python has a wide range of built-in modules and allows you to create your own:</p>
-    <pre><code>
-import math
-
-print(math.pi)  # Output: 3.141592653589793
-    </code></pre>
-
-    <div class="highlight">
-        <p>The Python Standard Library contains many useful modules for various tasks, from file I/O to web development.
-        </p>
-    </div>
-    <div class="home">
-        <button><a href="pythontask.html" style="text-decoration: none; color: white;">Task</a></button>
-    </div>
-    <footer>
-        <div class="logo" style="color: white;"><b>CODECRAFT</b></div><br>
-        <p>Creating a Language Learning Game website is an exciting project <br> that can enhance the user experience in
-            language acquisition. <br> Here's a breakdown of the key features and components <br> you might want to
-            include
-        </p>
-
-        <div class="bottom">
-            <p>Copyright &copy; 2024 <a href="#"> CODECRAFT</a> All Rights Reserved</p>
+        <div class="footer-bottom">
+            <p>
+                © 2024 <a href="#">CODECRAFT</a>. All Rights Reserved. Crafted with 
+                <i class="fas fa-heart" style="color: #ff3366;"></i> by CodeCraft Team
+            </p>
         </div>
     </footer>
 
+     <!-- Script -->
+    <script>
+        // Intersection Observer for animation on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, { threshold: 0.1 });
 
-    <script src="Cursor.js"></script> <!-- Cursor Animation -->
+        // Observe all footer fade elements
+        document.querySelectorAll('.footer-fade-up').forEach(el => {
+            el.style.animationPlayState = 'paused';
+            observer.observe(el);
+        });
 
+        // Newsletter form handling
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input').value;
+            if (email) {
+                alert('Thank you for subscribing! You will receive our updates at ' + email);
+                this.reset();
+            }
+        });
+    </script>
 
+    <script src="Cursor.js"></script>
 </body>
 
 </html>

@@ -147,6 +147,7 @@ body, html {
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 }
+
 /* Main start */
 .hero-section {
     padding: 8rem 2rem 4rem;
@@ -746,7 +747,6 @@ body, html {
 .footer-delay-4 { animation-delay: 0.4s; }
 
 /* footer end */
-
 /* Cursor Animations Start*/
 body,
 html {
