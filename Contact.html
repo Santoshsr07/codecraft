@@ -21,6 +21,52 @@
 
 
 	<title>CODECRAFT</title>
+		<a href="home.html" class="logo"
+			style="text-decoration: none; color: white; height: 100; font-size: xx-large;">CODECRAFT<img
+				src="./images/.png" alt=""></a>
+
+		<div class="fa-solid fa-bars" id="menu-icon"></div>
+
+		<ul class="navlist">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a href="Contact.html">Contact</a></li>
+			<li><a href="Course.html">Course</a></li>
+
+			<img src="images/user.png" class="user-pic" onclick="toggleMenu()">
+			<div class="sub-menu-wrap" id="subMenu">
+				<div class="sub-menu">
+					<div class="user-info">
+						<img src="images/user.png">
+						<h3>Santosh Rathod</h3>
+					</div>
+
+					<hr>
+					<a href="#" class="sub-menu-link">
+						<img src="images/profile.png">
+						<p>Edit Profile</p>
+						<span>></span>
+					</a>
+					<a href="#" class="sub-menu-link">
+						<img src="images/setting.png">
+						<p>Settings</p>
+						<span>></span>
+					</a>
+					<a href="#" class="sub-menu-link">
+						<img src="images/help.png">
+						<p>Help & Support</p>
+						<span>></span>
+					</a>
+					<a href="#" class="sub-menu-link">
+						<img src="images/logout.png">
+						<p>Logout</p>
+						<span>></span>
+					</a>
+
+				</div>
+			</div>
+		</ul>
+	<!-- Header End -->
 </head>
 
 <body vlink="black">
@@ -162,24 +208,80 @@
 		</main>
 	</div>
 
-	<footer>
-		<div class="flogo" style="color: white;"><b>CODECRAFT</b></div><br>
-		<p>Creating a Language Learning Game website is an exciting project <br> that can enhance the user experience in
-			language acquisition. <br> Here's a breakdown of the key features and components <br> you might want to
-			include
-		</p>
+	    <!-- footer section start -->
+		<footer class="footer">
+			<div class="footer-content">
+				<div class="footer-info footer-fade-up footer-delay-1">
+					<div class="footer-logo">CODECRAFT</div>
+					<p class="footer-description">
+						Empowering the next generation of developers with cutting-edge programming education.
+						Join our community and transform your coding journey into a masterpiece of innovation and
+						creativity.
+					</p>
+					<div class="footer-social">
+						<a href="#" class="social-icon" title="Facebook">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<a href="#" class="social-icon" title="Twitter">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a href="#" class="social-icon" title="LinkedIn">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+						<a href="#" class="social-icon" title="GitHub">
+							<i class="fab fa-github"></i>
+						</a>
+						<a href="#" class="social-icon" title="Instagram">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</div>
+				</div>
+	
+				<div class="footer-section footer-fade-up footer-delay-2">
+					<h3>Quick Links</h3>
+					<ul class="footer-links">
+						<li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+						<li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+						<li><a href="#"><i class="fas fa-chevron-right"></i> Courses</a></li>
+						<li><a href="#"><i class="fas fa-chevron-right"></i> Blog</a></li>
+						<li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
+					</ul>
+				</div>
+	
+				<div class="footer-section footer-fade-up footer-delay-3">
+					<h3>Our Courses</h3>
+					<ul class="footer-links">
+						<li><a href="#"><i class="fas fa-chevron-right"></i> C++ Programming</a></li>
+						<li><a href="#"><i class="fas fa-chevron-right"></i> Python Development</a></li>
+						<li><a href="#"><i class="fas fa-chevron-right"></i> Web Development</a></li>
+						<li><a href="#"><i class="fas fa-chevron-right"></i> Data Structures</a></li>
+						<li><a href="#"><i class="fas fa-chevron-right"></i> Machine Learning</a></li>
+					</ul>
+				</div>
+	
+				<div class="footer-section footer-fade-up footer-delay-4">
+					<h3>Newsletter</h3>
+					<p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 1rem;">
+						Subscribe to our newsletter for the latest updates and coding resources.
+					</p>
+					<form class="newsletter-form">
+						<input type="email" class="newsletter-input" placeholder="Enter your email" required>
+						<button type="submit" class="newsletter-button">
+							<i class="fas fa-paper-plane"></i>
+						</button>
+					</form>
+				</div>
+			</div>
+	
+			<div class="footer-bottom">
+				<p>
+					© 2024 <a href="#">CODECRAFT</a>. All Rights Reserved. Crafted with
+					<i class="fas fa-heart" style="color: #ff3366;"></i> by CodeCraft Team
+				</p>
+			</div>
+		</footer>
+		<!-- footer section start -->
 
-		<div class="icons">
-			<i class="fa-brands fa-facebook"></i>
-			<i class="fa-brands fa-instagram"></i>
-			<i class="fa-brands fa-twitter"></i>
-			<i class="fa-brands fa-pinterest"></i>
-			<i class="fa-brands fa-linkedin"></i>
-		</div>
-
-		<div class="bottom">
-			<p>Copyright &copy; 2024 <a href="#"> CODECRAFT</a> All Rights Reserved</p>
-		</div>
 
 		<div id="cursor" class="Cursor"></div> <!-- Cursor Animation  div -->
 
@@ -187,7 +289,6 @@
 		<script src="script.js"></script>
 		<script src="Cursor.js"></script> <!-- Cursor Animation -->
 		<!-- Script -->
-	</footer>
 
 </body>
 

@@ -1,11 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=JetBrains+Mono:wght@700&display=swap');
+
 :root {
-    --primary-color: #0F0F1A;/* Backgroun color */
+    --primary-color: #0F0F1A;
+    /* Backgroun color */
     --secondary-color: #1B1B26;
     --complement-color: #1D6CE9;
     --heading-color: #f5f5f5;
     --gray-color: #ccc;
 
-  }
+
+}
+
+:root {
+    --primary-color: #6e48aa;
+    --secondary-color: #9d50bb;
+    --accent-color: #00ffa3;
+    --bg-color: #0f0f1a;
+    --text-color: #ffffff;
+}
 
 * {
     margin: 0;
@@ -18,7 +30,7 @@
 }
 
 body {
-    background:#0F0F1A;   
+    background: #0F0F1A;
 }
 
 /* Scrollbar start */
@@ -34,93 +46,318 @@ html::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar {
     width: 10px;
 }
+
 /* Scrollbar End */
 
 /* Cursor Animations Start*/
 body,
 html {
-  cursor: none;
+    cursor: none;
 }
 
 .Cursor {
-  pointer-events: none;
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  filter: url("#goo");
+    pointer-events: none;
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    filter: url("#goo");
 }
 
 .Cursor span {
-  position: absolute;
-  display: block;
-  width: 26px;
-  height: 26px;
-  border-radius: 20px;
-  background-color: #1D6CE9;
-  transform-origin: center center;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 20px;
+    background-color: #1D6CE9;
+    transform-origin: center center;
+    transform: translate(-50%, -50%);
 }
+
 /* Cursor Animations End*/
 
-/* Footer Start */
-footer {
-    width: 100%; /* height: 20vh; */
-    box-shadow: #1D6CE9 0px 0px 10px 0px;
-    padding-top: 5%;
-    margin-top: 15%;
-    background-image: url('images/BG.png');
-    background-size: auto; /* Ensures the image covers the entire background */
-    background-repeat: no-repeat; /* Prevents the background from repeating */
-    background-position: center top; /* Centers the image */
-    height: auto; /* Ensures the background takes up the full height of the viewport */
-    margin: 0; /* Removes any default margin */
+/* footer start */
+.footer {
+    background: linear-gradient(180deg, rgba(15, 15, 26, 0.8) 0%, rgba(15, 15, 26, 0.95) 100%);
+    backdrop-filter: blur(10px);
+    padding: 4rem 0 2rem;
+    position: relative;
+    overflow: hidden;
 }
 
-.wrapper {
-    background-image: url('images/BG.png');
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100vh;
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(0, 255, 163, 0.2),
+            rgba(0, 255, 163, 0.2),
+            transparent);
 }
 
-footer .flogo {
-    text-align: center;
-    font-size: xx-large;
-    
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 4rem;
 }
 
-footer p {
-    color: #fff;
-    text-align: center !important;
-    letter-spacing: 1px;
-    font-weight: 400;
+.footer-info {
+    padding-right: 2rem;
 }
 
-.icons {
-    text-align: center;
+.footer-logo {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 10px rgba(0, 255, 163, 0.5);
 }
 
-.icons i {
-    padding: 10px;
-    border: 2px solid #1D6CE9;
-    color: #1D6CE9;
-    font-size: 13px;
-    margin-top: 20px;
-    margin-left: 6px;
-    border-radius: 5px;
-    transition: 0.5s;
+.footer-description {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 255, 163, 0.1);
+}
+
+.social-icon:hover {
+    background: var(--accent-color);
+    color: var(--bg-color);
+    transform: translateY(-5px) rotate(360deg);
+    box-shadow: 0 5px 15px rgba(0, 255, 163, 0.2);
+}
+
+.footer-section h3 {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.footer-section:hover h3::after {
+    width: 60px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+    transform: translateX(10px);
+}
+
+.footer-links a i {
+    font-size: 0.8rem;
+    /* opacity: 0; */
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover i {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.newsletter-form {
+    position: relative;
+    margin-top: 1.5rem;
+}
+
+.newsletter-input {
+    width: 100%;
+    padding: 1rem;
+    padding-right: 3rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 163, 0.1);
+    border-radius: 8px;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.newsletter-input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    background: rgba(0, 255, 163, 0.05);
+}
+
+.newsletter-button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: var(--accent-color);
     cursor: pointer;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
 }
 
-.icons i:hover {
-    background-color: #1D6CE9;
-    color: #fff;
+.newsletter-button:hover {
+    transform: translateY(-50%) scale(1.2);
 }
 
-.bottom {
-    margin-top: 3%;
+.footer-bottom {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
 }
-/* Footer End */
+
+.footer-bottom a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .footer-info {
+        grid-column: 1 / -1;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-section h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-links a {
+        justify-content: center;
+    }
+}
+
+/* Added animation classes */
+.footer-fade-up {
+    animation: footerFadeUp 0.5s ease forwards;
+    opacity: 0;
+}
+
+@keyframes footerFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Sequential animation delays */
+.footer-delay-1 {
+    animation-delay: 0.1s;
+}
+
+.footer-delay-2 {
+    animation-delay: 0.2s;
+}
+
+.footer-delay-3 {
+    animation-delay: 0.3s;
+}
+
+.footer-delay-4 {
+    animation-delay: 0.4s;
+}
+
+/* Breathing effect of logo on footer */
+/* 
+.footer-logo {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--accent-color);
+    text-shadow: 0 0 15px rgba(0, 255, 163, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-logo::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+} */
+
+/* footer end */
