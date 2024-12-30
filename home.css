@@ -8,621 +8,190 @@
     font-family: "Lobster", sans-serif;
 }
 
-/* Home Section Start */
-.home {
-    margin-top: 90px;
-    padding: 1px 11.5% 30px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+/* ***************Home Sections ********************** */
+.hero-section {
+    padding: 8rem 2rem 4rem;
     position: relative;
-    z-index: 0;
-    transition: all .50s ease;
+    overflow: hidden;
+    margin-top: 80px;
 }
 
-.home .img {
-    flex: 1 1 200px;
+/* for bottom hr  */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(0, 255, 163, 0.2),
+            rgba(0, 255, 163, 0.2),
+            transparent);
 }
 
-.home .img img {
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background:
+        radial-gradient(circle at 20% 30%, var(--primary-color) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, var(--secondary-color) 0%, transparent 50%);
+    filter: blur(60px);
 }
 
+.hero-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
 
-@keyframes c {
+.hero-text {
+    padding-right: 2rem;
+}
+
+.hero-title {
+    font-size: 4rem;
+    margin: 0 0 1rem;
+    color: var(--accent-color);
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo1,.logo2,.logo3 {
+    width: 200px;
+    height: 200px;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
 
     0%,
     100% {
-        transform: translateY(0px);
+        transform: translateY(0) rotate(0deg);
     }
 
     50% {
-        transform: translateY(30px);
+        transform: translateY(-20px) rotate(5deg);
     }
 }
 
-.home-content {
-    flex: 1 1 500px;
-    margin-top: 90px;
+.feature-desc {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
 }
 
-.home-content .text {
-    letter-spacing: 1px;
-    font-size: 30px;
-    color: var(--complement-color);
-    font-weight: 700;
-}
-
-/* .home-content h3 {
-    font-size: 43px;
-    color: #e49158;
-    margin-top: 5px;
-    font-weight: 700;
-} */
-
-.home-content p {
-    letter-spacing: 1px;
-    font-size: 13px;
-    color: #fff;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-/* .home button {
-    position: relative;
-    padding: 10px 20px;
-    margin-top: 15px;
-    border-radius: 7px;
-    border: 1px solid #e49158;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 2px;
-    background: transparent;
-    color: #e49158;
-    overflow: hidden;
-    box-shadow: 0 0 0 0 transparent;
-    cursor: pointer;
-}
-
-.home button:hover {
-    color: #fff;
-    background: #e49158;
-    box-shadow: 0 0 30px 5px #e49158;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    transition: all 0.25s ease-out;
-}
-
-.home button:hover::before {
-    -webkit-animation: sh02 0.5s 0s linear;
-    -moz-animation: sh02 0.5s 0s linear;
-    animation: sh02 0.5s 0s linear;
-}
-
-.home button::before {
-    content: '';
-    display: block;
-    width: 0px;
-    height: 86%;
-    position: absolute;
-    top: 7%;
-    left: 0%;
-    opacity: 0;
-    background: #e49158;
-    box-shadow: 0 0 50px 30px #fff;
-    -webkit-transform: skewX(-20deg);
-    -moz-transform: skewX(-20deg);
-    -ms-transform: skewX(-20deg);
-    -o-transform: skewX(-20deg);
-    transform: skewX(-20deg);
-} */
-
-@keyframes sh02 {
-    form {
-        opacity: 0;
-        left: 0%;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-        left: 100%;
-    }
-}
-
-button:active {
-    box-shadow: 0 0 0 0 transparent;
-    -webkit-transition: box-shadow 0.2s ease-in;
-    -moz-transition: box-shadow 0.2s ease-in;
-    transition: box-shadow 0.2s ease-in;
-}
-
-@keyframes animate {
-
-    40%,
-    60% {
-        left: 100%;
-    }
-
-    100% {
-        left: 0%;
-    }
-}
-
-@media (max-width:1200px) {
-    .home {
-        padding: 30px 7% 10px;
-    }
-}
-
-@media (max-width:951px) {
-    .home {
-        padding: 30px 11% 10px;
-        height: auto;
-    }
-
-}
-
-/* Home Section End */
-
-/* Scroll Container */
-.scroll-container {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-/* Features Grid */
-.features-grid {
-    display: flex;
-    width: calc(300px * 5 + 20px * 4);
-    animation: scroll-horizontal 15s linear infinite;
-}
-
-/* Feature Card Styling */
-.feature-card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 250px;
-    margin: 10px;
-    padding: 20px;
-    text-align: center;
-    background-color: #1B1B26;
-    color: #f1f1f1;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgb(27, 27, 38, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform-style: preserve-3d;
-    overflow: hidden;
-}
-
-/* Flex Container for Card Content */
-.feature-card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    position: relative;
-}
-
-/* Feature Card Icon */
-.feature-icon {
-    font-size: 2.5rem;
-    color: var(--complement-color);
-    margin-bottom: 15px;
-    transition: opacity 0.3s ease;
-}
-
-/* Feature Card Heading */
-.feature-card h3 {
-    font-size: 1.5rem;
-    margin: 0;
-    color: #ccc;
-    opacity: 1;
-    transition: opacity 0.3s ease;
-}
-
-/* Feature Card Paragraph */
-.feature-card p {
-    font-size: 1rem;
-    color: #cccccc;
-    margin: 0;
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    transition: opacity 0.3s ease;
-    flex: 1;
-}
-
-/* Hover Effect on Feature Card */
-.feature-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgb(27, 27, 38, 0.2);
-    background-color: #1B1B26;
-}
-
-/* Hide Icon on Hover */
-.feature-card:hover .feature-icon {
-    opacity: 0;
-}
-
-/* Show Paragraph and Hide Heading on Hover */
-.feature-card:hover h3 {
-    opacity: 0;
-}
-
-.feature-card:hover p {
-    opacity: 1;
-}
-
-/* Scroll Animation */
-@keyframes scroll-horizontal {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-/* Stop Scroll Animation on Hover */
-.scroll-container:hover .features-grid {
-    animation-play-state: paused;
-}
-
-/* Features Section */
-.features {
-    padding: 50px 0;
-    background: #0F0F1A;
-}
-
-/* Featured Section End*/
-
-
-/* Trending Auction Start */
-.trending {
-    padding: 100px 11.5% 100px;
-    transition: all .50s ease;
-}
-
-.trending h6 {
-    color: #e49158;
-    font-size: 20px;
-}
-
-.trending h1 {
-    color: var(--heading-color);
-    font-size: 32px;
-    margin-top: 10px;
-}
-
-.trending .card-content .row {
-    width: 100%;
-    padding: 15px;
-    background-color: #1B1B26;
-    color: black;
-    overflow: hidden;
-    /* Ensures zoomed content doesn't overflow the container */
-    border-radius: 5px;
-    transition: transform 0.5s ease;
-    /* Smooth zoom-in effect on hover */
-    cursor: pointer;
-}
-
-.trending .card-content .row:hover {
-    transform: scale(1.05);
-    /* Slightly zooms in the element */
-}
-
-#profile {
-    margin-bottom: 10px;
-}
-
-#profile img {
-    width: 30px;
-}
-
-#profile span {
-    color: #fff;
-}
-
-#profile i {
-    float: right;
-    font-size: 20px;
-    color: #fff;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-#profile i:hover {
-    color: #e49158
-}
-
-.trending .img {
-    text-align: center;
-}
-
-.trending .img img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.trending .card-body h3 {
-    margin-top: 15px;
-    font-size: 20px;
-    color: #fff;
-}
-
-.trending .card-body p {
-    font-size: 15px;
-    margin-top: 10px;
-    color: #fff;
-}
-
-.trending .card-body h5 {
-    font-size: 17px;
-    color: #fff;
-    margin-top: 10px;
-}
-
-.trending .card-body h5 i {
-    font-size: 25px;
-    color: #606061;
-}
-
-.trending .card-body h5 button {
-    float: right;
-    width: 100px;
-    height: 30px;
-    background-color: #e49158;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-#trending-btn {
-    margin-top: 30px;
-    width: 150px;
-    height: 32px;
-    background-color: #fff;
-    border-radius: 5px;
-    border: none;
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-
-#trending-btn:hover {
-    background-color: #e49158;
-    color: #fff;
-}
-
-@media (max-width:920px) {
-    .trending .card-content {
-        grid-template-columns: 1fr;
-        grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-    }
-}
-
-@media (max-width:1200px) {
-    .trending {
-        padding: 110px 7% 90px;
-    }
-}
-
-@media (max-width:951px) {
-    .trending {
-        padding: 110px 11% 90px;
-        height: auto;
-    }
-}
-
-@media (max-width:600px) {
-    .trending .card-content {
-        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-    }
-}
-
-/* Trending Auction End */
-
-
-/* NFTs Start */
-.nfts {
-    padding: 50px 11.5% 50px;
-    transition: all .50s ease;
-
-}
-
-.nfts .main-text {
-    text-align: center;
-}
-
-.nfts .main-text h1 {
-    
-    color: var(--heading-color);
-    font-size: 32px;
-    margin-top: 10px;
-}
-
-.nfts .main-text h2 {
-    color: var(--heading-color);
-    font-size: 32px;
-    margin-top: 10px;
-    border-bottom: 2px solid #e49158;
+.cta-button {
     display: inline-block;
-}
-
-.nfts .card-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
-    gap: 0.90rem;
-    margin-top: 30px;
-}
-
-.nfts .card-content .row {
-    width: 100%;
-    padding: 15px;
-    background-color: #1B1B26;
-    color: #1B1B26;
+    padding: 1rem 2.5rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin-top: 2rem;
     position: relative;
     overflow: hidden;
-    border-radius: 5px;
-    transition: 0.5s;
-    cursor: pointer;
 }
 
-.nfts .img {
-    text-align: center;
-}
-
-.nfts .img img {
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
     width: 100%;
-    border-radius: 10px;
-}
-
-.nfts .card-body h3 {
-    margin-top: 15px;
-    font-size: 20px;
-    color: #fff;
-}
-
-.nfts .card-body h3 button {
-    float: right;
-    padding: 5px;
-    background-color: #e49158;
-    color: #fff;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
-
-.nfts .card-body h5 {
-    margin-top: 10px;
-    color: #fff;
-    font-weight: 300;
-    font-size: 15px;
-}
-
-.nfts .card-body h5 span {
-    float: right;
-    color: #1B1B26
-}
-
-@media (max-width:920px) {
-    .nfts .card-content {
-        grid-template-columns: 1fr;
-        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-    }
-}
-
-@media(max-width:1200px) {
-    .nfts {
-        padding: 50px 7% 50px;
-    }
-}
-
-@media(max-width:951px) {
-    .nfts {
-        padding: 50px 11% 50px;
-        height: auto;
-    }
-}
-
-/* NFTs End */
-
-
-
-/* Nfts Art Start */
-.nfts-art {
-    padding: 100px 11.5% 100px;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 1.5rem;
-    transition: all .50s ease;
-}
-
-.nfts-art .card-2 h3 {
-    font-size: 36px;
-    color: #fff;
-}
-
-.nfts-art .card-2 p {
-    color: darkgray;
-    font-size: 15px;
-    letter-spacing: 1px;
-    margin-top: 10px;
-}
-
-.nfts-art .card-2 button {
-    width: 150px;
-    height: 32px;
-    background-color: #e49158;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    margin-top: 20px;
+    height: 100%;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.2),
+            transparent);
     transition: 0.5s;
-    cursor: pointer;
 }
 
-.nfts-art .card-2 button:hover {
-    width: 165px;
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(110, 72, 170, 0.3);
 }
 
-.nfts-art .card-3 img {
-    width: 100%;
+.cta-button:hover::before {
+    left: 100%;
 }
 
-
-
-@media (max-width:920px) {
-    .nfts-art {
+@media (max-width: 1024px) {
+    .hero-content {
         grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-text {
+        padding-right: 0;
+    }
+
+    .hero-title {
+        font-size: 3rem;
     }
 }
 
-@media(max-width:1200px) {
-    .nfts-art {
-        padding: 110px 7% 90px;
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-section {
+        padding-top: 6rem;
+    }
+
+    .logo1,.logo2,.logo3 {
+        width: 200px;
+        height: 200px;
+    }
+    .logo3{
+        display: none;
+    }
+    
+}
+@media (max-width: 380px){
+    .logo1,.logo2,.logo3{
+        display: none;
     }
 }
+/**************** Home Sections ***********************/
 
-@media (max-width:951px) {
-    .nfts-art {
-        padding: 110px 11% 90px;
-        height: auto;
-    }
-}
-
-/* Nfts Art End */
-
-
-/* starts */
-
+/************** Featuress section ********************/
 .features2 {
-    padding: 60px 20px; 
+    padding: 60px 20px;
 }
 
 .features2 .text {
@@ -659,7 +228,8 @@ button:active {
 
 .feature-icon2 {
     font-size: 48px;
-    color: var(--complement-color); /* Replace with your primary color */
+    color: var(--complement-color);
+    /* Replace with your primary color */
     margin-bottom: 20px;
     transition: transform 0.3s ease;
 }
@@ -671,19 +241,93 @@ button:active {
 .feature-card2 h3 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: #ccc; 
+    color: #ccc;
 }
 
 .feature-card2 p {
     font-size: 1rem;
-    color: var(--gray-color); 
+    color: var(--gray-color);
     margin: 0;
     line-height: 1.6;
 }
 
-/* end */
+/************** Featuress section ********************/
 
 
+/*******************NFTS Sections ********************/
+.features {
+    padding: 60px 20px;
+}
+
+.features .text {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.features .text h2 {
+    font-size: 32px;
+    color: var(--heading-color);
+}
+.main-text h1{
+        text-align: center;
+        font-size: 32px;
+        color: var(--heading-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.feature-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 48px;
+    color: var(--complement-color);
+    /* Replace with your primary color */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+.nfts-logo{
+    width: 80px;
+    height: 80px;
+}
+
+.feature-card:hover .feature-icon2 {
+    transform: translateZ(20px) rotateY(360deg);
+}
+
+.feature-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: var(--gray-color);
+    margin: 0;
+    line-height: 1.6;
+}
+/*******************NFTS Sections ********************/
+
+/* *************** Testimonials section ************ */
 .testimonials {
     padding: 2rem 1rem;
     text-align: center;
@@ -692,7 +336,7 @@ button:active {
 
 .testimonial-list blockquote {
     margin: 1rem auto;
-    
+
     max-width: 700px;
     font-style: italic;
     color: var(--gray-color);
@@ -705,3 +349,6 @@ button:active {
     color: var(--heading-color);
     padding-bottom: 40px;
 }
+
+
+/* *************** Testimonials section ************ */

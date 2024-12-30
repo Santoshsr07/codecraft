@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="new.css">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="Nav.css">
+
     <!-- Style CSS -->
 
     <!-- Font Awesome CDN -->
@@ -25,83 +26,34 @@
 
 </head>
 
+<!-- header nav bar -->
+<header>
+    <div id="header-placeholder"></div>
+</header>
+
 <body class>
-    <!-- Header Start -->
-    <header>
-        <a href="home.html" class="logo"
-            style="text-decoration: none; color: white; height: 100; font-size: xx-large;">CODECRAFT<img
-                src="./images/.png" alt=""></a>
-
-        <div class="fa-solid fa-bars" id="menu-icon"></div>
-
-        <ul class="navlist">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-            <li><a href="Course.html">Course</a></li>
-
-            <img src="images/user.png" class="user-pic" onclick="toggleMenu()">
-            <div class="sub-menu-wrap" id="subMenu">
-                <div class="sub-menu">
-                    <div class="user-info">
-                        <img src="images/user.png">
-                        <h3>Santosh Rathod</h3>
-                    </div>
-
-                    <hr>
-                    <a href="#" class="sub-menu-link">
-                        <img src="images/profile.png">
-                        <p>Edit Profile</p>
-                        <span>></span>
-                    </a>
-                    <a href="#" class="sub-menu-link">
-                        <img src="images/setting.png">
-                        <p>Settings</p>
-                        <span>></span>
-                    </a>
-                    <a href="#" class="sub-menu-link">
-                        <img src="images/help.png">
-                        <p>Help & Support</p>
-                        <span>></span>
-                    </a>
-                    <a href="#" class="sub-menu-link">
-                        <img src="images/logout.png">
-                        <p>Logout</p>
-                        <span>></span>
-                    </a>
+    <!-- Home section Start -->
+    <main>
+        <section class="hero-section">
+            <div class="hero-background"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">CODECRAFT</h1>
+                    <p class="hero-subtitle">
+                        Empowering the next generation of developers with cutting-edge programming education. Join our
+                        community and transform your coding journey into a masterpiece of innovation and creativity.
+                    </p>
+                    <a href="Course.html" class="cta-button">Start Your Journey</a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1183/1183618.png" alt="Java Logo" class="logo1">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3098/3098090.png " alt="Python Logo" class="logo2">
+                    <img src=" https://cdn-icons-png.flaticon.com/512/246/246185.png" alt="HTML5 Logo" class="logo3">
                 </div>
             </div>
-        </ul>
-    </header>
-    <!-- Header End -->
+        </section>
 
-    <!-- Home section Start -->
-    <section class="home" id="home">
-        <!-- Home Content -->
-        <div class="home-content">
-            <div class="container">
-                <div class="text">
-                    <h1>Programming</h1>
-                </div><br>
-                <p>
-                    Programming refers to the process of telling a computer which tasks to perform in order to solve
-                    problems. It's a collaborative effort between humans and computers, where humans create instructions
-                    (known as code) for the computer to follow. Think of it like a recipe: the programmer provides a set
-                    of instructions, and the computer executes them. Coding, on the other hand, is the act of
-                    transforming those ideas into a written language that the computer can understand. So, programming
-                    is all about communication with machines, and coding is the bridge that enables that communication!
-                </p>
-            </div>
-        </div>
-        <!-- Home Content -->
-
-        <!-- Img -->
-        <div class="img">
-            <img class="img1" src="./images/Pro-Gauntlet.png" alt="">
-        </div>
-        <!-- Img -->
-
-    </section>
+    </main>
     <!-- Home section End -->
 
     <!-- features2 start -->
@@ -133,53 +85,43 @@
 
     <!-- NFTs Start -->
     <section class="nfts" id="nfts">
-
         <div class="main-text">
             <h1>Treanding Courses</h1>
         </div>
-        <section class="features" id="features">
-            <div class="scroll-container">
+            <div class="features">
                 <div class="features-grid">
-                    <div class="feature-card" data-tilt>
-                        <div class="feature-icon"><i class="fas fa-code"></i></div>
-                        <h3>C Programming</h3>
-                        <p>C Programming Course Online - Learn C with Data Structures.</p>
-                    </div>
-                    <div class="feature-card" data-tilt>
-                        <div class="feature-icon"><i class="fab fa-java"></i></div>
-                        <h3>Programming with JAVA</h3>
-                        <p>Java Programming Online Course [Complete Beginner to Advanced].</p>
-                    </div>
-                    <div class="feature-card" data-tilt>
-                        <div class="feature-icon"><i class="fab fa-js"></i></div>
-                        <h3>JavaScript</h3>
-                        <p>JavaScript Full Course Online | Learn JavaScript with Certification.</p>
-                    </div>
-                    <div class="feature-card" data-tilt>
-                        <div class="feature-icon"><i class="fab fa-python"></i></div>
-                        <h3>Python</h3>
-                        <p>Python Programming Course Online | Learn Python with Data Structures.</p>
-                    </div>
-                    <div class="feature-card" data-tilt>
-                        <div class="feature-icon"><i class="fab fa-rust"></i></div>
-                        <h3>Rust</h3>
-                        <p>Rust Programming Course Online | Learn Rust with Certification.</p>
-                    </div>
-                    <div class="feature-card" data-tilt>
-                        <div class="feature-icon"><i class="fab fa-php"></i></div>
-                        <h3>PHP</h3>
-                        <p>PHP Programming Course Online | Learn PHP with Web Development.</p>
-                    </div>
-                    <div class="feature-card" data-tilt>
-                        <div class="feature-icon"><i class="fab fa-swift"></i></div>
-                        <h3>Swift</h3>
-                        <p>Swift Programming Course Online | Learn Swift for iOS Development.</p>
-                    </div>
+                    <a href="JAVA.html">
+                        <div class="feature-card" data-tilt>
+                            <img src="https://cdn-icons-png.flaticon.com/512/1183/1183618.png" alt="Java Logo" class="nfts-logo">
+                            <h3>JAVA</h3>
+                            <p>Java Programming Online Course [Complete Beginner to Advanced].</p>
+                        </div>
+                    </a>
+                    <a href="JAVASCRIPT.html">
+                        <div class="feature-card" data-tilt>
+                            <img src="https://cdn-icons-png.flaticon.com/512/1199/1199124.png" alt="JavaScript Logo"  class="nfts-logo">
+                            <h3>JavaScript</h3>
+                            <p>JavaScript Full Course Online | Learn JavaScript with Certification.</p>
+                        </div>
+                    </a>
+                    <a href="PYTHON.html">
+                        <div class="feature-card" data-tilt>
+                            <img src="https://cdn-icons-png.flaticon.com/512/3098/3098090.png" alt="Python Logo" class="nfts-logo">
+                            <h3>Python</h3>
+                            <p>Python Programming Course Online | Learn Python with Data Structures.</p>
+                        </div>
+                    </a>
+                    <a href="REACT.html">
+                        <div class="feature-card" data-tilt>
+                            <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React Logo" class="nfts-logo">
+                            <h3>React</h3>
+                            <p>React Programming Course Online | Learn React with Certification.</p>
+                        </div>
+                    </a>
                     <!-- Add more cards here if needed -->
 
                 </div>
             </div>
-        </section>
     </section>
     <!-- NFTs End -->
 
