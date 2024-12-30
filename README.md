@@ -3,13 +3,6 @@ Main Colour: A bold, bright blue (#03A9F4) to represent the magical world of cod
 
 Secondary Colour: A deep, rich purple (#6c5ce7) to represent the mystery and adventure of the quest.
 
-# Footer Colour:
-	Colour for Icons “ #0000d5 ”
-	Colour for Shades “ #000080 ”
-
-# button Colour
-	Hover "1D6CE9"
-
 # Icon for address bar
 <!-- Address Bar Icon -->
 	<head>
@@ -17,3 +10,17 @@ Secondary Colour: A deep, rich purple (#6c5ce7) to represent the mystery and adv
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	</head>
 <!-- Address Bar Icon -->
+
+# Import Header
+<!-- Header / Nav Bar -->
+	<header>
+    	<div id="header-placeholder"></div>
+	</header>
+<!-- Header / Nav Bar -->
+	<script src="script.js"></script><!-- Main Script File-->
+
+# Import Footer 
+<!-- Include Footer -->
+    <div id="footer-placeholder"></div>
+<!-- Include Footer -->
+	<script src="script.js"></script><!-- Main Script File-->
