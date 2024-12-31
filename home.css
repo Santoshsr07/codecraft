@@ -8,21 +8,6 @@
     font-family: "Lobster", sans-serif;
 }
 
-/* Scrollbar start */
-html::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-html::-webkit-scrollbar-thumb {
-    background: linear-gradient(var(--primary-color) 10%, #1D6CE9 50%);
-    border-radius: 10px;
-}
-
-html::-webkit-scrollbar {
-    width: 10px;
-}
-/* Scrollbar End */
-
 /* ***************Home Sections ********************** */
 .hero-section {
     padding: 8rem 2rem 4rem;
@@ -268,10 +253,13 @@ html::-webkit-scrollbar {
 
 /************** Featuress section ********************/
 
-
 /*******************NFTS Sections ********************/
+.nfts{
+    background-color: rgba(255, 255, 255, 0.02);
+}
 .features {
     padding: 60px 20px;
+   
 }
 
 .features .text {
@@ -284,6 +272,7 @@ html::-webkit-scrollbar {
     color: var(--heading-color);
 }
 .main-text h1{
+    padding-top: 20px;
         text-align: center;
         font-size: 32px;
         color: var(--heading-color);
@@ -343,7 +332,6 @@ html::-webkit-scrollbar {
 /*******************NFTS Sections ********************/
 
 /***************** why us section *******************/
-/* Why Choose Us Section */
 .why-us {
     padding: 80px 20px;
     background-color: rgba(255, 255, 255, 0.02);
@@ -377,7 +365,7 @@ html::-webkit-scrollbar {
 }
 
 .why-us-card i {
-    font-size: 40px;
+    font-size: 30px;
     color: var(--complement-color);
     margin-bottom: 20px;
 }
@@ -429,11 +417,13 @@ html::-webkit-scrollbar {
     color: var(--gray-color);
     font-size: 18px;
 }
+/********************* why us section *******************/
 
-/* Newsletter Section */
+/****************** Newsletter Section *******************/
 .newsletter {
     padding: 80px 20px;
     background: linear-gradient(135deg, rgba(var(--primary-color-rgb), 0.1), rgba(var(--secondary-color-rgb), 0.1));
+    background-color: rgba(255, 255, 255, 0.02);
 }
 
 .newsletter-content {
@@ -488,9 +478,9 @@ html::-webkit-scrollbar {
         max-width: 400px;
     }
 }
-/***************** why us section *******************/
+/****************** Newsletter Section ******************/
 
-/* *************** Testimonials section ************ */
+/* *************** Testimonials section **************/
 .testimonials {
     padding: 2rem 1rem;
     text-align: center;
@@ -512,6 +502,4 @@ html::-webkit-scrollbar {
     color: var(--heading-color);
     padding-bottom: 40px;
 }
-
-
 /* *************** Testimonials section ************ */

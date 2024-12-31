@@ -11,6 +11,14 @@ Secondary Colour: A deep, rich purple (#6c5ce7) to represent the mystery and adv
 	</head>
 <!-- Address Bar Icon -->
 
+# Custom cursor 
+<!-- in Head tag-->
+	<link rel="stylesheet" href="format.css"> <!--For Cursor And Footer-->
+
+<!-- in body tag at the bottom-->
+	<div id="cursor" class="Cursor"></div> <!-- Cursor Animation  div -->
+    <script src="Cursor.js"></script> <!-- Cursor Animation -->
+
 # Import Header
 <!-- Header / Nav Bar -->
 	<header>

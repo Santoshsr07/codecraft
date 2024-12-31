@@ -12,97 +12,130 @@
     <!-- Address Bar Icon -->
 
     <!-- Style sheet link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="format.css"> <!--For Cursor And Footer-->
     <link rel="stylesheet" href="index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script> <!-- Cursor animation -->
     <!-- Style sheet link -->
 
-    <title>CODECRAFT</title>
+    <title>CODECRAFT - Authentication</title>
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-logo">
-            <p><a href="#" style="text-decoration: none; color: white;">CODECRAFT</a></p>
-        </div>
-    </nav>
-
-    <!-- Wrapper -->
-    <div class="wrapper">
-        <!-- Login Form -->
-        <div class="form-box login-container" id="login-form">
-            <header>Login</header>
-            <div class="top">
-                <span>Don't have an account? <a href="#" id="show-signup">Sign up</a></span>
-            </div>
-            <form id="loginForm">
-                <!-- Username Field with Icon -->
-                <div class="input-box">
-                    <i class="icon-user"></i>
-                    <input type="text" placeholder="Username" required class="input-field">
-                    <i class="bx bx-user"></i>
-                </div>
-
-                <!-- Password Field with Icon -->
-                <div class="input-box">
-                    <i class="icon-lock"></i>
-                    <input type="password" placeholder="Password" required class="input-field">
-                    <i class="bx bx-lock-alt"></i>
-                </div>
-
-                <!-- Login Button -->
-                <button type="submit" class="submit">Login</button>
-                <div class="two-col">
-                    <div class="one">
-                        <input type="checkbox" id="login-check">
-                        <label for="login-check"> Remember Me</label>
-                    </div>
-                    <div class="two">
-                        <label><a href="#">Forgot password?</a></label>
-                    </div>
-                </div>
-
-            </form>
-        </div>
-
-        <!-- Signup Form -->
-        <div class="form-box register-container" id="signup-form" style="display: none;">
-            <header>Sign Up</header>
-
-            <div class="top">
-                <span>Already have an account? <a href="#" id="show-login">Login</a></span>
-            </div>
-
-            <form id="signupForm">
-                <div class="input-box">
-                    <input type="text" placeholder="Username" required class="input-field">
-                    <i class="bx bx-user"></i>
-                </div>
-
-                <div class="input-box">
-                    <input type="email" placeholder="Email" required class="input-field">
-                    <i class="bx bx-envelope"></i>
-                </div>
-
-                <div class="input-box">
-                    <input type="password" placeholder="Password" required class="input-field">
-                    <i class="bx bx-lock-alt"></i>
-                </div>
-                
-                <button type="submit" class="submit">Sign Up</button>
-                
-                <div class="two-col">
-                    <input type="checkbox" id="login-check" required>
-                    <label for="login-check"> Accept all Terms & conditions</label>
-                </div>
-            </form>
-        </div>
+    <div class="background-animations">
+        <div class="floating-shape shape1"></div>
+        <div class="floating-shape shape2"></div>
+        <div class="floating-shape shape3"></div>
     </div>
 
-    <script src="testscript.js"></script>
-</body>
-<div id="cursor" class="Cursor"></div> <!-- Cursor Animation  div -->
-<script src="Cursor.js"></script> <!-- Cursor Animation -->
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('login')">Login</button>
+            <button class="tab-btn" onclick="switchTab('register')">Register</button>
+        </div>
 
+        <form class="form active" id="login-form" action="home.html">
+            <h2 class="title">Welcome Back!</h2>
+            <p class="subtitle">Sign in to continue your journey</p>
+
+            <div class="input-field">
+                <input type="email" placeholder="Email" required>
+                <i class="fas fa-envelope"></i>
+            </div>
+
+            <div class="input-field">
+                <input type="password" placeholder="Password" required>
+                <i class="fas fa-lock"></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label class="remember">
+                    <input type="checkbox">
+                    <span>Remember me</span>
+                </label>
+                <a href="#" class="forgot">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+                <a href="https://www.google.com" class="social-icon">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="https://www.github.com" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </form>
+
+        <form class="form" id="register-form" action="home.html">
+            <h2 class="title">Create Account</h2>
+
+            <div class="input-field">
+                <input type="text" placeholder="Full Name" required>
+                <i class="fas fa-user"></i>
+            </div>
+
+            <div class="input-field">
+                <input type="email" placeholder="Email Address" required>
+                <i class="fas fa-envelope"></i>
+            </div>
+
+            <div class="input-field">
+                <input type="password" placeholder="Password" required>
+                <i class="fas fa-lock"></i>
+            </div>
+
+            <div class="input-field">
+                <input type="password" placeholder="Confirm Password" required>
+                <i class="fas fa-lock"></i>
+            </div>
+
+            <div class="terms">
+                <input type="checkbox" required>
+                <span>I agree to the <a href="#">Terms & Conditions</a></span>
+            </div>
+
+            <button type="submit" class="btn">Create Account</button>
+            <div class="social-media">
+                <a href="https://www.google.com" class="social-icon">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="https://www.github.com" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </form>
+    </div>
+    <div id="cursor" class="Cursor"></div> <!-- Cursor Animation  div -->
+    <script src="Cursor.js"></script> <!-- Cursor Animation -->
+
+    <script>
+        function switchTab(tab) {
+            const loginForm = document.getElementById('login-form');
+            const registerForm = document.getElementById('register-form');
+            const [loginBtn, registerBtn] = document.querySelectorAll('.tab-btn');
+
+            if (tab === 'login') {
+                loginForm.classList.add('active');
+                registerForm.classList.remove('active');
+                loginBtn.classList.add('active');
+                registerBtn.classList.remove('active');
+            } else {
+                loginForm.classList.remove('active');
+                registerForm.classList.add('active');
+                loginBtn.classList.remove('active');
+                registerBtn.classList.add('active');
+            }
+        }
+    </script>
+</body>
 </html>
