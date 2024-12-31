@@ -23,21 +23,23 @@
     font-family: "Lobster", sans-serif;
 }
 
+
 body {
     background: var(--primary-color);
+    
 }
 
 /* Scrollbar start */
-html::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: transparent;
 }
 
-html::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: linear-gradient(var(--primary-color) 10%, #1D6CE9 50%);
     border-radius: 10px;
 }
 
-html::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 10px;
 }
 /* Scrollbar End */
@@ -68,6 +70,17 @@ html {
     transform-origin: center center;
     transform: translate(-50%, -50%);
 }
+
+/* for touch device */
+body.touch-device .Cursor {
+    display: none;
+}
+
+body.touch-device,
+body.touch-device html {
+    cursor: default;
+}
+
 /* Cursor Animations End*/
 
 /* footer start */

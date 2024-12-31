@@ -2,132 +2,159 @@
 <html>
 
 <head>
-
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- Address Bar Icon -->
 	<link rel="icon" href="images/favicon.png" type="image/png">
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<!-- Address Bar Icon -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+	<link rel="stylesheet" href="format.css"> <!--For Cursor And Footer-->
+	<link rel="stylesheet" href="Contact.css">
 
-	<link rel="stylesheet" type="text/css" href="Contact.css">
-	<link rel="stylesheet" href="format.css">
-	<link rel="stylesheet" href="Nav.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script> <!-- Cursor animation -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,900&display=swap"
-		rel="stylesheet">
+	<title>CODECRAFT - Contact</title>
 
+	<!-- header nav bar -->
+	<header>
+        <div class="header-content">
+            <div class="logo glitch" data-text="CodeCraft"><a href="index.html" style="color: #00ffa3;text-decoration: none;">CODECRAFT</a></div>
+        </div>
+    </header>
 
-	<title>CODECRAFT</title>
+<body>
+	<main>
+		<section class="hero-section">
+			<div class="hero-background"></div>
+			<div class="hero-content">
+				<div class="hero-text">
+					<h1 class="hero-title">Get in Touch</h1>
+					<p class="hero-subtitle">
+						Have questions about our courses or want to start your coding journey?
+						We're here to help you every step of the way. Reach out to us and we'll
+						respond within 24 hours.
+					</p>
+				</div>
+			</div>
+		</section>
 
-<!-- header nav bar -->
-<header>
-    <div id="header-placeholder"></div>
-</header>
-
-<body vlink="black">
-
-	<div class="container">
-		<main class="row">
-			<section class="col left">
-				<div class="contactTitle">
-					<h2><a href="index.html" style="text-decoration: none; color: whitesmoke;">Get In Touch</a></h2>
-					<p></p>
+		<div class="contact-container">
+			<div class="contact-grid">
+				<div class="contact-info">
+					<h3>Contact Information</h3>
+					<div class="info-item">
+						<div>
+							<i class="fas fa-map-marker-alt" style="width: 22px;height: 22px;"></i>
+							<h4>Our Location</h4>
+							<p>123 Coding Street, Tech City, TC 12345</p>
+						</div>
+					</div>
+					<div class="info-item">
+						<div>
+							<i class="fas fa-phone-alt" style="width: 22px; height: 22px;"></i>
+							<h4>Phone Number</h4>
+							<p>+1 (555) 123-4567</p>
+						</div>
+					</div>
+					<div class="info-item">
+						<div>
+							<i class="fas fa-envelope" style="width: 22px; height: 22px;"></i>
+							<h4>Email Address</h4>
+							<p>info@codecraft.com</p>
+						</div>
+					</div>
+					<div class="social-links">
+						<a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+						<a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+						<a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+						<a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+						<a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+					</div>
 				</div>
 
-				<!--  *******   Contact Info Starts   *******  -->
-
-				<div class="contactInfo">
-
-					<div class="iconGroup">
-						<div class="icon">
-							<i class="fa-solid fa-phone"></i>
+				<div class="contact-form">
+					<form id="contactForm" onsubmit="return validateForm(event)">
+						<div class="form-group">
+							<label for="name">Full Name</label>
+							<input type="text" id="name" name="name" placeholder="Enter your name" required>
 						</div>
-						<div class="details">
-							<span>Phone</span>
-							<span>+91 9999999999</span>
+						<div class="form-group">
+							<label for="email">Email Address</label>
+							<input type="email" id="email" name="email" placeholder="Enter your email" required>
 						</div>
-					</div>
-
-					<div class="iconGroup">
-						<div class="icon">
-							<i class="fa-solid fa-envelope"></i>
+						<div class="form-group">
+							<label for="subject">Subject</label>
+							<input type="text" id="subject" name="subject" placeholder="What is this about?" required>
 						</div>
-						<div class="details">
-							<span>Email</span>
-							<span>CODECRAFT@gmail.com</span>
+						<div class="form-group">
+							<label for="message">Message</label>
+							<textarea id="message" name="message" placeholder="Write your message here..."
+								required></textarea>
 						</div>
-					</div>
-
-					<div class="iconGroup">
-						<div class="icon">
-							<i class="fa-solid fa-location-dot"></i>
-						</div>
-						<div class="details">
-							<span>Location</span>
-							<span>Vadodara</span>
-						</div>
-					</div>
-
+						<button type="submit" class="submit-btn">
+							Send Message <i class="fas fa-paper-plane"></i>
+						</button>
+					</form>
 				</div>
-
-
-			</section>
-
-			<section class="col right">
-
-				<!--  *******   Form Starts   *******  -->
-
-				<form class="messageForm">
-
-					<div class="inputGroup halfWidth">
-						<input type="text" name="" required="required">
-						<label>Your Name</label>
-					</div>
-
-					<div class="inputGroup halfWidth">
-						<input type="email" name="" required="required">
-						<label>Email</label>
-					</div>
-
-					<div class="inputGroup fullWidth">
-						<input type="text" name="" required="required">
-						<label>Subject</label>
-					</div>
-
-					<div class="inputGroup fullWidth">
-						<textarea required="required"></textarea>
-						<label>Say Something</label>
-					</div>
-
-					<div class="inputGroup fullWidth">
-						<button>Send Message</button>
-					</div>
-
-				</form>
-
-				<!--  *******   Form Ends   *******  -->
-			</section>
-
-			<!--  *******   Right Section (Column) Ends   *******  -->
-
-		</main>
-	</div>
-
-	<!-- Include Footer -->
-	<div id="footer-placeholder"></div>
-	<!-- Include Footer -->
-
-
+			</div>
+		</div>
+	</main>
 	<div id="cursor" class="Cursor"></div> <!-- Cursor Animation  div -->
 
-	<!-- Script -->
-	<script src="script.js"></script>
-	<script src="Cursor.js"></script> <!-- Cursor Animation -->
-	<!-- Script -->
 
+	<!-- Script -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script> <!-- Cursor animation -->
+	<script src="Cursor.js"></script> <!-- Cursor Animation -->
+	<script src="script.js"></script>
+
+	<script>
+		function validateForm(event) {
+			event.preventDefault();
+
+			const name = document.getElementById('name').value;
+			const email = document.getElementById('email').value;
+			const subject = document.getElementById('subject').value;
+			const message = document.getElementById('message').value;
+
+			// Simple email validation
+			const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+			if (!emailRegex.test(email)) {
+				alert('Please enter a valid email address');
+				return false;
+			}
+
+			// Minimum length validations
+			if (name.length < 2) {
+				alert('Name must be at least 2 characters long');
+				return false;
+			}
+
+			if (subject.length < 5) {
+				alert('Subject must be at least 5 characters long');
+				return false;
+			}
+
+			if (message.length < 10) {
+				alert('Message must be at least 10 characters long');
+				return false;
+			}
+
+			// If all validations pass, you would typically send the form data to a server here
+			alert('Thank you for your message! We will get back to you soon.');
+			document.getElementById('contactForm').reset();
+			return false;
+		}
+
+		// Initialize vanilla-tilt for card hover effects
+		VanillaTilt.init(document.querySelectorAll(".info-item"), {
+			max: 5,
+			speed: 300,
+			glare: true,
+			"max-glare": 0.1,
+		});
+	</script>
+	<!-- Script -->
 </body>
 
 </html>

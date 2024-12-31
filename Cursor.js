@@ -111,3 +111,12 @@ function positionCursor(delta) {
 }
 
 initCursor();
+
+
+
+// for touch display
+document.addEventListener("DOMContentLoaded", () => {
+    if ("ontouchstart" in window || navigator.maxTouchPoints > 0) {
+        document.body.classList.add("touch-device");
+    }
+});
