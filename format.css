@@ -31,16 +31,23 @@ body {
 
 /* Scrollbar start */
 ::-webkit-scrollbar-track {
-    background: transparent;
+    background: transparent 20%;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(var(--primary-color) 10%, #1D6CE9 50%);
-    border-radius: 10px;
+    background: linear-gradient(#1D6CE9 30%, var(--primary-color) 60%);
+    border-radius: 2px;
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
+}
+
+/* Disable custom scrollbar for mobile */
+@media (max-width: 767px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }
 /* Scrollbar End */
 
