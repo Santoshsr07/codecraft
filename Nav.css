@@ -11,8 +11,16 @@ html {
   color: var(--text-color);
   background-color: var(--bg-color);
   overflow-x: hidden;
+  transition: opacity 0.5s ease-in-out; /* Fade effect */
 }
-
+body.fade-out {
+  opacity: 0; /* Fade out */
+}
+a {
+  text-decoration: none;
+  color: #1d6ce9;
+  cursor: pointer;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;

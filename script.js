@@ -35,3 +35,16 @@ let subMenu = document.getElementById("subMenu");
 function toggleMenu() {
     subMenu.classList.toggle("open-menu");
 }
+
+
+ // Add event listeners to links with the class 'transition-link'
+ document.querySelectorAll('.transition-link').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault(); // Prevent immediate navigation
+      const href = this.getAttribute('href');
+      document.body.classList.add('fade-out'); // Add fade-out class
+      setTimeout(() => {
+        window.location.href = href; // Redirect after the fade-out
+      }, 500); // Match the transition duration (500ms)
+    });
+  });
