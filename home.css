@@ -1,3 +1,13 @@
+:root {
+    --primary-color: #6E48AA;
+    --secondary-color: #9D50BB;
+    --complement-color: #00FFA3;
+    --bg-color: #0f0f1a;
+    --text-color: #FFFFFF;
+    --error-color: #FF4646;
+    --accent-color: #00ffa3;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -206,7 +216,7 @@
 
 .features2 .text h2 {
     font-size: 32px;
-    color: var(--heading-color);
+    color: #f5f5f5;
 }
 
 .container2 {
@@ -251,7 +261,7 @@
 
 .feature-card2 p {
     font-size: 1rem;
-    color: var(--gray-color);
+    color: #ccc;
     margin: 0;
     line-height: 1.6;
 }
@@ -274,13 +284,13 @@
 
 .features .text h2 {
     font-size: 32px;
-    color: var(--heading-color);
+    color: #f5f5f5;
 }
 .main-text h1{
     padding-top: 20px;
         text-align: center;
         font-size: 32px;
-        color: var(--heading-color);
+        color: #f5f5f5;
 }
 
 .container {
@@ -330,7 +340,7 @@
 
 .feature-card p {
     font-size: 1rem;
-    color: var(--gray-color);
+    color: #ccc;
     margin: 0;
     line-height: 1.6;
 }
@@ -345,7 +355,7 @@
 .section-title {
     text-align: center;
     font-size: 32px;
-    color: var(--heading-color);
+    color: #f5f5f5;
     margin-bottom: 50px;
 }
 
@@ -382,7 +392,7 @@
 }
 
 .why-us-card p {
-    color: var(--gray-color);
+    color: #ccc;
     line-height: 1.6;
 }
 
@@ -419,7 +429,7 @@
 }
 
 .stat-label {
-    color: var(--gray-color);
+    color: #ccc;
     font-size: 18px;
 }
 /********************* why us section *******************/
@@ -438,13 +448,13 @@
 }
 
 .newsletter-content h2 {
-    color: var(--heading-color);
+    color: #f5f5f5;
     margin-bottom: 20px;
     font-size: 32px;
 }
 
 .newsletter-content p {
-    color: var(--gray-color);
+    color: #ccc;
     margin-bottom: 30px;
     font-size: 18px;
 }
@@ -497,14 +507,14 @@
 
     max-width: 700px;
     font-style: italic;
-    color: var(--gray-color);
+    color: #ccc;
 }
 
 .testimonials h2 {
     font-size: 32px;
     margin: auto;
     max-width: 700px;
-    color: var(--heading-color);
+    color: #f5f5f5;
     padding-bottom: 40px;
 }
 /* *************** Testimonials section ************ */
