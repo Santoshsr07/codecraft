@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <!-- Address Bar Icon -->
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- Address Bar Icon -->
 
     <title>CODECRAFT</title>
 
@@ -17,30 +15,68 @@
     <link rel="stylesheet" href="new.css">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="Nav.css">
-    <!-- Style CSS -->
-
+    
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Font Awesome CDN -->
 </head>
-
-<header class="header">
-    <div class="header-content">
-        <div class="logo">CODECRAFT</div>
-        <nav class="nav-links"> 
-            <a href="home.html">Home</a>
-            <a href="Course.html">Courses</a>
-            <a href="About.html">About</a>
-            <a href="#">Profile</a>
-        </nav>
-        <!-- <div class="mobile-menu"> -->
-        </div>
-    </div>
-</header>
-
 <body>
-    <script src="script.js"></script>
-    
-</body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">CODECRAFT</div>
+            <nav class="nav-links"> 
+                <a href="home.html">Home</a>
+                <a href="Course.html">Courses</a>
+                <a href="About.html">About</a>
+                <button class="profile-trigger" onclick="toggleOverlay()">
+                    <img src="/images/user.png" alt="Profile" class="profile-pic">
+                    <span>John Doe</span>
+                </button>
+            </nav>
+        </div>
+    </header>
 
+    <!-- Profile Overlay -->
+    <div class="overlay" id="profileOverlay">
+        <div class="profile-modal">
+          <button class="close-btn" onclick="toggleOverlay()">×</button>
+      
+          <!-- Profile Header -->
+          <div class="profile-header">
+            <img src="images/user.png" alt="Profile Picture">
+            <h2>John Doe</h2>
+            <p style="color: var(--complement-color);">Premium Member</p>
+          </div>
+      
+          <!-- Stats Grid -->
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-value">85%</div>
+              <div class="stat-label">Progress</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">12</div>
+              <div class="stat-label">Courses</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">5</div>
+              <div class="stat-label">Certificates</div>
+            </div>
+          </div>
+      
+          <!-- Menu Items -->
+          <div class="menu-items">
+            <button class="menu-item active">👤 Profile</button>
+            <button class="menu-item">📊 Progress Track</button>
+            <button class="menu-item">🏆 Certificates</button>
+            <button class="menu-item">⚙️ Settings</button>
+          </div>
+      
+          <!-- Logout Button -->
+          <button class="logout-btn">Logout</button>
+        </div>
+      </div>
+      
+
+    <script src="script.js"></script>
+</body>
 </html>
