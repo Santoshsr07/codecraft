@@ -1,3 +1,27 @@
+// smooth reloding
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+window.addEventListener('beforeunload', () => {
+  sessionStorage.setItem('scrollPos', window.scrollY);
+});
+
+window.addEventListener('load', () => {
+  const scrollPos = sessionStorage.getItem('scrollPos');
+  if (scrollPos) {
+    window.scrollTo(0, parseInt(scrollPos, 10));
+    sessionStorage.removeItem('scrollPos');
+  }
+});
+
+
+window.addEventListener('load', () => {
+  document.body.classList.add('loaded');
+});
+
+
+
 // fetch header and footer
 fetch('header.html')
     .then(response => response.text())

@@ -1,8 +1,32 @@
+:root {
+    --primary-color: #6E48AA;
+    --secondary-color: #9D50BB;
+    --complement-color: #00FFA3;
+    --bg-color: #0f0f1a;
+    --text-color: #FFFFFF;
+    --error-color: #FF4646;
+    --accent-color: #00ffa3;
+}
+
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
     scroll-behavior: smooth;
     font-family: "Lobster", sans-serif;
 }
 
+body {
+    background: var(--primary-color);
+    opacity: 0;
+    transition: opacity 0.5s ease-out-in;
+}
+
+body.loaded {
+    opacity: 1;
+}
 
 /* About Page Specific Styles */
 .hero-about {
@@ -254,14 +278,17 @@
     transition: all 0.3s ease;
     cursor: pointer;
 }
+
 .value-card:hover {
     transform: translateY(-10px);
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
 .value-card:hover .value-icon {
     transform: scale(1.2);
 }
+
 .value-card:hover h3 {
     color: var(--complement-color);
 }
