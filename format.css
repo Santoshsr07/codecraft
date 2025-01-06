@@ -23,7 +23,7 @@
 
 body {
     background: var(--primary-color);
-    
+
 }
 
 /* Scrollbar start */
@@ -46,6 +46,7 @@ body {
         display: none;
     }
 }
+
 /* Scrollbar End */
 
 /* Cursor Animations Start*/
@@ -303,8 +304,9 @@ body.touch-device html {
         transform: translateX(-50%);
     }
 
-    .footer-links a {
-        justify-content: center;
+    .footer-links i {
+        justify-content: space-evenly;
+        padding-left: 35%;
     }
 }
 

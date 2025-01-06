@@ -65,6 +65,25 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
+
+/* Section Titles */
+.section-title {
+    text-align: center;
+    margin-bottom: 10px !important;
+    color: var(--complement-color);
+    font-size: 2.2rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--gray-color);
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 /* Mission Section */
 .mission-section {
     padding: 80px 20px;
@@ -232,11 +251,25 @@
     display: flex;
     align-items: flex-start;
     gap: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.value-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.value-card:hover .value-icon {
+    transform: scale(1.2);
+}
+.value-card:hover h3 {
+    color: var(--complement-color);
 }
 
 .value-icon {
     font-size: 30px;
     color: var(--complement-color);
+    transition: transform 0.3s ease;
 }
 
 .value-content h3 {
