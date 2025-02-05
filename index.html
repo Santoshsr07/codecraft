@@ -72,35 +72,38 @@
             </div>
         </form>
 
-        <form class="form" id="register-form" action="home.html">
+        <form class="form" id="register-form" action="home.html" onsubmit="return validatePassword(event)">
             <h2 class="title">Create Account</h2>
-
+        
             <div class="input-field">
                 <input type="text" placeholder="Full Name" required>
                 <i class="fas fa-user"></i>
             </div>
-
+        
             <div class="input-field">
                 <input type="email" placeholder="Email Address" required>
                 <i class="fas fa-envelope"></i>
             </div>
-
+        
             <div class="input-field">
-                <input type="password" placeholder="Password" required>
+                <input type="password" id="password" placeholder="Password" required>
                 <i class="fas fa-lock"></i>
             </div>
-
+        
             <div class="input-field">
-                <input type="password" placeholder="Confirm Password" required>
+                <input type="password" id="confirm-password" placeholder="Confirm Password" required>
                 <i class="fas fa-lock"></i>
             </div>
-
+        
+            <p id="error-message" style="color: red;"></p>
+        
             <div class="terms">
                 <input type="checkbox" required>
                 <span>I agree to the <a href="#">Terms & Conditions</a></span>
             </div>
-
+        
             <button type="submit" class="btn">Create Account</button>
+        
             <div class="social-media">
                 <a href="https://www.google.com" class="social-icon">
                     <i class="fab fa-google"></i>
@@ -113,6 +116,8 @@
                 </a>
             </div>
         </form>
+        
+        
     </div>
     <div id="cursor" class="Cursor"></div> <!-- Cursor Animation  div -->
     <script src="Cursor.js"></script> <!-- Cursor Animation -->
@@ -122,7 +127,7 @@
             const loginForm = document.getElementById('login-form');
             const registerForm = document.getElementById('register-form');
             const [loginBtn, registerBtn] = document.querySelectorAll('.tab-btn');
-
+    
             if (tab === 'login') {
                 loginForm.classList.add('active');
                 registerForm.classList.remove('active');
@@ -135,6 +140,32 @@
                 registerBtn.classList.add('active');
             }
         }
+    
+        function validatePassword(event) {
+            event.preventDefault(); // Prevent form submission initially
+    
+            let password = document.getElementById("password").value;
+            let confirmPassword = document.getElementById("confirm-password").value;
+            let errorMessage = document.getElementById("error-message");
+    
+            // Regular Expression for Strong Password
+            let passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    
+            if (!passwordPattern.test(password)) {
+                errorMessage.textContent = "Password must be at least 8 characters long, include an uppercase letter, a lowercase letter, a number, and a special character.";
+                return false;
+            }
+    
+            if (password !== confirmPassword) {
+                errorMessage.textContent = "Passwords do not match!";
+                return false;
+            }
+    
+            errorMessage.textContent = "";
+            event.target.submit(); // Submit form if validation passes
+        }
     </script>
+    
+    
 </body>
 </html>
