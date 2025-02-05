@@ -1,133 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Address Bar Icon -->
+    <title>CODECRAFT - Authentication</title>
+
+    <!-- Favicon -->
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- Address Bar Icon -->
 
-    <!-- Style sheet link -->
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="index.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script> <!-- Cursor animation -->
-    <!-- Style sheet link -->
 
-    <title>CODECRAFT - Authentication</title>
+    <!-- GSAP (Cursor Animation) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+    <!-- Firebase Authentication -->
+    <script type="module" src="index.js" defer></script>
 </head>
 
 <body>
-    <div class="background-animations">
-        <div class="floating-shape shape1"></div>
-        <div class="floating-shape shape2"></div>
-        <div class="floating-shape shape3"></div>
-    </div>
-
     <div class="container">
         <div class="tabs">
             <button class="tab-btn active" onclick="switchTab('login')">Login</button>
             <button class="tab-btn" onclick="switchTab('register')">Register</button>
         </div>
 
-        <form class="form active" id="login-form" action="home.html">
+        <!-- Login Form -->
+        <form class="form active" id="login-form">
             <h2 class="title">Welcome Back!</h2>
             <p class="subtitle">Sign in to continue your journey</p>
 
             <div class="input-field">
-                <input type="email" placeholder="Email" required>
+                <input type="email" id="login-email" placeholder="Email" required>
                 <i class="fas fa-envelope"></i>
             </div>
 
             <div class="input-field">
-                <input type="password" placeholder="Password" required>
+                <input type="password" id="login-password" placeholder="Password" required>
                 <i class="fas fa-lock"></i>
-            </div>
-
-            <div class="remember-forgot">
-                <label class="remember">
-                    <input type="checkbox">
-                    <span>Remember me</span>
-                </label>
-                <a href="#" class="forgot">Forgot Password?</a>
             </div>
 
             <button type="submit" class="btn">Login</button>
-
-            <p class="social-text">Or Sign in with social platforms</p>
-            <div class="social-media">
-                <a href="https://www.google.com" class="social-icon">
-                    <i class="fab fa-google"></i>
-                </a>
-                <a href="https://www.github.com" class="social-icon">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com" class="social-icon">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-            </div>
         </form>
 
-        <form class="form" id="register-form" action="home.html" onsubmit="return validatePassword(event)">
+        <!-- Register Form -->
+        <form class="form" id="register-form">
             <h2 class="title">Create Account</h2>
-        
+
             <div class="input-field">
-                <input type="text" placeholder="Full Name" required>
+                <input type="text" id="full-name" placeholder="Full Name" required>
                 <i class="fas fa-user"></i>
             </div>
-        
+
             <div class="input-field">
-                <input type="email" placeholder="Email Address" required>
+                <input type="email" id="register-email" placeholder="Email Address" required>
                 <i class="fas fa-envelope"></i>
             </div>
-        
+
             <div class="input-field">
-                <input type="password" id="password" placeholder="Password" required>
+                <input type="password" id="register-password" placeholder="Password" required>
                 <i class="fas fa-lock"></i>
             </div>
-        
-            <div class="input-field">
-                <input type="password" id="confirm-password" placeholder="Confirm Password" required>
-                <i class="fas fa-lock"></i>
-            </div>
-        
+
             <p id="error-message" style="color: red;"></p>
-        
-            <div class="terms">
-                <input type="checkbox" required>
-                <span>I agree to the <a href="#">Terms & Conditions</a></span>
-            </div>
-        
+
             <button type="submit" class="btn">Create Account</button>
-        
-            <div class="social-media">
-                <a href="https://www.google.com" class="social-icon">
-                    <i class="fab fa-google"></i>
-                </a>
-                <a href="https://www.github.com" class="social-icon">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com" class="social-icon">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-            </div>
         </form>
-        
-        
     </div>
-    <div id="cursor" class="Cursor"></div> <!-- Cursor Animation  div -->
-    <script src="Cursor.js"></script> <!-- Cursor Animation -->
 
     <script>
         function switchTab(tab) {
             const loginForm = document.getElementById('login-form');
             const registerForm = document.getElementById('register-form');
             const [loginBtn, registerBtn] = document.querySelectorAll('.tab-btn');
-    
+
             if (tab === 'login') {
                 loginForm.classList.add('active');
                 registerForm.classList.remove('active');
@@ -140,32 +91,6 @@
                 registerBtn.classList.add('active');
             }
         }
-    
-        function validatePassword(event) {
-            event.preventDefault(); // Prevent form submission initially
-    
-            let password = document.getElementById("password").value;
-            let confirmPassword = document.getElementById("confirm-password").value;
-            let errorMessage = document.getElementById("error-message");
-    
-            // Regular Expression for Strong Password
-            let passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-    
-            if (!passwordPattern.test(password)) {
-                errorMessage.textContent = "Password must be at least 8 characters long, include an uppercase letter, a lowercase letter, a number, and a special character.";
-                return false;
-            }
-    
-            if (password !== confirmPassword) {
-                errorMessage.textContent = "Passwords do not match!";
-                return false;
-            }
-    
-            errorMessage.textContent = "";
-            event.target.submit(); // Submit form if validation passes
-        }
     </script>
-    
-    
 </body>
 </html>
