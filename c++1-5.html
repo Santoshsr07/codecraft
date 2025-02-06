@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Address Bar Icon -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Address Bar Icon -->
+
+    <title>CODECRAFT</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="format.css">
+    <link rel="stylesheet" href="Nav.css">
+    <link rel="stylesheet" href="HTML1.css">
+
+    <!-- Style CSS -->
+
+    <!-- Font Awesome CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Font Awesome CDN -->
+
+</head>
+
+<body>
+
+
+
+    <!-- header nav bar -->
+    <header>
+        <div id="header-placeholder"></div>
+    </header>
+
+    <!-- Home section Start -->
+
+    <main class="container">
+        <h1>Operators in C++</h1>
+        <section>
+            <h2>Introduction</h2>
+            <p>In C++, an operator is a symbol that operates on a value to perform specific mathematical or logical
+                computations. Operators are classified into different categories based on the type of operation they
+                perform.</p>
+        </section>
+
+        <section>
+            <h2>Basic Syntax Example</h2>
+            <pre class="code-example">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int a = 10 + 20;
+    cout << a;
+    return 0;
+}
+            </pre>
+            <p><strong>Output:</strong> 30</p>
+        </section>
+
+        <section>
+            <h2>Types of Operators in C++</h2>
+            <ul>
+                <li>Arithmetic Operators</li>
+                <li>Relational Operators</li>
+                <li>Logical Operators</li>
+                <li>Bitwise Operators</li>
+                <li>Assignment Operators</li>
+                <li>Ternary or Conditional Operators</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Arithmetic Operators</h2>
+            <p>Arithmetic operators perform mathematical operations like addition, subtraction, etc.</p>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Symbol</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Addition</td>
+                    <td>+</td>
+                    <td>Adds two operands</td>
+                </tr>
+                <tr>
+                    <td>Subtraction</td>
+                    <td>-</td>
+                    <td>Subtracts second operand from the first</td>
+                </tr>
+                <tr>
+                    <td>Multiplication</td>
+                    <td>*</td>
+                    <td>Multiplies two operands</td>
+                </tr>
+                <tr>
+                    <td>Division</td>
+                    <td>/</td>
+                    <td>Divides first operand by second</td>
+                </tr>
+                <tr>
+                    <td>Modulo</td>
+                    <td>%</td>
+                    <td>Returns remainder of division</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Example of Arithmetic Operators</h2>
+            <pre class="code-example">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int a = 8, b = 3;
+    cout << "a + b = " << (a + b) << endl;
+    cout << "a - b = " << (a - b) << endl;
+    cout << "a * b = " << (a * b) << endl;
+    cout << "a / b = " << (a / b) << endl;
+    cout << "a % b = " << (a % b) << endl;
+    return 0;
+}
+            </pre>
+        </section>
+
+        <section>
+            <h2>Relational Operators</h2>
+            <p>Used to compare values of two operands.</p>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Symbol</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Equal To</td>
+                    <td>==</td>
+                    <td>Checks if both operands are equal</td>
+                </tr>
+                <tr>
+                    <td>Greater Than</td>
+                    <td>></td>
+                    <td>Checks if first operand is greater</td>
+                </tr>
+                <tr>
+                    <td>Less Than</td>
+                    <td>
+                        << /td>
+                    <td>Checks if first operand is lesser</td>
+                </tr>
+                <tr>
+                    <td>Not Equal</td>
+                    <td>!=</td>
+                    <td>Checks if both operands are not equal</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="faq-section">
+            <h2>FAQs on C++ Operators</h2>
+            <h3>What are operators in C++?</h3>
+            <p>Operators are symbols that perform specific computations on values.</p>
+
+            <h3>What are the different types of operators in C++?</h3>
+            <p>Arithmetic, Relational, Logical, Bitwise, Assignment, and Ternary operators.</p>
+
+            <h3>What is the difference between == and = in C++?</h3>
+            <p><code>==</code> is used for comparison, while <code>=</code> is used for assignment.</p>
+        </section>
+    </main>
+
+    <div class="footer-navigation">
+        <a href="c++1-4.html" class="cta-button">
+            <i class="fas fa-arrow-left"></i> Previous Page
+        </a>
+    </div>
+
+    <!-- Include Footer -->
+    <div id="footer-placeholder"></div> <!-- footer -->
+
+
+    <div id="cursor" class="Cursor"></div> <!-- Cursor Animation  div -->
+
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script> <!-- Cursor animation -->
+    <script src="script.js"></script>
+    <script src="Cursor.js"></script> <!-- Cursor Animation -->
+
+    <!-- features tilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <!-- features tilt -->
+
+    <!-- Script -->
+
+</body>
+
+
+</html>

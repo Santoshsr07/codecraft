@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Address Bar Icon -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Address Bar Icon -->
+
+    <title>CODECRAFT</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="format.css">
+    <link rel="stylesheet" href="HTML1.css">
+    <link rel="stylesheet" href="Nav.css">
+
+    <!-- Style CSS -->
+
+    <!-- Font Awesome CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Font Awesome CDN -->
+
+</head>
+
+<body>
+
+    
+
+    <!-- header nav bar -->
+    <header>
+        <div id="header-placeholder"></div>
+    </header>
+
+    <!-- Home section Start -->
+
+    <main class="container">
+        <h1>HTML Style Tag</h1>
+        <section>
+            <h2>What is the HTML &lt;style&gt; Tag?</h2>
+            <p>The HTML &lt;style&gt; tag defines CSS for document styling. It is placed inside the &lt;head&gt; section of the document.</p>
+        </section>
+
+        <section>
+            <h2>Syntax</h2>
+            <pre class="code-example">
+&lt;style&gt;
+    .divtag {
+        color: blue;
+    }
+&lt;/style&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>Attributes of the &lt;style&gt; Tag</h2>
+            <table>
+                <tr>
+                    <th>Attribute</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><strong>media</strong></td>
+                    <td>Specifies for what media/device the media resource is optimized.</td>
+                </tr>
+                <tr>
+                    <td><strong>type</strong></td>
+                    <td>Defines the media type of the &lt;style&gt; tag.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Example: Styling Elements</h2>
+            <pre class="code-example">
+&lt;style&gt;
+    p {
+        color: red;
+        font-size: 18px;
+    }
+    h2 {
+        color: green;
+    }
+&lt;/style&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>Example: Advanced Styling</h2>
+            <pre class="code-example">
+&lt;style&gt;
+    body {
+        background-color: #616a6b;
+    }
+    h1 {
+        font-family: commanders;
+        background-color: yellow;
+    }
+    h2 {
+        font-family: algerian;
+        background-color: cyan;
+    }
+    #first {
+        font-family: Castellar;
+        background-color: green;
+        color: blue;
+    }
+    .second {
+        text-align: right;
+        background-color: white;
+        font-size: 30px;
+        color: red;
+    }
+&lt;/style&gt;
+            </pre>
+        </section>
+
+        <section class="faq-section">
+            <h2>HTML Style Tag - FAQs</h2>
+            <h3>Can I use multiple &lt;style&gt; tags in a single HTML document?</h3>
+            <p>Yes, but it's better to group all internal styles within a single &lt;style&gt; tag for better organization and performance.</p>
+            
+            <h3>How do I target specific elements using the &lt;style&gt; tag?</h3>
+            <p>You can use selectors such as element selectors, class selectors, and ID selectors.</p>
+            
+            <h3>Is the &lt;style&gt; tag better than an external CSS file?</h3>
+            <p>For small projects, the &lt;style&gt; tag works well, but for larger projects, external CSS files are preferred for better maintainability and performance.</p>
+            
+            <h3>Can the &lt;style&gt; tag be placed in the &lt;body&gt; section?</h3>
+            <p>It is technically allowed but not recommended. The &lt;style&gt; tag should be placed in the &lt;head&gt; section.</p>
+        </section>
+    </main>
+
+    <div class="footer-navigation">
+        <a href="HTML1-7.html" class="cta-button">
+            <i class="fas fa-arrow-left"></i> Previous Page
+        </a>
+     </div>   
+
+    <!-- Include Footer -->
+    <div id="footer-placeholder"></div> <!-- footer -->
+
+
+    <div id="cursor" class="Cursor"></div> <!-- Cursor Animation  div -->
+
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script> <!-- Cursor animation -->
+    <script src="script.js"></script>
+    <script src="Cursor.js"></script> <!-- Cursor Animation -->
+
+    <!-- features tilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <!-- features tilt -->
+
+    <!-- Script -->
+
+</body>
+
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Address Bar Icon -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Address Bar Icon -->
+
+    <title>CODECRAFT</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="format.css">
+    <link rel="stylesheet" href="HTML1.css">
+    <link rel="stylesheet" href="Nav.css">
+
+    <!-- Style CSS -->
+
+    <!-- Font Awesome CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Font Awesome CDN -->
+
+</head>
+
+<body>
+
+    
+
+    <!-- header nav bar -->
+    <header>
+        <div id="header-placeholder"></div>
+    </header>
+
+    <!-- Home section Start -->
+
+    <main class="container">
+        <h1>HTML Layout</h1>
+        <section>
+            <h2>What is HTML Layout?</h2>
+            <p>HTML layouts are a technique used to divide a web page into multiple sections, making it easier to apply styles, organize content, and manage operations efficiently.</p>
+        </section>
+
+        <section>
+            <h2>Basic Layout Syntax</h2>
+            <pre class="code-example">
+&lt;header&gt; Content... &lt;/header&gt;
+&lt;nav&gt; Content... &lt;/nav&gt;
+&lt;main&gt; Content... &lt;/main&gt;
+&lt;footer&gt; Content... &lt;/footer&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>Basic HTML Layout Example</h2>
+            <pre class="code-example">
+&lt;html&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;My Website&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;p&gt;Welcome to my website!&lt;/p&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+        &lt;p&gt; 2024 My Website&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>Layout Components</h2>
+            <ul>
+                <li><strong>Header:</strong> The top section containing title or navigation links.</li>
+                <li><strong>Navigation Bar:</strong> Provides links to main sections.</li>
+                <li><strong>Index/Sidebar:</strong> Contains additional information like ads or links.</li>
+                <li><strong>Content Section:</strong> Main area displaying the primary content.</li>
+                <li><strong>Footer:</strong> Bottom section with legal or contact information.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Example: Layout with Additional Semantic Tags</h2>
+            <pre class="code-example">
+&lt;html&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;My Blog&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;nav&gt;
+        &lt;a href="#"&gt;Home&lt;/a&gt; | &lt;a href="#"&gt;About&lt;/a&gt; | &lt;a href="#"&gt;Contact&lt;/a&gt;
+    &lt;/nav&gt;
+    &lt;section&gt;
+        &lt;h2&gt;Latest Posts&lt;/h2&gt;
+        &lt;article&gt;
+            &lt;h3&gt;Post Title&lt;/h3&gt;
+            &lt;p&gt;This is a brief introduction to the blog post.&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/section&gt;
+    &lt;aside&gt;
+        &lt;h2&gt;About Me&lt;/h2&gt;
+        &lt;p&gt;Short bio or profile information.&lt;/p&gt;
+    &lt;/aside&gt;
+    &lt;footer&gt;
+        &lt;p&gt;&copy; 2024 My Blog&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>Best Practices for HTML Layout</h2>
+            <ul>
+                <li>Use semantic HTML5 elements like &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, and &lt;footer&gt;.</li>
+                <li>Ensure responsive design using CSS media queries.</li>
+                <li>Utilize CSS Grid and Flexbox for better layout control.</li>
+            </ul>
+        </section>
+
+        <section class="faq-section">
+            <h2>HTML Layout - FAQs</h2>
+            <h3>What is the purpose of the &lt;div&gt; element in HTML layout?</h3>
+            <p>The &lt;div&gt; element is a block-level container used to group elements for styling and layout control.</p>
+            
+            <h3>How can I center content horizontally in an HTML layout?</h3>
+            <p>Use CSS properties like <code>margin: auto;</code> for block elements or <code>text-align: center;</code> for inline elements.</p>
+            
+            <h3>How do you create a grid layout in HTML?</h3>
+            <p>Use CSS Grid Layout with properties like <code>display: grid;</code> and <code>grid-template-columns</code>.</p>
+            
+            <h3>How do I create a fixed header or footer?</h3>
+            <p>Apply <code>position: fixed;</code> along with <code>top: 0;</code> for headers or <code>bottom: 0;</code> for footers.</p>
+            
+            <h3>What is a responsive layout?</h3>
+            <p>A layout that adjusts based on screen size and orientation using CSS media queries.</p>
+        </section>
+    </main>
+
+    <div class="footer-navigation">
+        <a href="HTML1-2.html" class="cta-button">
+            <i class="fas fa-arrow-left"></i> Previous Page
+        </a>
+        <a href="HTML1-4.html" class="cta-button">
+            Next Page <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+
+    <!-- Include Footer -->
+    <div id="footer-placeholder"></div> <!-- footer -->
+
+
+    <div id="cursor" class="Cursor"></div> <!-- Cursor Animation  div -->
+
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script> <!-- Cursor animation -->
+    <script src="script.js"></script>
+    <script src="Cursor.js"></script> <!-- Cursor Animation -->
+
+    <!-- features tilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <!-- features tilt -->
+
+    <!-- Script -->
+
+</body>
+
+
+</html>

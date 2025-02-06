@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=JetBrains+Mono:wght@700&display=swap');
+
+:root {
+    --primary-color: #6E48AA;
+    --secondary-color: #9D50BB;
+    --complement-color: #00FFA3;
+    --bg-color: #0f0f1a;
+    --text-color: #FFFFFF;
+    --error-color: #FF4646;
+    --accent-color: #00ffa3;
+    --card-bg: rgba(255, 255, 255, 0.03);
+    --code-bg: #1e1e2e;
+}
+
+/* Reset and Base Styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 120px auto 0 120px;
+    margin-top: 120px;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 120px;
+    padding: 0 20px;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 40px;
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 30px;
+    border: 1px solid rgba(110, 72, 170, 0.1);
+}
+
+
+.container{
+    margin-top: 120px !important;
+}
+
+/* Typography */
+h1, h2, h3 {
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+/* Lists */
+ul {
+    list-style-position: inside;
+    margin-bottom: 1rem;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+/* Code Blocks */
+.code-example {
+    background: var(--code-bg);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    overflow-x: auto;
+}
+
+pre {
+    font-family: 'JetBrains Mono', monospace;
+    line-height: 1.4;
+    margin: 0;
+}
+
+code {
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--code-bg);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* FAQ Section */
+.faq-section {
+    background: rgba(110, 72, 170, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.faq-section h3 {
+    color: var(--accent-color);
+    margin-top: 20px;
+}
+
+.faq-section h3:first-child {
+    margin-top: 0;
+}
+.code-example {
+    overflow-x: auto; /* Default scrolling for all */
+    white-space: pre-wrap; /* Allows wrapping */
+}
+
+.code-example:first-of-type {
+    overflow-x: hidden; /* Disable scrolling for the first occurrence */
+    white-space: normal; /* Wrap long text */
+}
+
+
+
+/* Links */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--complement-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    header {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    .container {
+        margin-top: 120px;
+        padding: 15px;
+    }
+
+    .code-example {
+        padding: 15px;
+    }
+}
+
+/* Dark Mode Enhancements */
+@media (prefers-color-scheme: dark) {
+    .code-example {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    section {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-top: 30px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+
+    section {
+        border: 1px solid #ddd;
+        box-shadow: none;
+        break-inside: avoid;
+    }
+
+    .code-example {
+        border: 1px solid #ddd;
+        break-inside: avoid;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+.footer-navigation { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adds space between buttons */
+    margin-bottom: 70px;
+    width: 100%;
+}
+
+.footer-navigation .cta-button {
+    min-width: 150px; /* Ensures both buttons have a minimum width */
+    max-width: 200px; /* Prevents excessive stretching */
+    flex: 1; /* Makes both buttons take up equal space */
+    text-align: center;
+    padding: 12px 20px;
+}
+
+
+
+
+.cta-button {
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(110, 72, 170, 0.3);
+}
+
+.cta-button:hover::before {
+    margin: 0 5px;
+}
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
