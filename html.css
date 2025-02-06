@@ -395,7 +395,7 @@ body, html {
 }
 
 /* Level Cards Styles */
-.level-container {
+.level-container{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
