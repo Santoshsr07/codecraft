@@ -1,3 +1,4 @@
+/* CSS Variables */
 :root {
     --primary-color: #6E48AA;
     --secondary-color: #9D50BB;
@@ -8,6 +9,7 @@
     --accent-color: #00ffa3;
 }
 
+/* Base Styles */
 body, html {
     font-family: 'Poppins', sans-serif;
     color: var(--text-color);
@@ -32,38 +34,19 @@ body, html {
     background: linear-gradient(45deg, rgba(110, 72, 170, 0.1), rgba(157, 80, 187, 0.1));
     z-index: -1;
 }
+
+/* Typography */
 h1 {
-    font-size: 4rem; /* Default for large screens */
+    font-size: 4rem;
     margin-bottom: 10px;
     color: var(--accent-color);
     text-shadow: 0 0 20px rgba(0, 60, 255, 0.5);
 }
 
-/* Medium screens (tablets) */
-@media (max-width: 1024px) {
-    h1 {
-        font-size: 3rem;
-    }
-}
-
-/* Small screens (mobile) */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-}
-
-/* Extra small screens (phones) */
-@media (max-width: 480px) {
-    h1 {
-        font-size: 2rem;
-    }
-}
-
-
-h3{
+h3 {
     color: var(--text-color);
 }
+
 .hero p {
     font-size: 1.2rem;
     max-width: 800px;
@@ -71,7 +54,20 @@ h3{
     line-height: 1.6;
 }
 
-/* Search Bar */
+/* Responsive Typography */
+@media (max-width: 1024px) {
+    h1 { font-size: 3rem; }
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 2.5rem; }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: 2rem; }
+}
+
+/* Search Section */
 .search-section {
     padding: 40px 0;
     margin-bottom: 20px;
@@ -146,12 +142,7 @@ h3{
     color: var(--bg-color);
 }
 
-/* Hide courses when filtered */
-.course-feature-card.hidden {
-    display: none;
-}
-
-/* Layout & Containers */
+/* Layout & Grid */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -192,4 +183,8 @@ h3{
 
 .course-feature-card:hover {
     transform: translateY(-10px);
+}
+
+.course-feature-card.hidden {
+    display: none;
 }
