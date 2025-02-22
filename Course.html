@@ -4,42 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>CODECRAFT</title>
 
     <!-- Address Bar Icon -->
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- Address Bar Icon -->
-    
+
     <!-- Style CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="format.css">
     <link rel="stylesheet" href="Course.css">
     <link rel="stylesheet" href="Nav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Style CSS -->
-
 </head>
 
-<!-- Header / Nav Bar -->
-<header>
-    <div id="header-placeholder"></div>
-</header>
-<!-- Header / Nav Bar -->
-
 <body>
+    <!-- Header / Nav Bar -->
+    <header>
+        <div id="header-placeholder"></div>
+    </header>
 
     <section class="hero">
         <h1 class="glitch" data-text="Level Up Your Code">What Do You Want To Learn?</h1>
-        <p></p>
-        <!-- <a href="#" class="cta-button floating">Start Your Quest</a> -->
+        <p>Master modern programming languages and frameworks with our comprehensive courses. Learn at your own pace
+            with hands-on projects.</p>
+
+        <div class="container">
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Search for courses..." id="courseSearch">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            <div class="filter-tags">
+                <span class="filter-tag active" data-filter="all">All</span>
+                <span class="filter-tag" data-filter="Web-Development">Web-Development</span>
+                <span class="filter-tag" data-filter="Cybersecurity">Cybersecurity</span>
+                <span class="filter-tag" data-filter="Database">Database</span>
+                <span class="filter-tag" data-filter="Programming">Programming</span>
+                <span class="filter-tag" data-filter="AI_&_ML">AI & ML</span>
+            </div>
+        </div>
     </section>
 
     <section class="courses" id="courses">
         <div class="container">
             <div class="course-features-grid">
-                <a href="html.html">
+                <a href="html.html" data-category="Web-Development">
                     <div class="course-feature-card" data-tilt>
                         <img src="https://cdn-icons-png.flaticon.com/512/246/246185.png" width="150" height="150"
                             alt="HTML" title="HTML" class="img-small">
@@ -48,7 +58,7 @@
                     </div>
                 </a>
 
-                <a href="css.html">
+                <a href="css.html" data-category="Web-Development">
                     <div class="course-feature-card" data-tilt>
                         <img src="https://cdn-icons-png.flaticon.com/512/2325/2325973.png" width="150" height="150"
                             alt="CSS" title="CSS" class="img-small">
@@ -57,7 +67,7 @@
                     </div>
                 </a>
 
-                <a href="C++.html">
+                <a href="C++.html" data-category="Programming">
                     <div class="course-feature-card" data-tilt>
                         <img src="https://cdn-icons-png.flaticon.com/512/17711/17711694.png" width="150" height="150"
                             alt="C++" title="C++" class="img-small">
@@ -66,7 +76,7 @@
                     </div>
                 </a>
 
-                <a href="python.html">
+                <a href="PYTHON.html" data-category="Programming">
                     <div class="course-feature-card" data-tilt>
                         <img src="https://cdn-icons-png.flaticon.com/512/3098/3098090.png" width="150" height="150"
                             alt="Python" title="Python" class="img-small">
@@ -75,7 +85,7 @@
                     </div>
                 </a>
 
-                <a href="JAVA.html">
+                <a href="JAVA.html" data-category="Programming">
                     <div class="course-feature-card" data-tilt>
                         <img src="https://cdn-icons-png.flaticon.com/512/1183/1183618.png" width="150" height="150"
                             alt="Java" title="Java" class="img-small">
@@ -84,7 +94,7 @@
                     </div>
                 </a>
 
-                <a href="JAVASCRIPT.html">
+                <a href="JAVASCRIPT.html" data-category="Web-Development">
                     <div class="course-feature-card" data-tilt>
                         <img src="https://cdn-icons-png.flaticon.com/512/1199/1199124.png" width="150" height="150"
                             alt="JavaScript" title="JavaScript" class="img-small">
@@ -93,16 +103,16 @@
                     </div>
                 </a>
 
-                <a href="MYSQL.html">
+                <a href="MYSQL.html" data-category="Database">
                     <div class="course-feature-card" data-tilt>
-                        <img src="https://cdn-icons-png.flaticon.com/512/1199/1199128.png" width="150" height="150"
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" width="150" height="150"
                             alt="MySQL" title="MySQL" class="img-small">
                         <h3>MYSQL</h3>
                         <p>A language for accessing databases</p>
                     </div>
                 </a>
 
-                <a href="REACT.html">
+                <a href="REACT.html" data-category="Web-Development">
                     <div class="course-feature-card" data-tilt>
                         <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" width="150" height="150"
                             alt="React" title="React" class="img-small">
@@ -110,23 +120,95 @@
                         <p>Learn React Once and Write Everywhere</p>
                     </div>
                 </a>
+
+                <a href="../comingsoon.html" data-category="AI_&_ML">
+                    <div class="course-feature-card" data-tilt>
+                        <img src="https://cdn-icons-png.flaticon.com/512/12133/12133548.png" width="150" height="150"
+                            alt="AI" title="AI" class="img-small">
+                        <h3>AI</h3>
+                        <p>Introduction to Artificial Intelligence (AI)</p>
+                    </div>
+                </a> 
+
+                <a href="../comingsoon.html" data-category="Cybersecurity">
+                    <div class="course-feature-card" data-tilt>
+                        <img src="https://cdn-icons-png.flaticon.com/512/7922/7922150.png" width="150" height="150"
+                            alt="Cybersecurity" title="Cybersecurity" class="img-small">
+                        <h3>Cybersecurity</h3>
+                        <p>Basic Introduction to Cybersecurity</p>
+                    </div>
+                </a>
+
+                <a href="../comingsoon.html" data-category="AI_&_ML">
+                    <div class="course-feature-card" data-tilt>
+                        <img src="https://cdn-icons-png.flaticon.com/512/1171/1171570.png" width="150" height="150"
+                            alt="blockchain" title="blockchain" class="img-small">
+                        <h3>Blockchain</h3>
+                        <p>Basic Introduction to Blockchain</p>
+                    </div>
+                </a>
+
+                <a href="" data-category="All">
+                    <div class="course-feature-card" data-tilt>
+                        <img src="https://cdn-icons-png.flaticon.com/512/10738/10738273.png" width="150" height="150"
+                            alt="comingsoon" title="comingsoon" class="img-small">
+                        <h3>Comingsoon</h3>
+                        <p>There will soon be more exciting courses.</p>
+                    </div>
+                </a>
+
             </div>
         </div>
     </section>
-
     <!-- Include Footer -->
     <div id="footer-placeholder"></div>
-    <!-- Include Footer -->
 
-    <div id="cursor" class="Cursor"></div> <!-- Cursor Animation  div -->
+    <div id="cursor" class="Cursor"></div>
 
     <!-- Script -->
-     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script> <!-- Cursor animation -->
-    <script src="script.js"></script><!-- Main Script File-->
-    <script src="Cursor.js"></script> <!-- Cursor Animation -->
-    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="Cursor.js"></script>
+    <script>
+        // Search and Filter Functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const searchBar = document.getElementById('courseSearch');
+            const courseCards = document.querySelectorAll('.course-feature-card');
+            const filterTags = document.querySelectorAll('.filter-tag');
 
+            // Search functionality
+            searchBar.addEventListener('input', filterCourses);
+
+            // Filter tag functionality
+            filterTags.forEach(tag => {
+                tag.addEventListener('click', () => {
+                    // Remove active class from all tags
+                    filterTags.forEach(t => t.classList.remove('active'));
+                    // Add active class to clicked tag
+                    tag.classList.add('active');
+                    filterCourses();
+                });
+            });
+
+            function filterCourses() {
+                const searchTerm = searchBar.value.toLowerCase();
+                const activeFilter = document.querySelector('.filter-tag.active').dataset.filter;
+
+                courseCards.forEach(card => {
+                    const cardContainer = card.closest('a');
+                    const title = card.querySelector('h3').textContent.toLowerCase();
+                    const description = card.querySelector('p').textContent.toLowerCase();
+                    const category = cardContainer.dataset.category;
+
+                    const matchesSearch = title.includes(searchTerm) || description.includes(searchTerm);
+                    const matchesFilter = activeFilter === 'all' || category === activeFilter;
+
+                    // Show/hide based on both search and filter criteria
+                    cardContainer.style.display = (matchesSearch && matchesFilter) ? '' : 'none';
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
